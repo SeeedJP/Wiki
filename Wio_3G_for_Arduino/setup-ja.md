@@ -1,52 +1,70 @@
-# �J�����̃Z�b�g�A�b�v
+# 開発環境のセットアップ
 
-## Arduino IDE�̃C���X�g�[��
+## Arduino IDEのインストール
 
-�p�\�R����Arduino IDE���C���X�g�[������Ă��Ȃ��ꍇ�́A[Arduino��Software�T�C�g](https://www.arduino.cc/en/Main/Software)��Download the Arduino IDE�ɂ���ARDUINO x.x.x���_�E�����[�h�A�C���X�g�[�����Ă��������B  
-Wio 3G��Aruino IDE��Linux�ŁAArduino Web Editor�ɑΉ����Ă��܂���̂ł����ӂ��������B
+パソコンにArduino IDEがインストールされていない場合は、[ArduinoのSoftwareサイト](https://www.arduino.cc/en/Main/Software)のDownload the Arduino IDEにあるARDUINO x.x.xをダウンロード、インストールしてください。  
+Wio 3GはAruino IDEのLinux版、Arduino Web Editorに対応していませんのでご注意ください。
 
-**��Arduino IDE�̃_�E�����[�h**  
+**■Arduino IDEのダウンロード**  
 ![3](img/3.png)
 
-## �{�[�h�̒ǉ�
+## ボードの追加
 
-Arduino IDE���N�����āA"�c�[�� > �{�[�h"��**Seeed Wio 3G**���\������Ă��邩�m�F���Ă��������B  
-> ������Ȃ��ꍇ�́A[Wio 3G�{�[�h�̒ǉ�](add_board-ja.md)�����{���Ă��������B
-
-**���{�[�h�̊m�F�i�c�[�� > �{�[�h > Seeed Wio 3G�j**  
+Arduino IDEを起動して、"ツール > ボード"に**Seeed Wio 3G**が表示されているか確認してください。  
+**■ボードの確認（ツール > ボード > Seeed Wio 3G）**  
 ![4](img/4.png)
 
-## ���C�u�����̒ǉ�
+見つからない場合は、次の手順を実施して、Wio 3Gボードの追加をしてください。
+1. Arduino IDEを起動してください。
+1. ファイル > 環境設定 （Macでは、Arduino > Preferences...）の 設定タブ にある"追加のボードマネージャのURL:"に、**http://www.seeed.co.jp/package_SeeedJP_index.json** を入力してください。  
+![8](img/8.png)
+1. ツール > ボード > ボードマネージャ で、SeeedJP STM32F4 Boards by Seeed K.K. を選択し、インストールをクリックしてください。  
+![7](img/7.png)
 
-Arduino IDE�́A"�X�P�b�` > ���C�u�������C���N���[�h"��**Wio 3G for Arduino**���\������Ă��邩�m�F���Ă��������B
-> ������Ȃ��ꍇ�́A[Wio 3G���C�u�����̒ǉ�](add_library-ja.md)�����{���Ă��������B
+## ライブラリの追加
 
-**�����C�u�����̊m�F�i�X�P�b�` > ���C�u�������C���N���[�h > Wio 3G for Arduino�j**  
+Arduino IDEの、"スケッチ > ライブラリをインクルード"に**Wio 3G for Arduino**が表示されているか確認してください。
+**■ライブラリの確認（スケッチ > ライブラリをインクルード > Wio 3G for Arduino）**  
 ![5](img/5.png)
 
-## �V���A���|�[�g�h���C�o�̃C���X�g�[��
+見つからない場合は、次の手順を実施して、Wio 3Gライブラリの追加をしてください。
+1. [Wio 3Gライブラリのgithubサイト](https://github.com/SeeedJP/Wio_3G_for_Arduino/releases)から、最新のSource codeをダウンロードしてください。  
+(ダウンロードしたZIPファイルを解凍する必要はありません。)  
+![10](img/10.png)
+1. Arduino IDEを起動してください。
+1. スケッチ > ライブラリをインクルード > .ZIP形式のライブラリをインストール を選択して、ダウンロードしたZIPファイルを指定してください。  
+![11](img/11.png)
 
-Windows 10��������Mac OS X�́A�V���A���|�[�g�h���C�o�̃C���X�g�[���͕s�v�ł��B  
-Windows 7, Windows 8.1�̏ꍇ�́A[Windows serial driver�T�C�g](https://os.mbed.com/docs/latest/tutorials/windows-serial-driver.html)�ɂ���Arm Mbed Windows serial port driver���C���X�g�[�����Ă��������B
+## シリアルポートドライバのインストール
 
-**���V���A���|�[�g�h���C�o�̊m�F�iWio 3G��USB�ڑ����A�f�o�C�X�}�l�[�W���[�Ŋm�F�j**  
+Windows 10もしくはMac OS Xは、シリアルポートドライバのインストールは不要です。  
+Windows 7, Windows 8.1の場合は、[Windows serial driverサイト](https://os.mbed.com/docs/latest/tutorials/windows-serial-driver.html)にあるArm Mbed Windows serial port driverをインストールしてください。
+
+**■シリアルポートドライバの確認（Wio 3GをUSB接続し、デバイスマネージャーで確認）**  
 ![6](img/6.png)
 
-# �J�����̓���m�F
+# 開発環境の動作確認
 
-## �v���O�����̏�������
+## プログラムの書き込み
 
-Wio 3G���p�\�R����USB�ڑ����Ă����A"�t�@�C�� > �X�P�b�`�� > Wio 3G for Arduino"�ɂ���basic/LedSetRGB��I�����āA�J�����X�P�b�`���������݂܂��B  
-�������񂾌�Ƀ��Z�b�g���āAWio 3G���LED���J���t���ɓ_������ΐ���ł��B
+Wio 3GをパソコンにUSB接続しておき、"ファイル > スケッチ例 > Wio 3G for Arduino"にあるbasic/LedSetRGBを選択して、開いたスケッチを書き込みます。  
+書き込んだ後にリセットして、Wio 3G上のLEDがカラフルに点灯すれば正常です。
 
-1. Wio 3G���p�\�R����USB�ڑ����Ă��������B�iDAPLINK�Ƃ����h���C�u���p�\�R���ɔF������܂��B�j
-1. Arduino IDE���N�����Ă��������B
-1. Arduino IDE�̃{�[�h�I����Seeed Wio 3G�ɕύX���Ă��������B�i�c�[�� > �{�[�h > Seeed Wio 3G�j
-1. �X�P�b�`���basic/LedSetRGB���J���Ă��������B�i�t�@�C�� > �X�P�b�`�� > Wio 3G for Arduino > basic > LedSetRGB�j
-1. �X�P�b�`��Wio 3G�ɏ�������ł��������B�i�X�P�b�` > �}�C�R���{�[�h�ɏ������ށj
-1. �{�[�h�ւ̏������݂���������܂ő҂��Ă��������B�i��������ƁADAPLINK�h���C�u�������I�ɊO��A�ēx�A�F������܂��B�j
-1. Wio 3G��̃��Z�b�g�iBL�Ə����ꂽ�{�^���j�������Ă��������B
+1. Wio 3GをパソコンにUSB接続してください。（DAPLINKというドライブがパソコンに認識されます。）
+1. Arduino IDEを起動してください。
+1. Arduino IDEのボード選択をSeeed Wio 3Gに変更してください。（ツール > ボード > Seeed Wio 3G）
+1. スケッチ例のbasic/LedSetRGBを開いてください。（ファイル > スケッチ例 > Wio 3G for Arduino > basic > LedSetRGB）
+1. スケッチをWio 3Gに書き込んでください。（スケッチ > マイコンボードに書き込む）
+1. ボードへの書き込みが完了するまで待ってください。（完了すると、DAPLINKドライブが自動的に外れ、再度、認識されます。書き込んだファイルはマイコンに転送され自動的に消えます。）
+1. Wio 3G上のリセット（BLと書かれたボタン）を押してください。
 
-**��LED�_���̗l�q**  
+
+**■LED点灯の様子**  
 ![2](img/2.png)
 
+### おまけ
+毎回リセットボタンを押すのが面倒な方へ
+#### Break信号でリセット
+お手持ちのシリアルターミナルで、Break信号を送ると、リセットできます。Teratermの場合Alt-B、CoolTermの場合Command-BでBreak信号を送れます。（Arduino IDEのシリアルモニタでは、Break信号は送れません。）
+#### 自動リセットをするようにする
+DAPLINKドライブに、**auto_rst.cfg**という空のファイルをコピーすると、以降、マイコンに転送したあとに自動的にリセットがかかるようになります。
