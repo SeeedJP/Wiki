@@ -36,6 +36,7 @@ GroveコネクターとSTM32F4マイコン、3Gモジュールが載っており
 |grove/grove-ultrasonic-ranger|Grove - 超音波距離センサーの距離をシリアルモニタに表示します。|[Grove - 超音波距離センサー](https://www.seeedstudio.com/Grove-Ultrasonic-Ranger-p-960.html)|D38|
 |grove/grove-gps|Grove - GPSの位置情報をシリアルモニタに表示します。|[Grove - GPS](https://www.seeedstudio.com/Grove-GPS-p-959.html)|UART|
 |grove/grove-accelerometer|Grove - 加速度センサーの値をシリアルモニタに表示します。|[Grove - 3軸デジタル加速度センサー(±16g)](https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer%28%C2%B116g%29-p-1156.html)|I2C|
-|soracom/soracom-funnel|Wio LTEの稼働時間をSORACOM Funnelへ送信します。|[SORACOM Air SIM](https://soracom.jp/services/air/cellular/), [SORACOM Funnel](https://soracom.jp/services/funnel/)||
-|soracom/soracom-harvest|Wio LTEの稼働時間をSORACOM Harvestへ送信します。|[SORACOM Air SIM](https://soracom.jp/services/air/cellular/), [SORACOM Harvest](https://soracom.jp/services/harvest/)||
-|http/ifttt-webhook|Wio LTEの稼働時間をIFTTTのWebhookへ送信します。|SIM, [IFTTT Webhook](https://ifttt.com/maker_webhooks)||
+|soracom/soracom-funnel|Wio 3Gの稼働時間をSORACOM Funnelへ送信します。|[SORACOM Air SIM](https://soracom.jp/services/air/cellular/), [SORACOM Funnel](https://soracom.jp/services/funnel/)||
+|soracom/soracom-harvest|Wio 3Gの稼働時間をSORACOM Harvestへ送信します。|[SORACOM Air SIM](https://soracom.jp/services/air/cellular/), [SORACOM Harvest](https://soracom.jp/services/harvest/)||
+|http/ifttt-webhook|Wio 3Gの稼働時間をIFTTTのWebhookへ送信します。|[IFTTT Webhook](https://ifttt.com/maker_webhooks)||
+|mqtt/mqtt-client|Wio 3Gの稼働時間をMQTTブローカーへ送信します。|MQTT Broker||
