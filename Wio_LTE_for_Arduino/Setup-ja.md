@@ -10,7 +10,7 @@ Wio LTEはOnline IDEに対応していませんのでご注意ください。
 ### Wio Tracker LTEボードの追加
 
 Arduino IDEを起動して、"ツール > ボード"に**Wio Tracker LTE**が表示されているか確認してください。
-Wio Tracker LTEが見つからない場合は、[Wio Tracker LTEボードの追加](AddWioLTEBoard-ja)を実施してください。
+Wio Tracker LTEが見つからない場合は、[Wio Tracker LTEボードの追加](AddWioLTEBoard-ja.md)を実施してください。
 
 ![12](img-ja/12.png)
 
@@ -18,7 +18,7 @@ Wio Tracker LTEが見つからない場合は、[Wio Tracker LTEボードの追�
 ### Wio LTEライブラリの追加
 
 Arduino IDEの、"スケッチ > ライブラリをインクルード"に**Wio LTE for Arduino**が表示されているか確認してください。
-Wio LTE for Arduinoが見つからない場合は、[Wio LTEライブラリの追加](AddWioLTELibrary-ja)を実施してください。
+Wio LTE for Arduinoが見つからない場合は、[Wio LTEライブラリの追加](AddWioLTELibrary-ja.md)を実施してください。
 
 ## Wio LTEのモード切替とデバイスドライバーの動作確認
 
@@ -38,7 +38,7 @@ Wio LTEのマイコンは、**DFUモード**と**通常モード**の2つのモ�
 
 ![3](img-ja/3.png)
 
-下図のように、**ほかのデバイス > STM32 BOOTLOADER**と表示されていたり、**ユニバーサルシリアルバスコントローラー > STM Device in DFU Mode**と表示されている場合は[WinUSBデバイスドライバーに切り替え](ReplaceDriver-ja)を実施してください。
+下図のように、**ほかのデバイス > STM32 BOOTLOADER**と表示されていたり、**ユニバーサルシリアルバスコントローラー > STM Device in DFU Mode**と表示されている場合は[WinUSBデバイスドライバーに切り替え](ReplaceDriver-ja.md)を実施してください。
 
 ![8](img-ja/8.png) ![10](img-ja/10.png)
 
@@ -50,7 +50,7 @@ Wio LTEのマイコンは、**DFUモード**と**通常モード**の2つのモ�
 
 ![4](img-ja/4.png)
 
-下図のように、**ほかのデバイス > STM32 Virtual ComPort in FS Mode**と表示されている場合は、[Virtual COM Portデバイスドライバーのインストール](InstallVCOMDriver-ja)を実施してください。
+下図のように、**ほかのデバイス > STM32 Virtual ComPort in FS Mode**と表示されている場合は、[Virtual COM Portデバイスドライバーのインストール](InstallVCOMDriver-ja.md)を実施してください。
 
 ![7](img-ja/7.png)
 
@@ -58,6 +58,6 @@ Wio LTEのマイコンは、**DFUモード**と**通常モード**の2つのモ�
 
 マイコンをDFUモードにしておき、"ファイル > スケッチ例 > Wio LTE for Arduino"にあるbasic/LedSetRGBを選択して、開いたスケッチを書き込みます。書き込んだ後にRSTボタンをクリック（通常モードで動作）して、Wio LTE上のLEDがカラフルに点灯すれば正常です。
 
-"dyld: Library now loaded: /opt/local/lib/libusb-1.0.0.dylib"と表示されて書き込みできない場合は、[libusb](Installlibusb-ja)をインストールしてください。
+"dyld: Library now loaded: /opt/local/lib/libusb-1.0.0.dylib"と表示されて書き込みできない場合は、[libusb](Installlibusb-ja.md)をインストールしてください。
 
 ![15](img-ja/15.png)

@@ -1,3 +1,3 @@
 # Wio LTE for Arduino
 
-[Japanese](Home-ja)
+[Japanese](Home-ja.md)
