@@ -3,7 +3,7 @@
 ## Arduino IDEのインストール
 
 パソコンにArduino IDEがインストールされていない場合は、[ArduinoのSoftwareサイト](https://www.arduino.cc/en/Main/Software)のDownload the Arduino IDEにあるARDUINO x.x.xをダウンロード、インストールしてください。  
-Wio 3GはAruino IDEのLinux版、Arduino Web Editorに対応していませんのでご注意ください。
+Wio 3Gは**Aruino IDEのLinux版、Arduino Web Editorに対応していません**のでご注意ください。
 
 **■Arduino IDEのダウンロード**  
 ![3](img/3.png)
@@ -23,17 +23,16 @@ Arduino IDEを起動して、"ツール > ボード"に`Seeed Wio 3G`が表示�
 
 ## ライブラリの追加
 
-Arduino IDEの、"スケッチ > ライブラリをインクルード"に`Wio 3G for Arduino`が表示されているか確認してください。
+Arduino IDEの、"スケッチ > ライブラリをインクルード"に`Wio 3G for Arduino`が表示されているか確認してください。  
 **■ライブラリの確認（スケッチ > ライブラリをインクルード > Wio 3G for Arduino）**  
 ![5](img/5.png)
 
-見つからない場合は、次の手順を実施して、Wio 3Gライブラリの追加をしてください。
-1. [Wio 3Gライブラリのgithubサイト](https://github.com/SeeedJP/Wio_3G_for_Arduino/releases)から、最新のSource codeをダウンロードしてください。  
-(ダウンロードしたZIPファイルを解凍する必要はありません。)  
-![10](img/10.png)
 1. Arduino IDEを起動してください。
-1. スケッチ > ライブラリをインクルード > .ZIP形式のライブラリをインストール を選択して、ダウンロードしたZIPファイルを指定してください。  
-![11](img/11.png)
+1. スケッチ > ライブラリをインクルード > ライブラリを管理 を選択してください。  
+![12](img/12.png)
+1. Wio 3G for Arduino by Seeed K.K. を選択して、インストールしてください。  
+上部に wio と入力すると、一覧表示が少なくなって探しやすいです。  
+![13](img/13.png)
 
 ## シリアルポートドライバのインストール
 
@@ -53,6 +52,7 @@ Wio 3GをパソコンにUSB接続しておき、ファイル > スケッチ例 >
 1. Wio 3GをパソコンにUSB接続してください。（DAPLINKというドライブがパソコンに認識されます。）
 1. Arduino IDEを起動してください。
 1. Arduino IDEのボード選択を`Seeed Wio 3G`に変更してください。（ツール > ボード > Seeed Wio 3G）
+1. Arduino IDEのマイコンボードに書き込む手段を`OpenOCD`に変更してください。（ツール > マイコンボードに書き込む > OpenOCD）
 1. スケッチ例の`basic/LedSetRGB`を開いてください。（ファイル > スケッチ例 > Wio 3G for Arduino > basic > LedSetRGB）
 1. スケッチをWio 3Gに書き込んでください。（スケッチ > マイコンボードに書き込む）
 1. ボードへの書き込みが完了するまで待ってください。（完了すると、DAPLINKドライブが自動的に外れ、再度、認識されます。書き込んだファイルはマイコンに転送され自動的に消えます。）
@@ -61,15 +61,3 @@ Wio 3GをパソコンにUSB接続しておき、ファイル > スケッチ例 >
 
 **■LED点灯の様子**  
 ![2](img/2.png)
-
-### おまけ
-毎回リセットボタンを押すのが面倒な方へ
-#### Break信号でリセット
-お手持ちのシリアルターミナルで、Break信号を送ると、リセットできます。Tera Termの場合`Alt-B`、CoolTermの場合`Command-B`でBreak信号を送れます。（Arduino IDEのシリアルモニタでは、Break信号は送れません。）
-#### 自動リセットを有効にする
-1. まずパソコンにWio 3Gを接続します。
-2. パソコンにDAPLINKドライブが認識されたら、リセットボタンを押してください。
-3. リセットボタンを押したまま、DAPLINKドライブに`auto_rst.cfg`という空のファイルをコピーします。（コピーが終わったら、リセットボタンから手を放してください。）
-4. すると、以降、マイコンに転送したあとに自動的にリセットがかかるようになります。
-
-自動リセットを無効にするには、ステップ3.で書き込むファイル名を`hard_rst.cfg`にして同じ手順を実行してください。
