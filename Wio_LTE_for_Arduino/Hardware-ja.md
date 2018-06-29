@@ -4,7 +4,7 @@
 
 ![13](img/13.png)
 
-* 3.3V-Bは、[ソフトウェア](Reference-ja#powersupplygrove)で電源ON/OFF。
+* 3.3V-Bは、[ソフトウェア](Reference-ja.md#powersupplygrove)で電源ON/OFF。
 
 ## Groveコネクターのピン割当
 
