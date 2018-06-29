@@ -5,5 +5,5 @@
 
 # Wio LTE for Arduino
 
-* [Documents](https://github.com/SeeedJP/WioLTEforArduino/wiki)
+* [Documents - Japanese](Wio_LTE_for_Arduino/Home-ja.md)
 * [Arduino Library](https://github.com/SeeedJP/WioLTEforArduino)
