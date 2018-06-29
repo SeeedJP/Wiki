@@ -1,14 +1,14 @@
-# ƒn[ƒhƒEƒFƒA
+# ãƒãƒ¼ãƒ‰ã‚¦ã‚§ã‚¢
 
-## ŠOŠÏ
+## å¤–è¦³
 
 ![13](img/13.png)
 
-* 3.3V-B‚ÍA[ƒ\ƒtƒgƒEƒFƒA](Reference-ja.md#powersupplygrove)‚Å“dŒ¹ON/OFFB
+* 3.3V-Bã¯ã€[ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢](Reference-ja.md#powersupplygrove)ã§é›»æºON/OFFã€‚
 
-## GroveƒRƒlƒNƒ^[‚Ìƒsƒ“Š„“–
+## Groveã‚³ãƒã‚¯ã‚¿ãƒ¼ã®ãƒ”ãƒ³å‰²å½“
 
-|GroveƒRƒlƒNƒ^[ƒsƒ“|STM32F4ƒsƒ“|
+|Groveã‚³ãƒã‚¯ã‚¿ãƒ¼ãƒ”ãƒ³|STM32F4ãƒ”ãƒ³|
 |:--|:--|
 |D38|PC6|
 |D39|PC7|
@@ -25,34 +25,34 @@
 
 ## SIM
 
-nano SIM‚ÆTFƒJ[ƒh‚Ì2in1ƒ\ƒPƒbƒg‚ðŽÀ‘•‚µ‚Ä‚¢‚Ü‚·B
+nano SIMã¨TFã‚«ãƒ¼ãƒ‰ã®2in1ã‚½ã‚±ãƒƒãƒˆã‚’å®Ÿè£…ã—ã¦ã„ã¾ã™ã€‚
 
-nano SIM‚ð·‚·‚Æ‚«‚ÍA‰º}‚Ì‚æ‚¤‚É’[Žq–Ê‚ðŠî”Â‘¤‚É‚µ‚Ä‘}“ü‚µ‚Ä‚­‚¾‚³‚¢B
+nano SIMã‚’å·®ã™ã¨ãã¯ã€ä¸‹å›³ã®ã‚ˆã†ã«ç«¯å­é¢ã‚’åŸºæ¿å´ã«ã—ã¦æŒ¿å…¥ã—ã¦ãã ã•ã„ã€‚
 
 ![14](img/14.png)
 
-### “®ìŠm”FÏ‚ÝSIM
+### å‹•ä½œç¢ºèªæ¸ˆã¿SIM
 
-|ƒ[ƒJ[|»•i–¼|“®ìŠm”FŒ‹‰Ê|
+|ãƒ¡ãƒ¼ã‚«ãƒ¼|è£½å“å|å‹•ä½œç¢ºèªçµæžœ|
 |:--|:--|:--|
-|SORACOM|SORACOM Air SIMƒJ[ƒh ƒTƒCƒY:ƒiƒmiƒf[ƒ^’ÊM‚Ì‚Ýj|Z|
-|SORACOM|SORACOM Air SIMƒJ[ƒh ƒTƒCƒY:ƒiƒmiSMS/ƒf[ƒ^’ÊMj|Z|
-|IIJmio|‰¹º‹@”\•t‚«SIM ‚Ý‚¨‚Ó‚§‚ñ|Z|
+|SORACOM|SORACOM Air SIMã‚«ãƒ¼ãƒ‰ ã‚µã‚¤ã‚º:ãƒŠãƒŽï¼ˆãƒ‡ãƒ¼ã‚¿é€šä¿¡ã®ã¿ï¼‰|ã€‡|
+|SORACOM|SORACOM Air SIMã‚«ãƒ¼ãƒ‰ ã‚µã‚¤ã‚º:ãƒŠãƒŽï¼ˆSMS/ãƒ‡ãƒ¼ã‚¿é€šä¿¡ï¼‰|ã€‡|
+|IIJmio|éŸ³å£°æ©Ÿèƒ½ä»˜ãSIM ã¿ãŠãµã‰ã‚“|ã€‡|
 
 
-## USB“dŒ¹‹Ÿ‹‹
+## USBé›»æºä¾›çµ¦
 
-“d—¬‚ª2AˆÈã‹Ÿ‹‹‚Å‚«‚éUSB“dŒ¹‚ÆA‚•iŽ¿‚ÈUSBƒP[ƒuƒ‹‚ðŽg—p‚µ‚Ä‚­‚¾‚³‚¢B
+é›»æµãŒ2Aä»¥ä¸Šä¾›çµ¦ã§ãã‚‹USBé›»æºã¨ã€é«˜å“è³ªãªUSBã‚±ãƒ¼ãƒ–ãƒ«ã‚’ä½¿ç”¨ã—ã¦ãã ã•ã„ã€‚
 
-> USBƒP[ƒuƒ‹‚Ì’ïR‚ª‘å‚«‚¢ê‡ALTEƒ‚ƒWƒ…[ƒ‹“dŒ¹‚ðON‚µ‚½‚Æ‚«‚ÉÄ‹N“®‚µ‚Ä‚µ‚Ü‚¤Ž–Û‚ª”­¶‚µ‚Ä‚¢‚Ü‚·B
+> USBã‚±ãƒ¼ãƒ–ãƒ«ã®æŠµæŠ—ãŒå¤§ãã„å ´åˆã€LTEãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«é›»æºã‚’ONã—ãŸã¨ãã«å†èµ·å‹•ã—ã¦ã—ã¾ã†äº‹è±¡ãŒç™ºç”Ÿã—ã¦ã„ã¾ã™ã€‚
 
-## Žd—l
+## ä»•æ§˜
 
-|•”•i|‹@”\|’l|
+|éƒ¨å“|æ©Ÿèƒ½|å€¤|
 |:--|:--|:--|
-|STM32F4ƒ}ƒCƒRƒ“|ƒvƒƒZƒbƒT[|STM32F405RG, ARM Cortex-M4, 168MHz|
-||ƒtƒ‰ƒbƒVƒ…ƒƒ‚ƒŠ|1MƒoƒCƒg|
-||“à‘ SRAM|192KƒoƒCƒg|
+|STM32F4ãƒžã‚¤ã‚³ãƒ³|ãƒ—ãƒ­ã‚»ãƒƒã‚µãƒ¼|STM32F405RG, ARM Cortex-M4, 168MHz|
+||ãƒ•ãƒ©ãƒƒã‚·ãƒ¥ãƒ¡ãƒ¢ãƒª|1Mãƒã‚¤ãƒˆ|
+||å†…è”µSRAM|192Kãƒã‚¤ãƒˆ|
 |LTE|LTE Cat.1|FDD-LTE B1/B3/B8/B18/B19/B26|
-|ƒCƒ“ƒ^[ƒtƒFƒCƒX|SIM|nano SIM (2 in 1 socket)|
-||SD|TFƒJ[ƒh (2 in 1 socket)|
+|ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ã‚¤ã‚¹|SIM|nano SIM (2 in 1 socket)|
+||SD|TFã‚«ãƒ¼ãƒ‰ (2 in 1 socket)|

@@ -1,68 +1,68 @@
 # Wio LTE for Arduino
 
-Wio LTE‚ÌArduino IDE—pƒ‰ƒCƒuƒ‰ƒŠ‚Å‚·B
+Wio LTEã®Arduino IDEç”¨ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
 ## Wio LTE
 
 ![1](img/1.png)
 
-Wio LTE‚ÍASeeed‚ªŠJ”­‚µ‚Ä‚¢‚éƒ}ƒCƒRƒ“ƒ‚ƒWƒ…[ƒ‹‚Å‚·B
+Wio LTEã¯ã€SeeedãŒé–‹ç™ºã—ã¦ã„ã‚‹ãƒã‚¤ã‚³ãƒ³ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã§ã™ã€‚
 
-GroveƒRƒlƒNƒ^[‚ÆSTM32F4ƒ}ƒCƒRƒ“ALTEƒ‚ƒWƒ…[ƒ‹‚ªÚ‚Á‚Ä‚¨‚èAArduino IDE‚Å‘f‘‚­ƒvƒƒgƒ^ƒCƒsƒ“ƒO‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+Groveã‚³ãƒã‚¯ã‚¿ãƒ¼ã¨STM32F4ãƒã‚¤ã‚³ãƒ³ã€LTEãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ãŒè¼‰ã£ã¦ãŠã‚Šã€Arduino IDEã§ç´ æ—©ããƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ”ãƒ³ã‚°ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-## ‹@”\
+## æ©Ÿèƒ½
 
-|ƒJƒeƒSƒŠ[|‹@”\|ƒXƒPƒbƒ`—á|’‹L|
+|ã‚«ãƒ†ã‚´ãƒªãƒ¼|æ©Ÿèƒ½|ã‚¹ã‚±ãƒƒãƒä¾‹|æ³¨è¨˜|
 |:--|:--|:--|:--|
-|“dŒ¹§Œä|LTEƒ‚ƒWƒ…[ƒ‹“dŒ¹|||
-||GroveƒRƒlƒNƒ^[“dŒ¹|||
-|•\¦|ƒtƒ‹ƒJƒ‰[LED•\¦|basic/LedSetRGB||
-|LTE|óM‹­“x|basic/GetRSSI||
-||NTP“¯Šú|basic/GetTime||
-||SMS‘—M|sms/SendSMS|“ú–{Œê–¢‘Î‰|
-||SMSóM|sms/ReceiveSMS|“ú–{Œê–¢‘Î‰|
-||UDP/TCPƒNƒ‰ƒCƒAƒ“ƒg‘—M|||
-||UDP/TCPƒNƒ‰ƒCƒAƒ“ƒgóM|||
-||HTTPƒNƒ‰ƒCƒAƒ“ƒgGET||ContentTypeŒÅ’è[^1]|
-||HTTPƒNƒ‰ƒCƒAƒ“ƒgPOST|http/ifttt-webhook|ContentTypeŒÅ’è[^1]|
+|é›»æºåˆ¶å¾¡|LTEãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«é›»æº|||
+||Groveã‚³ãƒã‚¯ã‚¿ãƒ¼é›»æº|||
+|è¡¨ç¤º|ãƒ•ãƒ«ã‚«ãƒ©ãƒ¼LEDè¡¨ç¤º|basic/LedSetRGB||
+|LTE|å—ä¿¡å¼·åº¦|basic/GetRSSI||
+||NTPæ™‚åˆ»åŒæœŸ|basic/GetTime||
+||SMSé€ä¿¡|sms/SendSMS|æ—¥æœ¬èªæœªå¯¾å¿œ|
+||SMSå—ä¿¡|sms/ReceiveSMS|æ—¥æœ¬èªæœªå¯¾å¿œ|
+||UDP/TCPã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆé€ä¿¡|||
+||UDP/TCPã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆå—ä¿¡|||
+||HTTPã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆGET||ContentTypeå›ºå®š[^1]|
+||HTTPã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆPOST|http/ifttt-webhook|ContentTypeå›ºå®š[^1]|
 
 [^1]: application/x-www-form-urlencoded
 
-## ŠJ”­ŠÂ‹«‚ÌƒZƒbƒgƒAƒbƒv
+## é–‹ç™ºç’°å¢ƒã®ã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ—
 
-ŠJ”­ŠÂ‹«‚ÌƒZƒbƒgƒAƒbƒv‚Í[‚±‚¿‚ç](Setup-ja.md)B
+é–‹ç™ºç’°å¢ƒã®ã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ—ã¯[ã“ã¡ã‚‰](Setup-ja.md)ã€‚
 
-## ƒn[ƒhƒEƒFƒA
+## ãƒãƒ¼ãƒ‰ã‚¦ã‚§ã‚¢
 
-ƒn[ƒhƒEƒFƒA‚Ìî•ñ‚Í[‚±‚¿‚ç](Hardware-ja.md)B
+ãƒãƒ¼ãƒ‰ã‚¦ã‚§ã‚¢ã®æƒ…å ±ã¯[ã“ã¡ã‚‰](Hardware-ja.md)ã€‚
 
-## ƒŠƒtƒ@ƒŒƒ“ƒXƒ}ƒjƒ…ƒAƒ‹
+## ãƒªãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ãƒãƒ‹ãƒ¥ã‚¢ãƒ«
 
-ƒŠƒtƒ@ƒŒƒ“ƒXƒ}ƒjƒ…ƒAƒ‹‚Í[‚±‚¿‚ç](Reference-ja.md)B
+ãƒªãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ã¯[ã“ã¡ã‚‰](Reference-ja.md)ã€‚
 
 
-## ƒTƒ“ƒvƒ‹ƒvƒƒOƒ‰ƒ€
+## ã‚µãƒ³ãƒ—ãƒ«ãƒ—ãƒ­ã‚°ãƒ©ãƒ 
 
-ƒTƒ“ƒvƒ‹ƒvƒƒOƒ‰ƒ€‚ÍWio LTEƒ‰ƒCƒuƒ‰ƒŠ‚É“¯••‚µ‚Ä‚¢‚Ü‚·BArdino IDE‚ÌAƒtƒ@ƒCƒ‹ > ƒXƒPƒbƒ`—á > WioLTEforArduino ”z‰º‚ğ‘I‘ğ‚µ‚ÄŠJ‚«‚Ü‚·B
+ã‚µãƒ³ãƒ—ãƒ«ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯Wio LTEãƒ©ã‚¤ãƒ–ãƒ©ãƒªã«åŒå°ã—ã¦ã„ã¾ã™ã€‚Ardino IDEã®ã€ãƒ•ã‚¡ã‚¤ãƒ« > ã‚¹ã‚±ãƒƒãƒä¾‹ > WioLTEforArduino é…ä¸‹ã‚’é¸æŠã—ã¦é–‹ãã¾ã™ã€‚
 
-|ƒXƒPƒbƒ`—á|“à—e|•K—v‚È‚à‚Ì|Ú‘±ƒRƒlƒNƒ^[|
+|ã‚¹ã‚±ãƒƒãƒä¾‹|å†…å®¹|å¿…è¦ãªã‚‚ã®|æ¥ç¶šã‚³ãƒã‚¯ã‚¿ãƒ¼|
 |:--|:--|:--|:--|
-|basic/LedSetRGB|LED‚ğƒŒƒCƒ“ƒ{[•\¦‚µ‚Ü‚·B|||
-|basic/GetRSSI|óMM†‹­“x‚ğƒVƒŠƒAƒ‹ƒ‚ƒjƒ^‚É•\¦‚µ‚Ü‚·B|||
-|basic/GetTime|NTPƒT[ƒo[‚Æ“ú“¯Šú‚µ‚ÄA“ú‚ğƒVƒŠƒAƒ‹ƒ‚ƒjƒ^‚É•\¦‚µ‚Ü‚·B|SIM||
-|basic/SDReadWrite|TFƒJ[ƒh‚É‘‚«‚İ/“Ç‚İ‚İ‚µ‚Ü‚·B|TFƒJ[ƒh||
-|grove/grove-button|Grove - ƒ{ƒ^ƒ“‚ÌON/OFF‚ğƒVƒŠƒAƒ‹ƒ‚ƒjƒ^‚É•\¦‚µ‚Ü‚·B|[Grove - ƒ{ƒ^ƒ“](https://www.seeedstudio.com/Grove-Button-p-766.html)|D38|
-|grove/grove-button-using-int|Grove - ƒ{ƒ^ƒ“‚ÌON/OFF‚ğƒVƒŠƒAƒ‹ƒ‚ƒjƒ^‚ÆLED‚É•\¦‚µ‚Ü‚·B|[Grove - ƒ{ƒ^ƒ“](https://www.seeedstudio.com/Grove-Button-p-766.html)|D38|
-|grove/grove-buzzer|Grove - ƒuƒU[‚ğ–Â‚ç‚µ‚Ü‚·B|[Grove - ƒuƒU[](https://www.seeedstudio.com/Grove-Buzzer-p-768.html)|D38|
-|grove/grove-magnetic-switch|Grove - ¥ÎƒXƒCƒbƒ`‚ÌON/OFF‚ğƒVƒŠƒAƒ‹ƒ‚ƒjƒ^‚É•\¦‚µ‚Ü‚·B|[Grove - ¥ÎƒXƒCƒbƒ`](https://www.seeedstudio.com/Grove-Magnetic-Switch-p-744.html)|D38|
-|grove/grove-rotary-angle-sensor|Grove - ‰Â•Ï’ïR‚Ì‰ñ“]—Ê‚ğƒVƒŠƒAƒ‹ƒ‚ƒjƒ^‚É•\¦‚µ‚Ü‚·B|[Grove - ‰Â•Ï’ïR](https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor-p-770.html)|A4|
-|grove/grove-temperature-and-humidity-sensor|Grove - ‰·¼“xƒZƒ“ƒT[‚Ì‰·“xA¼“x‚ğƒVƒŠƒAƒ‹ƒ‚ƒjƒ^‚É•\¦‚µ‚Ü‚·B|[Grove - ‰·¼“xƒZƒ“ƒT[](https://www.seeedstudio.com/Grove-Temperature-%26-Humidity-Sensor-p-745.html)|D38|
-|grove/grove-ultrasonic-ranger|Grove - ’´‰¹”g‹——£ƒZƒ“ƒT[‚Ì‹——£‚ğƒVƒŠƒAƒ‹ƒ‚ƒjƒ^‚É•\¦‚µ‚Ü‚·B|[Grove - ’´‰¹”g‹——£ƒZƒ“ƒT[](https://www.seeedstudio.com/Grove-Ultrasonic-Ranger-p-960.html)|D38|
-|grove/grove-gps|Grove - GPS‚ÌˆÊ’uî•ñ‚ğƒVƒŠƒAƒ‹ƒ‚ƒjƒ^‚É•\¦‚µ‚Ü‚·B|[Grove - GPS](https://www.seeedstudio.com/Grove-GPS-p-959.html)|UART|
-|grove/grove-accelerometer|Grove - ‰Á‘¬“xƒZƒ“ƒT[‚Ì’l‚ğƒVƒŠƒAƒ‹ƒ‚ƒjƒ^‚É•\¦‚µ‚Ü‚·B|[Grove - 3²ƒfƒWƒ^ƒ‹‰Á‘¬“xƒZƒ“ƒT[(}16g)](https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer%28%C2%B116g%29-p-1156.html)|I2C|
-|sms/SendSMS|w’è‚Ì“d˜b”Ô†‚ÖSMS‚ğ‘—M‚µ‚Ü‚·B|SIM||
-|sms/ReceiveSMS|óM‚µ‚½SMS‚ğƒVƒŠƒAƒ‹ƒ‚ƒjƒ^‚É•\¦‚µ‚Ü‚·B|SIM||
-|soracom/soracom-funnel|Wio LTE‚Ì‰Ò“­ŠÔ‚ğSORACOM Funnel‚Ö‘—M‚µ‚Ü‚·B|[SORACOM Air SIM](https://soracom.jp/services/air/cellular/), [SORACOM Funnel](https://soracom.jp/services/funnel/)||
-|soracom/soracom-harvest|Wio LTE‚Ì‰Ò“­ŠÔ‚ğSORACOM Harvest‚Ö‘—M‚µ‚Ü‚·B|[SORACOM Air SIM](https://soracom.jp/services/air/cellular/), [SORACOM Harvest](https://soracom.jp/services/harvest/)||
-|http/ifttt-webhook|Wio LTE‚Ì‰Ò“­ŠÔ‚ğIFTTT‚ÌWebhook‚Ö‘—M‚µ‚Ü‚·B|SIM, [IFTTT Webhook](https://ifttt.com/maker_webhooks)||
-|mqtt/mqtt-client|Wio LTE‚Ì‰Ò“­ŠÔ‚ğMQTTƒuƒ[ƒJ[‚Ö‘—M‚µ‚Ü‚·B|SIM, MQTT Broker||
+|basic/LedSetRGB|LEDã‚’ãƒ¬ã‚¤ãƒ³ãƒœãƒ¼è¡¨ç¤ºã—ã¾ã™ã€‚|||
+|basic/GetRSSI|å—ä¿¡ä¿¡å·å¼·åº¦ã‚’ã‚·ãƒªã‚¢ãƒ«ãƒ¢ãƒ‹ã‚¿ã«è¡¨ç¤ºã—ã¾ã™ã€‚|||
+|basic/GetTime|NTPã‚µãƒ¼ãƒãƒ¼ã¨æ—¥æ™‚åŒæœŸã—ã¦ã€æ—¥æ™‚ã‚’ã‚·ãƒªã‚¢ãƒ«ãƒ¢ãƒ‹ã‚¿ã«è¡¨ç¤ºã—ã¾ã™ã€‚|SIM||
+|basic/SDReadWrite|TFã‚«ãƒ¼ãƒ‰ã«æ›¸ãè¾¼ã¿/èª­ã¿è¾¼ã¿ã—ã¾ã™ã€‚|TFã‚«ãƒ¼ãƒ‰||
+|grove/grove-button|Grove - ãƒœã‚¿ãƒ³ã®ON/OFFã‚’ã‚·ãƒªã‚¢ãƒ«ãƒ¢ãƒ‹ã‚¿ã«è¡¨ç¤ºã—ã¾ã™ã€‚|[Grove - ãƒœã‚¿ãƒ³](https://www.seeedstudio.com/Grove-Button-p-766.html)|D38|
+|grove/grove-button-using-int|Grove - ãƒœã‚¿ãƒ³ã®ON/OFFã‚’ã‚·ãƒªã‚¢ãƒ«ãƒ¢ãƒ‹ã‚¿ã¨LEDã«è¡¨ç¤ºã—ã¾ã™ã€‚|[Grove - ãƒœã‚¿ãƒ³](https://www.seeedstudio.com/Grove-Button-p-766.html)|D38|
+|grove/grove-buzzer|Grove - ãƒ–ã‚¶ãƒ¼ã‚’é³´ã‚‰ã—ã¾ã™ã€‚|[Grove - ãƒ–ã‚¶ãƒ¼](https://www.seeedstudio.com/Grove-Buzzer-p-768.html)|D38|
+|grove/grove-magnetic-switch|Grove - ç£çŸ³ã‚¹ã‚¤ãƒƒãƒã®ON/OFFã‚’ã‚·ãƒªã‚¢ãƒ«ãƒ¢ãƒ‹ã‚¿ã«è¡¨ç¤ºã—ã¾ã™ã€‚|[Grove - ç£çŸ³ã‚¹ã‚¤ãƒƒãƒ](https://www.seeedstudio.com/Grove-Magnetic-Switch-p-744.html)|D38|
+|grove/grove-rotary-angle-sensor|Grove - å¯å¤‰æŠµæŠ—ã®å›è»¢é‡ã‚’ã‚·ãƒªã‚¢ãƒ«ãƒ¢ãƒ‹ã‚¿ã«è¡¨ç¤ºã—ã¾ã™ã€‚|[Grove - å¯å¤‰æŠµæŠ—](https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor-p-770.html)|A4|
+|grove/grove-temperature-and-humidity-sensor|Grove - æ¸©æ¹¿åº¦ã‚»ãƒ³ã‚µãƒ¼ã®æ¸©åº¦ã€æ¹¿åº¦ã‚’ã‚·ãƒªã‚¢ãƒ«ãƒ¢ãƒ‹ã‚¿ã«è¡¨ç¤ºã—ã¾ã™ã€‚|[Grove - æ¸©æ¹¿åº¦ã‚»ãƒ³ã‚µãƒ¼](https://www.seeedstudio.com/Grove-Temperature-%26-Humidity-Sensor-p-745.html)|D38|
+|grove/grove-ultrasonic-ranger|Grove - è¶…éŸ³æ³¢è·é›¢ã‚»ãƒ³ã‚µãƒ¼ã®è·é›¢ã‚’ã‚·ãƒªã‚¢ãƒ«ãƒ¢ãƒ‹ã‚¿ã«è¡¨ç¤ºã—ã¾ã™ã€‚|[Grove - è¶…éŸ³æ³¢è·é›¢ã‚»ãƒ³ã‚µãƒ¼](https://www.seeedstudio.com/Grove-Ultrasonic-Ranger-p-960.html)|D38|
+|grove/grove-gps|Grove - GPSã®ä½ç½®æƒ…å ±ã‚’ã‚·ãƒªã‚¢ãƒ«ãƒ¢ãƒ‹ã‚¿ã«è¡¨ç¤ºã—ã¾ã™ã€‚|[Grove - GPS](https://www.seeedstudio.com/Grove-GPS-p-959.html)|UART|
+|grove/grove-accelerometer|Grove - åŠ é€Ÿåº¦ã‚»ãƒ³ã‚µãƒ¼ã®å€¤ã‚’ã‚·ãƒªã‚¢ãƒ«ãƒ¢ãƒ‹ã‚¿ã«è¡¨ç¤ºã—ã¾ã™ã€‚|[Grove - 3è»¸ãƒ‡ã‚¸ã‚¿ãƒ«åŠ é€Ÿåº¦ã‚»ãƒ³ã‚µãƒ¼(Â±16g)](https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer%28%C2%B116g%29-p-1156.html)|I2C|
+|sms/SendSMS|æŒ‡å®šã®é›»è©±ç•ªå·ã¸SMSã‚’é€ä¿¡ã—ã¾ã™ã€‚|SIM||
+|sms/ReceiveSMS|å—ä¿¡ã—ãŸSMSã‚’ã‚·ãƒªã‚¢ãƒ«ãƒ¢ãƒ‹ã‚¿ã«è¡¨ç¤ºã—ã¾ã™ã€‚|SIM||
+|soracom/soracom-funnel|Wio LTEã®ç¨¼åƒæ™‚é–“ã‚’SORACOM Funnelã¸é€ä¿¡ã—ã¾ã™ã€‚|[SORACOM Air SIM](https://soracom.jp/services/air/cellular/), [SORACOM Funnel](https://soracom.jp/services/funnel/)||
+|soracom/soracom-harvest|Wio LTEã®ç¨¼åƒæ™‚é–“ã‚’SORACOM Harvestã¸é€ä¿¡ã—ã¾ã™ã€‚|[SORACOM Air SIM](https://soracom.jp/services/air/cellular/), [SORACOM Harvest](https://soracom.jp/services/harvest/)||
+|http/ifttt-webhook|Wio LTEã®ç¨¼åƒæ™‚é–“ã‚’IFTTTã®Webhookã¸é€ä¿¡ã—ã¾ã™ã€‚|SIM, [IFTTT Webhook](https://ifttt.com/maker_webhooks)||
+|mqtt/mqtt-client|Wio LTEã®ç¨¼åƒæ™‚é–“ã‚’MQTTãƒ–ãƒ­ãƒ¼ã‚«ãƒ¼ã¸é€ä¿¡ã—ã¾ã™ã€‚|SIM, MQTT Broker||
