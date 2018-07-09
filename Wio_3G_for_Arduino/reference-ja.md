@@ -31,6 +31,8 @@
 ||[GetPhoneNumber](reference-ja.md#getphonenumber)|
 ||[GetReceivedSignalStrength](reference-ja.md#getreceivedsignalstrength)|
 ||[GetTime](reference-ja.md#gettime)|
+||[WaitForCSRegistration](reference-ja.md#waitforcsregistration)|
+||[WaitForPSRegistration](reference-ja.md#waitforpsregistration)|
 ||[Activate](reference-ja.md#activate)|
 ||[Deactivate](reference-ja.md#deactivate)|
 ||[SocketOpen](reference-ja.md#socketopen)|
@@ -39,6 +41,7 @@
 ||[SocketClose](reference-ja.md#socketclose)|
 ||[HttpGet](reference-ja.md#httpget)|
 ||[HttpPost](reference-ja.md#httppost)|
+||[SendUSSD](reference-ja.md#sendussd)|
 
 ## 定数
 
@@ -370,10 +373,54 @@ bool GetTime(struct tm* tim)
 
 3Gモジュールが保持している日時を取得します。
 
+### WaitForCSRegistration
+
+```cpp
+bool WaitForCSRegistration(long timeout = 120000)
+```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|timeout|タイムアウト時間[ミリ秒]。|
+
+#### 戻り値
+
+|説明|
+|:--|
+|成功したときはtrue、失敗したときはfalseを返します。|
+
+#### 説明
+
+CSネットワークに登録完了するまで待ちます。
+
+### WaitForPSRegistration
+
+```cpp
+bool WaitForPSRegistration(long timeout = 120000)
+```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|timeout|タイムアウト時間[ミリ秒]。|
+
+#### 戻り値
+
+|説明|
+|:--|
+|成功したときはtrue、失敗したときはfalseを返します。|
+
+#### 説明
+
+PSネットワークに登録完了するまで待ちます。
+
 ### Activate
 
 ```cpp
-bool Activate(const char* accessPointName, const char* userName, const char* password)
+bool Activate(const char* accessPointName, const char* userName, const char* password, long waitForRegistTimeout = 120000)
 ```
 
 #### 引数
@@ -383,6 +430,7 @@ bool Activate(const char* accessPointName, const char* userName, const char* pas
 |accessPointName|APN。|
 |userName|ユーザー名。|
 |password|パスワード。|
+|waitForRegistTimeout|タイムアウト時間[ミリ秒]。|
 
 #### 戻り値
 
@@ -561,3 +609,26 @@ bool HttpPost(const char* url, const char* data, int* responseCode)
 
 指定したURLへ、HTTP通信でPOSTします。
 
+### SendUSSD
+
+```cpp
+bool SendUSSD(const char* in, char* out, int outSize)
+```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|in|送信するデータ。|
+|out|受信したデータを取得する変数。|
+|outSize|outのバイト数。|
+
+#### 戻り値
+
+|説明|
+|:--|
+|成功したときはtrue、失敗したときはfalseを返します。|
+
+#### 説明
+
+USSDでメッセージ交換します。
