@@ -43,3 +43,4 @@ Wio LTE M1/NB1(BG96)のハードウェア情報は[こちら](hardware-bg96-ja.m
 |soracom/soracom-ussd-test|"123"をUSSDを使ってSORACOM Beamへ送信します。|[SORACOM Beam](https://soracom.jp/services/beam/)||
 |http/ifttt-webhook|Wio 3Gの稼働時間をIFTTTのWebhookへ送信します。|[IFTTT Webhook](https://ifttt.com/maker_webhooks)||
 |mqtt/mqtt-client|Wio 3Gの稼働時間をMQTTブローカーへ送信します。|MQTT Broker||
+
