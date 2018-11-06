@@ -1,5 +1,9 @@
 # Wio 3G for Arduino
 
+**「Wio 3G for Arduino」は、「Wio cell lib for Arduino」に統合しました。今後は「[Wio cell lib for Arduino]((https://github.com/SeeedJP/Wio_cell_lib_for_Arduino))」を使用してください。**
+
+「Wio 3G for Arduino」をアンインストールするには、スケッチを保存するフォルダ内の`libraries`フォルダの中にある`Wio_3G_for_Arduino`というフォルダをフォルダごと削除してArduino IDEを再起動してください。
+
 Wio 3GのArduino IDE用ライブラリです。
 
 ## Wio 3G
@@ -11,7 +15,11 @@ GroveコネクターとSTM32F4マイコン、3Gモジュールが載っており
 
 ## 開発環境のセットアップ
 
-開発環境のセットアップは[こちら](setup-ja.md)。  
+~~開発環境のセットアップは[こちら](setup-ja.md)。~~  
+「Wio 3G for Arduino」は、「Wio cell lib for Arduino」に統合しました。今後は「[Wio cell lib for Arduino]((https://github.com/SeeedJP/Wio_cell_lib_for_Arduino))」を使用してください。
+
+「Wio 3G for Arduino」をアンインストールするには、スケッチを保存するフォルダ内の`libraries`フォルダの中にある`Wio_3G_for_Arduino`というフォルダをフォルダごと削除してArduino IDEを再起動してください。
+  
 **現状、Arduino IDEの開発環境ではTFカードをサポートしていません。**
 
 
