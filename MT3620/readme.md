@@ -1,4 +1,4 @@
-# Azure Sphere MT3620 Development Kit
+# Azure Sphere MT3620 開発キット
 
 Azure Sphereは、Azure Sphere MCU、Azure Sphere OS、および Azure Sphere Security Service を三位一体で提供することで、セキュリティに対する開発リソースやコストをかけずにインテリジェントな製品とエクスペリエンスを実現することができます。
 
@@ -34,8 +34,44 @@ MT3620のソフトウェア開発には、Microsoft Visual Studio IDEを使用�
 - Microsoft Visual Studio開発環境
 - デバイスライフタイムのためのオンライン認証とアップデート
 
-## スペック
+## Azure Sphereのはじめかた
 
+MT3620開発ボードを使用するには、最新のWindows Update適用済みのWindows 10 PCに加えて、Visual StudioとAzure Sphere SDKが必要です。
+
+現在のところ、Azure Sphereのドキュメントは英文でのみ提供されています。
+
+- [Install the Azure Sphere SDK](https://docs.microsoft.com/ja-jp/azure-sphere/install/install) 
+- [Set up an account](https://docs.microsoft.com/ja-jp/azure-sphere/install/azure-directory-account)
+- [Claiming your device](https://docs.microsoft.com/ja-jp/azure-sphere/install/claim-device)
+- [Configuring Wi-Fi](https://docs.microsoft.com/ja-jp/azure-sphere/install/configure-wifi)
+- [Build an application](https://docs.microsoft.com/ja-jp/azure-sphere/quickstarts/qs-blink-application)
+- [Deploy an application over the air](https://docs.microsoft.com/ja-jp/azure-sphere/quickstarts/qs-first-deployment)
+
+## デバイスのクレーム実行時のエラー 
+デバイスのクレームを実行時に下記のエラーが起きた場合、 [Microsoftのフォーラム](https://social.msdn.microsoft.com/Forums/en-US/3a9aeca1-d764-40e3-b2da-92ecc5efae19/sphere-update?forum=azuresphere)の英文記事にあるAnswersを参照してください。 
+
+```
+C:\Users\Seeed05\Documents>azsphere device claim
+error: The Azure Sphere OS on the attached device requires an update to be used with this version of the SDK.
+Diagnostic info: [1.2.0, 3]
+error: Failed to retrieve device ID from attached device: 'The Azure Sphere OS on the attached device requires an update to be used with this version of the SDK.
+Diagnostic info: [1.2.0, 3]'.
+error: Command failed in 00:00:00.9187758.
+```
+## 制限事項
+
+現在のところ、Azure Sphereのソフトウェアリリースは、MT3620の全てのハードウェア機能をサポートしていません。例えば、下記の機能は**未サポート**です。
+
+- Arm Cortex-M4 with FPU
+- ADC,、I2C、I2S、PWM、SPIペリフェラル・インターフェース（GPIOとUARTはサポートされています）
+- 802.11a (b/g/nはサポートされています)
+- RTC
+
+詳細は、[Information and tools for hardware design and manufacture](https://docs.microsoft.com/en-us/azure-sphere/manufacturers/hardware-manufacturing)を参照下さい。
+
+
+
+## スペック
 ### ハードウェア
 
 <style type="text/css">
@@ -137,22 +173,21 @@ MT3620のソフトウェア開発には、Microsoft Visual Studio IDEを使用�
 
 ## ハードウェアの概要
 
-### Board Diagram
+### ボードについて
 
 <a href="https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/img/Diagram.png" target="_blank"><img src="https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/img/Diagram.png"/></a>
 
-- **J1**: ADC Reference Voltage, On: using internal 2.5v; Off: Connect External 1.8v to Pin 1. Off by default. 
-- **J2**: 3.3V Isolation, On: Enable system 3.3v power; Off: Cut off the system 3.3v power. On by default.
-- **J3**: RTC Power Selection: Left 2 pins: Using RTC Battery(Model:CR2032) at backside.
-- **4 User RGB LED**: LED model is LTST-C19HE1WT.
-- **USB Port**: Power supply(5V/1A) and debug, connected to FT4232HQ chip at backside. 
-- **4 System LED**: Led1(Near USB port): Green, FTDI Activity LED. Led2: RED, Power Indicator. Led3: RGB, Wifi Status. Led4: RGB, App Status.
-- **DC Power**: 5V/1A
-- **3 System Button**: Button A&B(White) are user botton. Button Reset(Blue) is System Reset.
-- **MT3620**：The [MT3620](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/datasheet/MediaTek%20MT3620%20Product%20Brief.pdf) is a highly integrated, high performance IoT MCU with the high level of security necessary for modern, robust internet-connected devices. The MT3620 targets a wide range of IoT applications including smart home, commercial, industrial and many other domains thanks to its extensive I/O peripheral subsystem that allows device design flexibility and freedom.
-- **FT4232HQ**: The [FT4232H](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/datasheet/DS_FT4232H.pdf) is a USB 2.0 High Speed (480Mb/s) to UART/MPSSE ICs.
+- **J1**: ADCリファレンス電圧 ショート：内部の2.5Vを使用　オープン：外部の1.8Vをピン1に接続 （標準ではオープン） 
+- **J2**: 3.3V電源の選択 ショート：システムの3.3Vを有効に　オープン：システムの3.3Vを遮断（標準ではショート）
+- **J3**: RTC電源の選択 左側2ピン：背面のCR2032RTCバッテリーを使用　右側2ピン：システムの3.3Vを使用
+- **USB ポート**: 電源(5V/1A)とデバッグ用。背面のFT4232HQに接続されています。 
+- **システム LED**: LED1（USBポート横）FTDIの動作状況。LED2: 電源インジケーター。LED3: 無線LANステータス。LED4: アプリケーションステータス
+- **DC 電源端子**: 5V/1A
+- **システムボタン**: 白色のボタンAとBはユーザーボタン。青色はシステムリセットボタン。
+- **MT3620**：[MT3620](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/datasheet/MediaTek%20MT3620%20Product%20Brief.pdf)は、高度に集積され、インターネットに接続するデバイスに求められる高いレベルのセキュリティを備えたハイパフォーマンスなIoT MCUです。MT3620が想定しているアプリケーションは、拡張性の高いI/Oペリフェラル・サブシステムによってスマートホームや商業・工業など多岐に渡り、柔軟性の高い設計が可能です。
+- **FT4232HQ**: [FT4232H](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/datasheet/DS_FT4232H.pdf)はUSB 2.0 High Speed (480Mb/s)とUART/MPSSEを接続するICです。
 
-### Board Pinmap
+### ピン配置
 
 <a href="https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/img/PinMap.png" target="_blank"><img src="https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/img/PinMap.png"/></a>
 
@@ -166,112 +201,31 @@ MT3620のソフトウェア開発には、Microsoft Visual Studio IDEを使用�
 
 **電源**
 
-Power to the Azure Sphere MT3620 Development Kit is supplied via the on-board USB Micro B connector or directly via the DC connector. 
+MT3620開発ボードへの電源供給は、オンボードのUSB Micro Bコネクタまたは、DCコネクタと想定されています。 
 
-- GPIO voltage is 3.3v, has a limited overhead of only 100mA available.
-- 5v_out on H3 connector has a limited overhead of only 500mA available.
-- 3.3v on H3 connector has a limited overhead of only 400mA available. 
-- Typical average current consumption is 150mA with 5V Wi-Fi on. Wifi scan current is typically 330ma.
+- GPIO電圧は3.3Vです。
+- H3の5V_OUTの供給能力は、500mAです。
+- H3の3.3Vの供給能力は、400mAです。
+- 一般的な平均消費電力は、無線LANがONのときに5Vで150mAです。Wifiスキャン時には、一般的に330mAです。
 
 ![](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/img/power.png)
 
+## 取り扱い
 
-**Hardware Design and Manufacture**
-
-The current Azure Sphere software release does not support all features of the [MT3620](https://www.mediatek.com/products/azureSphere/mt3620) hardware. For example, the following are **not yet supported** in software:
-
-- 2 x ARM Cortex-M4 with FPU
-- ADC, I2C, I2S, PWM and SPI peripheral interfaces (GPIO and UART are supported)
-- Wi-Fi 802.11a (b/g/n are supported)
-- RTC with clock selection and battery backup
-
-!!!Tip
-​    For more info, please refer to [Information and tools for hardware design and manufacture](https://docs.microsoft.com/en-us/azure-sphere/manufacturers/hardware-manufacturing).
-
-## Product Handling
-
-**Packaging**
-
-The Azure Sphere MT3620 Development Kit packaging contains Azure Sphere MT3620 Development Kit and Micro B USB cable.
+**同梱品**
+Azure Sphere MT3620開発キットのパッケージには、Azure Sphere MT3620開発キットとMicro B USB ケーブルが入っています。
 
 ![](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/img/box.JPG)
 
 **ESD Precautions**
+Azure Sphere MT3620開発キットには、静電気の放電に敏感なデバイスが含まれています。静電気の放電によってこれらの装置が損傷するのを防ぐために必要な予防措置を採ってください。
 
-The Azure Sphere MT3620 Development Kit contains highly sensitive electronic circuitry and is an Electrostatic Sensitive Device (ESD). Handling The Azure Sphere MT3620 Development Kit without proper ESD protection may destroy or damage it permanently. Proper ESD handling and packaging procedures must be applied throughout the processing, handling and operation of any application that incorporates Azure Sphere MT3620 Development Kit.
-
-## Applications
-
-- Home/Building/Facilities
-- Automation
-- Security
-- Equipment Management
-- Utilities
-- Public Safety
-
-!!!Tip
-​    To understand how Azure Sphere works in a real-world setting, consider [Contoso, Ltds cenario](https://docs.microsoft.com/en-us/azure-sphere/product-overview/scenario).
-
-## Qualification and approvals
+## 認証
 
 - FCC ID: [Z4T-MT3620DEVB](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/certification/Azure%20Sphere%20MT3620%20Development%20Kit-FCC-FCC.zip) 
 - CE ID: [18/0331/SZ](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/certification/Azure%20Sphere%20MT3620%20Development%20Kit-CE.zip)
 - MIC ID: [CSRT18207](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/certification/Azure%20Sphere%20MT3620%20Development%20Kit-MIC.zip)
 
-## Quickstarts for Azure Sphere
-
-To use MT3620 Dev Board for Azure Sphere, you’ll need a Windows 10 PC with the latest Windows Updates, alongwith the Visual Studio Tools for Azure Sphere (which will be available for download from Microsoft). These tools will include application templates, development tools and the Azure Sphere software development kit ([SDK](https://azure.microsoft.com/en-us/services/azure-sphere/get-started/)).
-
-The quickstarts guide you through:
-
-- [Install the Azure Sphere SDK](https://docs.microsoft.com/en-us/azure-sphere/install/install) 
-- [Set up an account](https://docs.microsoft.com/en-us/azure-sphere/install/azure-directory-account)
-- [Claiming your device](https://docs.microsoft.com/en-us/azure-sphere/install/claim-device)
-- [Configuring Wi-Fi](https://docs.microsoft.com/en-us/azure-sphere/install/configure-wifi)
-- [Build an application](https://docs.microsoft.com/en-us/azure-sphere/quickstarts/qs-blink-application)
-- [Deploy an application over the air](https://docs.microsoft.com/en-us/azure-sphere/quickstarts/qs-first-deployment)
-
-!!!Warning 
-​    If we see error during claiming your device, please follow the soltuion to update azure sphere on board SDK.   
-
-```c
-C:\Users\Seeed05\Documents>azsphere device claim
-error: The Azure Sphere OS on the attached device requires an update to be used with this version of the SDK.
-Diagnostic info: [1.2.0, 3]
-error: Failed to retrieve device ID from attached device: 'The Azure Sphere OS on the attached device requires an update to be used with this version of the SDK.
-Diagnostic info: [1.2.0, 3]'.
-error: Command failed in 00:00:00.9187758.
-```
-
-- Step 1.	In order to access the latest version of the device image you need to be enrolled on [MS Collaborate](http://aka.ms/collaborate). When you download the latest version from there (TP4.2.1) you will have access to a "ReleaseNotesTP4.2.1.pdf" file where the steps to recover the device with the new image are explained.
-- Step 2. Open an Azure Sphere Developer Command Prompt; 
-- Step 3. In the Azure Sphere Developer Command Prompt, change directory to the root of the unzipped folder; 
-- Step 4. Ensure that your board is connected to your computer by USB; 
-- Step 5. Issue the following command:
-
-```
-azsphere device recover --images <recovery-image-folder>
-For example:
-azsphere device recover –images images
-```
-
-## MT3620 Grove Shield
-
-現状、[Azure Sphere SDK](http://aka.ms/AzureSphereSDK)はMT3620のADCやI2Cをサポートしていません。このシールドは、MT3620のUARTと、I2C温度センサなど外部のI2Cデバイスとのブリッジの役割をします。このシールドの基本的な機能は、外部のI2Cデバイスとの接続を可能にすることです。また、ADCも搭載していますので、アナログポートからアナログ値の読み取りも可能です。
-
-[MT3620 Grove Shield](https://www.seeedstudio.com/MT3620-Grove-Shield-p-3145.html)には、AD7992(Anlog to I2C)とSC18IM700(I2C to UART)の2つのチップが搭載されています。アナログ信号はAD7992で読まれ、そしてSC18IM700を経由して開発ボードのUARTに接続されます。I2Cセンサは、同様にSC18IM700を通じて開発ボードのUARTに接続されます。
-
-[AD7992](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/datasheet/AD7992.pdf)は12ビットの低消費電力な I2Cコンパチブルのシリアル・インターフェースを備えたA/Dコンバーターです。A0とA1ピンの信号をI2Cデータに変換します。
-
-![](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/img/ADC_2_I2C.png)
-
-[SC18IM700](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/datasheet/SC18IM700.pdf)は、マイコンの標準的なUARTポートとI2Cバスをインターフェースするために設計されました。SDA/SCL信号をGPIO26_TXD0とGPIO28_RXD0との通信に変換します。
-
-![](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/img/I2C_2_UART.png)
-
-![](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/img/MT3620_Grove_Shield-2018-09-11.png)
-
-<div style="text-align:center">MT3620 Grove Shield Hardware Overview</div>
 
 ## 資料
 
@@ -288,3 +242,21 @@ azsphere device recover –images images
 
 ## テクニカルサポート
 テクニカルな問題については、私たちの[フォーラム](http://forum.seeedstudio.com/)（英語のみ）に投稿してください。
+
+# MT3620 Grove Shield
+
+現状、[Azure Sphere SDK](http://aka.ms/AzureSphereSDK)はMT3620のADCやI2Cをサポートしていません。このシールドは、MT3620のUARTと、I2C温度センサなど外部のI2Cデバイスとのブリッジの役割をします。このシールドの基本的な機能は、外部のI2Cデバイスとの接続を可能にすることです。また、ADCも搭載していますので、アナログポートからアナログ値の読み取りも可能です。
+
+[MT3620 Grove Shield](https://www.seeedstudio.com/MT3620-Grove-Shield-p-3145.html)には、AD7992(Anlog to I2C)とSC18IM700(I2C to UART)の2つのチップが搭載されています。アナログ信号はAD7992で読まれ、そしてSC18IM700を経由して開発ボードのUARTに接続されます。I2Cセンサは、同様にSC18IM700を通じて開発ボードのUARTに接続されます。
+
+[AD7992](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/datasheet/AD7992.pdf)は12ビットの低消費電力な I2Cコンパチブルのシリアル・インターフェースを備えたA/Dコンバーターです。A0とA1ピンの信号をI2Cデータに変換します。
+
+![](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/img/ADC_2_I2C.png)
+
+[SC18IM700](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/datasheet/SC18IM700.pdf)は、マイコンの標準的なUARTポートとI2Cバスをインターフェースするために設計されました。SDA/SCL信号をGPIO26_TXD0とGPIO28_RXD0との通信に変換します。
+
+![](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/img/I2C_2_UART.png)
+
+![](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/raw/master/img/MT3620_Grove_Shield-2018-09-11.png)
+
+<div style="text-align:center">MT3620 Grove Shield Hardware Overview</div>
