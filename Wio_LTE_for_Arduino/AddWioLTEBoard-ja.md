@@ -1,9 +1,9 @@
-# Wio Tracker LTEボードの追加
+# Seeed Wio LTE Cat.1ボードの追加
 
 1. Arduino IDEを起動します。
-1. ファイル > 環境設定 （Macでは、Arduino > Preferences...）の 設定タブ にある"追加のボードマネージャのURL:"に、https://raw.githubusercontent.com/Seeed-Studio/Seeed_Platform/master/package_seeeduino_boards_index.json を入力します。
+1. ファイル > 環境設定 （Macでは、Arduino > Preferences...）の 設定タブ にある"追加のボードマネージャのURL:"に、`http://www.seeed.co.jp/package_SeeedJP_index.json`を入力します。  
 ![9](img-ja/9.png)
-1. ツール > ボード > ボードマネージャ で、Seeed STM32F4 Boards by Seeed Studio を選択し、インストールをクリックします。
+1. ツール > ボード > ボードマネージャ で、`Seeed STM32F4 Board(JP mirror) by Seeed K.K.`を選択し、インストールをクリックします。  
 ![2](img-ja/2.png)
 
 ### 上記手順の動画 (クリックでYouTubeへ移動します)

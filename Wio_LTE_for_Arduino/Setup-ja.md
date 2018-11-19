@@ -7,13 +7,14 @@
 パソコンにArduino IDEがインストールされていない場合は、[ArduinoのSoftwareサイト](https://www.arduino.cc/en/Main/Software)のDownload the Arduino IDEにあるARDUINO x.x.xをダウンロード、インストールしてください。
 Wio LTEはOnline IDEに対応していませんのでご注意ください。
 
-### Wio Tracker LTEボードの追加
+### Seeed Wio LTE Cat.1ボードの追加
 
-Arduino IDEを起動して、"ツール > ボード"に**Wio Tracker LTE**が表示されているか確認してください。
-Wio Tracker LTEが見つからない場合は、[Wio Tracker LTEボードの追加](AddWioLTEBoard-ja.md)を実施してください。
+Arduino IDEを起動して、"ツール > ボード"に**Seeed Wio LTE Cat.1**が表示されているか確認してください。
+Seeed Wio LTE Cat.1が見つからない場合は、[Seeed Wio LTE Cat.1ボードの追加](AddWioLTEBoard-ja.md)を実施してください。
 
 ![12](img-ja/12.png)
 
+> 以前はボード名が`Wio Tracker LTE`でしたが`Seeed Wio LTE Cat.1`に変更になりました。
 
 ### Wio LTEライブラリの追加
 
