@@ -60,4 +60,4 @@ Wio 3Gのバッテリ端子は、JST PH型コネクタです。次の点に注�
 
 ## 回路図
 
-* [Wio 3G SORACOM Edition v.ES(PDF)](files/Wio_3G_vES.pdf)
+* [Wio 3G SORACOM Edition v.ES(PDF)](https://github.com/SeeedJP/Wiki/raw/master/Wio_3G_for_Arduino/files/Wio_3G_vES.pdf)
