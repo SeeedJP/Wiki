@@ -805,6 +805,7 @@ bool SocketClose(int connectId)
 
 ```cpp
 int HttpGet(const char* url, char* data, int dataSize)
+int HttpGet(const char* url, char* data, int dataSize, const WioLTEHttpHeader& header)
 ```
 
 #### 引数
@@ -814,6 +815,7 @@ int HttpGet(const char* url, char* data, int dataSize)
 |url|接続するURL。例："http://test.co.jp", "https://test.co.jp" |
 |data|受信したデータを取得する変数。|
 |dataSize|dataのバイト数。|
+|header|カスタムHTTPヘッダ。|
 
 #### 戻り値
 
@@ -829,6 +831,7 @@ int HttpGet(const char* url, char* data, int dataSize)
 
 ```cpp
 bool HttpPost(const char* url, const char* data, int* responseCode)
+bool HttpPost(const char* url, const char* data, int* responseCode, const WioLTEHttpHeader& header)
 ```
 
 #### 引数
@@ -838,6 +841,7 @@ bool HttpPost(const char* url, const char* data, int* responseCode)
 |url|接続するURL。例："http://test.co.jp", "https://test.co.jp" |
 |data|送信するデータ。|
 |responseCode|受信したHTTPレスポンスステータスコードを取得する変数。|
+|header|カスタムHTTPヘッダ。|
 
 #### 戻り値
 
