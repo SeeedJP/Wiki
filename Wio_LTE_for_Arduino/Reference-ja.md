@@ -24,23 +24,28 @@
 ||[WIOLTE_UDP](Reference-ja.md#wiolte_udp)|
 |関数|[GetLastError](Reference-ja.md#getlasterror)|
 ||[Init](Reference-ja.md#init)|
-||[LedSetRGB](Reference-ja.md#ledsetrgb)|
 ||[PowerSupplyLTE](Reference-ja.md#powersupplylte)|
+||[PowerSupplyCellular](Reference-ja.md#powersupplycellular)|
 ||[PowerSupplyGNSS](Reference-ja.md#powersupplygnss)|
+||[PowerSupplyLed](Reference-ja.md#powersupplyled)|
 ||[PowerSupplyGrove](Reference-ja.md#powersupplygrove)|
 ||[PowerSupplySD](Reference-ja.md#powersupplysd)|
+||[LedSetRGB](Reference-ja.md#ledsetrgb)|
 ||[TurnOnOrReset](Reference-ja.md#turnonorreset)|
 ||[TurnOff](Reference-ja.md#turnoff)|
 ||[Sleep](Reference-ja.md#sleep)|
 ||[Wakeup](Reference-ja.md#wakeup)|
 ||[GetIMEI](Reference-ja.md#getimei)|
 ||[GetIMSI](Reference-ja.md#getimsi)|
+||[GetICCID](Reference-ja.md#geticcid)|
 ||[GetPhoneNumber](Reference-ja.md#getphonenumber)|
 ||[GetReceivedSignalStrength](Reference-ja.md#getreceivedsignalstrength)|
 ||[GetTime](Reference-ja.md#gettime)|
 ||[SendSMS](Reference-ja.md#sendsms)|
 ||[ReceiveSMS](Reference-ja.md#receivesms)|
 ||[DeleteReceivedSMS](Reference-ja.md#deletereceivedsms)|
+||[WaitForCSRegistration](Reference-ja.md#waitforcsregistration)|
+||[WaitForPSRegistration](Reference-ja.md#waitforpsregistration)|
 ||[Activate](Reference-ja.md#activate)|
 ||[Deactivate](Reference-ja.md#deactivate)|
 ||[SyncTime](Reference-ja.md#synctime)|
@@ -182,29 +187,28 @@ void Init()
 Wio LTEを初期化します。
 初期化直後は、LTEモジュール電源・Groveコネクター電源がオフします。
 
-### LedSetRGB
+### PowerSupplyLTE
 
 ```cpp
-void LedSetRGB(byte red, byte green, byte blue)
+void PowerSupplyLTE(bool on)
 ```
 
 #### 引数
 
 |引数|説明|
 |:--|:--|
-|red|赤色の度合い。0～255を指定します。|
-|green|緑色の度合い。0～255を指定します。|
-|blue|青色の度合い。0～255を指定します。|
+|on|電源供給のオン/オフ。オンしたいときはtrue、オフしたいときはfalseを指定します。|
 
 #### 説明
 
-Wio LTE上のフルカラーLEDを点灯します。
-消灯したいときは、red/green/blue全てに0を指定します。
+Wio LTE上のLTEモジュールの電源供給をオン/オフします。
+LTEモジュールは電源供給オンの後に、起動操作（TurnOnOrReset）しないと利用できません。
+本関数を実行した後の、LTEモジュールの操作は0.5秒以上待ってください。（LTEモジュールの動作が安定するまで待つ。）
 
-### PowerSupplyLTE
+### PowerSupplyCellular
 
 ```cpp
-void PowerSupplyLTE(bool on)
+void PowerSupplyCellular(bool on)
 ```
 
 #### 引数
@@ -235,6 +239,22 @@ void PowerSupplyGNSS(bool on)
 
 GNSS/GPSアンテナへの電源供給をオン/オフします。
 日本版Wio LTEにはGNSS/GPS機能が無いので、本関数を使うことはありません。
+
+### PowerSupplyLed
+
+```cpp
+void PowerSupplyLed(bool on)
+```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|on|電源供給のオン/オフ。オンしたいときはtrue、オフしたいときはfalseを指定します。|
+
+#### 説明
+
+フルカラーLEDへの電源供給をオン/オフします。
 
 ### PowerSupplyGrove
 
@@ -269,6 +289,25 @@ void PowerSupplySD(bool on)
 
 マイクロSDの電源供給をオン/オフします。
 
+### LedSetRGB
+
+```cpp
+void LedSetRGB(byte red, byte green, byte blue)
+```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|red|赤色の度合い。0～255を指定します。|
+|green|緑色の度合い。0～255を指定します。|
+|blue|青色の度合い。0～255を指定します。|
+
+#### 説明
+
+Wio LTE上のフルカラーLEDを点灯します。
+消灯したいときは、red/green/blue全てに0を指定します。
+
 ### TurnOnOrReset
 
 ```cpp
@@ -290,8 +329,14 @@ LTEモジュールが電源オンしていないときは電源オン、電源�
 ### TurnOff
 
 ```cpp
-bool TurnOff()
+bool TurnOff(long timeout = 60000)
 ```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|timeout|タイムアウト時間[ミリ秒]。|
 
 #### 戻り値
 
@@ -369,6 +414,29 @@ int GetIMSI(char* imsi, int imsiSize)
 #### 説明
 
 Wio LTEに取り付けられたSIMのIMSIを取得します。
+
+### GetICCID
+
+```cpp
+int GetICCID(char* iccid, int iccidSize)
+```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|iccid|ICCIDを取得する変数。文字列。|
+|iccidSize|iccidのバイト数。|
+
+#### 戻り値
+
+|説明|
+|:--|
+|成功したときはICCIDの文字数、失敗したときはマイナス値を返します。|
+
+#### 説明
+
+Wio LTEに取り付けられたSIMのICCIDを取得します。
 
 ### GetPhoneNumber
 
@@ -500,10 +568,54 @@ bool DeleteReceivedSMS()
 受信したショートメッセージ（SMS）のうちの、一番古いショートメッセージを削除します。
 受信したショートメッセージが無いときは、falseを返します。
 
+### WaitForCSRegistration
+
+```cpp
+bool WaitForCSRegistration(long timeout = 120000)
+```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|timeout|タイムアウト時間[ミリ秒]。|
+
+#### 戻り値
+
+|説明|
+|:--|
+|成功したときはtrue、失敗したときはfalseを返します。|
+
+#### 説明
+
+CSネットワークに登録完了するまで待ちます。
+
+### WaitForPSRegistration
+
+```cpp
+bool WaitForPSRegistration(long timeout = 120000)
+```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|timeout|タイムアウト時間[ミリ秒]。|
+
+#### 戻り値
+
+|説明|
+|:--|
+|成功したときはtrue、失敗したときはfalseを返します。|
+
+#### 説明
+
+PSネットワークに登録完了するまで待ちます。
+
 ### Activate
 
 ```cpp
-bool Activate(const char* accessPointName, const char* userName, const char* password)
+bool Activate(const char* accessPointName, const char* userName, const char* password, long waitForRegistTimeout = 120000)
 ```
 
 #### 引数
@@ -513,6 +625,7 @@ bool Activate(const char* accessPointName, const char* userName, const char* pas
 |accessPointName|APN。|
 |userName|ユーザー名。|
 |password|パスワード。|
+|waitForRegistTimeout|タイムアウト時間[ミリ秒]。|
 
 #### 戻り値
 

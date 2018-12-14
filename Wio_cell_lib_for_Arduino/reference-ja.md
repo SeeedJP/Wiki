@@ -163,7 +163,7 @@ void Init()
 
 #### 説明
 
-Wio 3Gを初期化します。
+Wioを初期化します。
 初期化直後は、全ての電源がオフします。
 
 ### PowerSupplyCellular
@@ -180,9 +180,9 @@ void PowerSupplyCellular(bool on)
 
 #### 説明
 
-Wio 3G上の3Gモジュールの電源供給をオン/オフします。
-3Gモジュールは電源供給オンの後に、起動操作（TurnOnOrReset）しないと利用できません。
-本関数を実行した後の、3Gモジュールの操作は0.5秒以上待ってください。（3Gモジュールの動作が安定するまで待つ。）
+Wio上のセルラーモジュールの電源供給をオン/オフします。
+セルラーモジュールは電源供給オンの後に、起動操作（TurnOnOrReset）しないと利用できません。
+本関数を実行した後の、セルラーモジュールの操作は0.5秒以上待ってください。（セルラーモジュールの動作が安定するまで待つ。）
 
 ### PowerSupplyLed
 
@@ -233,7 +233,7 @@ void LedSetRGB(byte red, byte green, byte blue)
 
 #### 説明
 
-Wio 3G上のフルカラーLEDを点灯します。
+Wio上のフルカラーLEDを点灯します。
 消灯したいときは、red/green/blue全てに0を指定します。
 
 ### TurnOnOrReset
@@ -250,9 +250,9 @@ bool TurnOnOrReset()
 
 #### 説明
 
-Wio 3G上の3Gモジュールを起動操作します。
-3Gモジュールが電源オンしていないときは電源オン、電源オンしているときはリセットします。
-本関数を実行する前に、3Gモジュールへ電源供給（PowerSupplyCellular）してください。
+Wio上のセルラーモジュールを起動操作します。
+セルラーモジュールが電源オンしていないときは電源オン、電源オンしているときはリセットします。
+本関数を実行する前に、セルラーモジュールへ電源供給（PowerSupplyCellular）してください。
 
 ### TurnOff
 
@@ -268,7 +268,7 @@ bool TurnOff()
 
 #### 説明
 
-Wio 3G上の3Gモジュールを停止操作します。
+Wio上のセルラーモジュールを停止操作します。
 
 ### GetIMEI
 
@@ -291,7 +291,7 @@ int GetIMEI(char* imei, int imeiSize)
 
 #### 説明
 
-Wio 3GのIMEIを取得します。
+WioのIMEIを取得します。
 
 ### GetIMSI
 
@@ -314,7 +314,7 @@ int GetIMSI(char* imsi, int imsiSize)
 
 #### 説明
 
-Wio 3Gに取り付けられたSIMのIMSIを取得します。
+Wioに取り付けられたSIMのIMSIを取得します。
 
 ### GetICCID
 
@@ -337,7 +337,7 @@ int GetICCID(char* iccid, int iccidSize)
 
 #### 説明
 
-Wio 3Gに取り付けられたSIMのICCIDを取得します。
+Wioに取り付けられたSIMのICCIDを取得します。
 
 ### GetPhoneNumber
 
@@ -360,7 +360,7 @@ int GetPhoneNumber(char* number, int numberSize)
 
 #### 説明
 
-Wio 3Gに取り付けられたSIMの電話番号を取得します。
+Wioに取り付けられたSIMの電話番号を取得します。
 
 ### GetReceivedSignalStrength
 
@@ -376,7 +376,7 @@ int GetReceivedSignalStrength()
 
 #### 説明
 
-3Gモジュールが受信している信号強度[dBm]を取得します。
+セルラーモジュールが受信している信号強度[dBm]を取得します。
 
 ### GetTime
 
@@ -398,7 +398,7 @@ bool GetTime(struct tm* tim)
 
 #### 説明
 
-3Gモジュールが保持している日時を取得します。
+セルラーモジュールが保持している日時を取得します。
 
 ### SetAccessTechnology
 
