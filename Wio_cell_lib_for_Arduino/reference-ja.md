@@ -16,8 +16,8 @@
 ||[WIO_UART_D22](reference-ja.md#wio_uart_d22)|
 ||[WIO_I2C_D24](reference-ja.md#wio_i2c_d24)|
 ||[WIO_I2C_D25](reference-ja.md#wio_i2c_d25)|
-||[Wio3G::SOCKET_TCP](reference-ja.md#wio3gsocket_tcp)|
-||[Wio3G::SOCKET_UDP](reference-ja.md#wio3gsocket_udp)|
+||[WioCellular::SOCKET_TCP](reference-ja.md#wiocellularsocket_tcp)|
+||[WioCellular::SOCKET_UDP](reference-ja.md#wiocellularsocket_udp)|
 |関数|[GetLastError](reference-ja.md#getlasterror)|
 ||[Init](reference-ja.md#init)|
 ||[PowerSupplyCellular](reference-ja.md#powersupplycellular)|
@@ -28,9 +28,12 @@
 ||[TurnOff](reference-ja.md#turnoff)|
 ||[GetIMEI](reference-ja.md#getimei)|
 ||[GetIMSI](reference-ja.md#getimsi)|
+||[GetICCID](reference-ja.md#geticcid)|
 ||[GetPhoneNumber](reference-ja.md#getphonenumber)|
 ||[GetReceivedSignalStrength](reference-ja.md#getreceivedsignalstrength)|
 ||[GetTime](reference-ja.md#gettime)|
+||[SetAccessTechnology](reference-ja.md#setaccesstechnology)|
+||[SetSelectNetwork](reference-ja.md#setselectnetwork)|
 ||[WaitForCSRegistration](reference-ja.md#waitforcsregistration)|
 ||[WaitForPSRegistration](reference-ja.md#waitforpsregistration)|
 ||[Activate](reference-ja.md#activate)|
@@ -42,6 +45,7 @@
 ||[HttpGet](reference-ja.md#httpget)|
 ||[HttpPost](reference-ja.md#httppost)|
 ||[SendUSSD](reference-ja.md#sendussd)|
+||[SystemReset](reference-ja.md#systemreset)|
 
 ## 定数
 
@@ -123,12 +127,12 @@ pinMode(), digitalRead(), digitalWrite()の引数に使用します。
 GroveコネクターピンD25のピン番号です。
 pinMode(), digitalRead(), digitalWrite()の引数に使用します。
 
-### Wio3G::SOCKET_TCP
+### WioCellular::SOCKET_TCP
 
 TCP通信の指定です。
 SocketOpen()の引数に使用します。
 
-### Wio3G::SOCKET_UDP
+### WioCellular::SOCKET_UDP
 
 UDP通信の指定です。
 SocketOpen()の引数に使用します。
@@ -312,6 +316,29 @@ int GetIMSI(char* imsi, int imsiSize)
 
 Wio 3Gに取り付けられたSIMのIMSIを取得します。
 
+### GetICCID
+
+```cpp
+int GetICCID(char* iccid, int iccidSize)
+```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|iccid|ICCIDを取得する変数。文字列。|
+|iccidSize|iccidのバイト数。|
+
+#### 戻り値
+
+|説明|
+|:--|
+|成功したときはICCIDの文字数、失敗したときはマイナス値を返します。|
+
+#### 説明
+
+Wio 3Gに取り付けられたSIMのICCIDを取得します。
+
 ### GetPhoneNumber
 
 ```cpp
@@ -372,6 +399,41 @@ bool GetTime(struct tm* tim)
 #### 説明
 
 3Gモジュールが保持している日時を取得します。
+
+### SetAccessTechnology
+
+> `Seeed Wio LTE M1/NB1(BG96)`で使用可能。
+
+```cpp
+void SetAccessTechnology(AccessTechnologyType technology)
+```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|technology|セルラー通信のテクノロジー。LTE Cat.M1はACCESS_TECHNOLOGY_LTE_M1、LTE Cat.NB1はACCESS_TECHNOLOGY_LTE_NB1を指定します。|
+
+#### 説明
+
+セルラー通信のテクノロジーを指定します。
+
+### SetSelectNetwork
+
+```cpp
+void SetSelectNetwork(SelectNetworkModeType mode, const char* plmn = NULL)
+```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|mode|ネットワークの選択方法。自動はSELECT_NETWORK_MODE_AUTOMATIC、IMSIから導出はSELECT_NETWORK_MODE_MANUAL_IMSI、手動はSELECT_NETWORK_MODE_MANUALを指定します。手動のときは、plmnを指定してください。|
+|plmn|PLMN。（Public land mobile network）|
+
+#### 説明
+
+セルラー通信のネットワーク選択方法を指定します。
 
 ### WaitForCSRegistration
 
@@ -565,6 +627,7 @@ bool SocketClose(int connectId)
 
 ```cpp
 int HttpGet(const char* url, char* data, int dataSize)
+int HttpGet(const char* url, char* data, int dataSize, const WioCellularHttpHeader& header)
 ```
 
 #### 引数
@@ -574,6 +637,7 @@ int HttpGet(const char* url, char* data, int dataSize)
 |url|接続するURL。例："http://test.co.jp", "https://test.co.jp" |
 |data|受信したデータを取得する変数。|
 |dataSize|dataのバイト数。|
+|header|カスタムHTTPヘッダ。|
 
 #### 戻り値
 
@@ -589,6 +653,7 @@ int HttpGet(const char* url, char* data, int dataSize)
 
 ```cpp
 bool HttpPost(const char* url, const char* data, int* responseCode)
+bool HttpPost(const char* url, const char* data, int* responseCode, const WioCellularHttpHeader& header)
 ```
 
 #### 引数
@@ -598,6 +663,7 @@ bool HttpPost(const char* url, const char* data, int* responseCode)
 |url|接続するURL。例："http://test.co.jp", "https://test.co.jp" |
 |data|送信するデータ。|
 |responseCode|受信したHTTPレスポンスステータスコードを取得する変数。|
+|header|カスタムHTTPヘッダ。|
 
 #### 戻り値
 
@@ -632,3 +698,13 @@ bool SendUSSD(const char* in, char* out, int outSize)
 #### 説明
 
 USSDでメッセージ交換します。
+
+### SystemReset
+
+```cpp
+static void SystemReset()
+```
+
+#### 説明
+
+CPUをリセットします。
