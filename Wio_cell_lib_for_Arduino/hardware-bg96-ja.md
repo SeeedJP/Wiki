@@ -41,3 +41,7 @@ Wio LTE M1/NB1(BG96)のバッテリ端子は、JST PH型コネクタです。次
 * 充電中は決して放置せず、絶えず目を離さないようにしてください。
 
 **リチウムイオン電池の取り扱いには、十分な注意を要します。ご使用による機器の破壊や事故、これらに伴う被害・損害については当社では一切の責任を負いかねます。**
+
+## 回路図
+
+* [Wio LTE M1/NB1(BG96) v.ES(PDF)](https://github.com/SeeedJP/Wiki/raw/master/Wio_cell_lib_for_Arduino/files/Wio_BG96_vES.pdf)
