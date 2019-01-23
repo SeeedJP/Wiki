@@ -36,11 +36,12 @@ nano SIMを差すときは、下図のように端子面を基板側にして挿
 
 |メーカー|製品名|動作確認結果|
 |:--|:--|:--|
-|SORACOM|SORACOM Air SIMカード サイズ:ナノ（データ通信のみ）|〇|
-|SORACOM|SORACOM Air SIMカード サイズ:ナノ（SMS/データ通信）|〇|
+|SORACOM|SORACOM Air SIMカード plan-D サイズ:ナノ（データ通信のみ）|〇|
+|SORACOM|SORACOM Air SIMカードplan-D サイズ:ナノ（SMS/データ通信）|〇|
 |IIJmio|音声機能付きSIM みおふぉん|〇|
 |nuroモバイル|0 SIM データ専用プラン|〇|
 
+※ オペレーターが販売して下さっているWio LTEは、当該オペレーターでの使用を前提としています。
 
 ## USB電源供給
 
