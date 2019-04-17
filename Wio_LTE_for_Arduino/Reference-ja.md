@@ -804,8 +804,8 @@ bool SocketClose(int connectId)
 ### HttpGet
 
 ```cpp
-int HttpGet(const char* url, char* data, int dataSize)
-int HttpGet(const char* url, char* data, int dataSize, const WioLTEHttpHeader& header)
+int HttpGet(const char* url, char* data, int dataSize, long timeout = 60000)
+int HttpGet(const char* url, char* data, int dataSize, const WioLTEHttpHeader& header, long timeout = 60000)
 ```
 
 #### 引数
@@ -816,6 +816,7 @@ int HttpGet(const char* url, char* data, int dataSize, const WioLTEHttpHeader& h
 |data|受信したデータを取得する変数。|
 |dataSize|dataのバイト数。|
 |header|カスタムHTTPヘッダ。|
+|timeout|タイムアウト時間[ミリ秒]。|
 
 #### 戻り値
 
@@ -830,8 +831,8 @@ int HttpGet(const char* url, char* data, int dataSize, const WioLTEHttpHeader& h
 ### HttpPost
 
 ```cpp
-bool HttpPost(const char* url, const char* data, int* responseCode)
-bool HttpPost(const char* url, const char* data, int* responseCode, const WioLTEHttpHeader& header)
+bool HttpPost(const char* url, const char* data, int* responseCode, long timeout = 60000)
+bool HttpPost(const char* url, const char* data, int* responseCode, const WioLTEHttpHeader& header, long timeout = 60000)
 ```
 
 #### 引数
@@ -842,6 +843,7 @@ bool HttpPost(const char* url, const char* data, int* responseCode, const WioLTE
 |data|送信するデータ。|
 |responseCode|受信したHTTPレスポンスステータスコードを取得する変数。|
 |header|カスタムHTTPヘッダ。|
+|timeout|タイムアウト時間[ミリ秒]。|
 
 #### 戻り値
 

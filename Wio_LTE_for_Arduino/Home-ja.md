@@ -64,5 +64,6 @@ GroveコネクターとSTM32F4マイコン、LTEモジュールが載ってお�
 |sms/ReceiveSMS|受信したSMSをシリアルモニタに表示します。|SIM||
 |soracom/soracom-funnel|Wio LTEの稼働時間をSORACOM Funnelへ送信します。|[SORACOM Air SIM](https://soracom.jp/services/air/cellular/), [SORACOM Funnel](https://soracom.jp/services/funnel/)||
 |soracom/soracom-harvest|Wio LTEの稼働時間をSORACOM Harvestへ送信します。|[SORACOM Air SIM](https://soracom.jp/services/air/cellular/), [SORACOM Harvest](https://soracom.jp/services/harvest/)||
+|soracom/soracom-unified|Wio LTEの稼働時間をSORACOM Unified Endpointへ送信します。|[SORACOM Air SIM](https://soracom.jp/services/air/cellular/), [SORACOM Unified Endpoint](https://dev.soracom.io/jp/unified_endpoint/what-is-unified_endpoint/)||
 |http/ifttt-webhook|Wio LTEの稼働時間をIFTTTのWebhookへ送信します。|SIM, [IFTTT Webhook](https://ifttt.com/maker_webhooks)||
 |mqtt/mqtt-client|Wio LTEの稼働時間をMQTTブローカーへ送信します。|SIM, MQTT Broker||
