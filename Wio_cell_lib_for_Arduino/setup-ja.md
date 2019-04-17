@@ -10,7 +10,7 @@ Wio 3G/Wio LTE M1/NB1(BG96)は**Aruino IDEのLinux版、Arduino Web Editorに対
 
 ## ボードの追加
 
-Arduino IDEを起動して、"ツール > ボード"に`Seeed Wio 3G`や`Seeed Wio LTE M1/NB1(BG96)`が表示されているか確認してください。  
+Arduino IDEを起動して、"ツール > ボード"に`SeeedJP STM32 Boards`の`Seeed Wio 3G`や`Seeed Wio LTE M1/NB1(BG96)`が表示されているか確認してください。  
 **■ボードの確認（ツール > ボード > Seeed Wio 3G or Seeed Wio LTE M1/NB1(BG96)）**  
 ![4](img/4.png)
 
@@ -18,7 +18,7 @@ Arduino IDEを起動して、"ツール > ボード"に`Seeed Wio 3G`や`Seeed W
 1. Arduino IDEを起動してください。
 1. ファイル > 環境設定 （Macでは、Arduino > Preferences...）の 設定タブ にある"追加のボードマネージャのURL:"に、`http://www.seeed.co.jp/package_SeeedJP_index.json`を入力してください。  
 ![8](img/8.png)
-1. ツール > ボード > ボードマネージャ で、`SeeedJP STM32F4 Boards by Seeed K.K.`を選択し、インストールをクリックしてください。  
+1. ツール > ボード > ボードマネージャ で、`SeeedJP STM32 Boards by Seeed K.K.`を選択し、インストールをクリックしてください。  
 ![7](img/7.png)
 
 ## ライブラリの追加
