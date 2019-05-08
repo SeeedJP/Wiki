@@ -51,6 +51,7 @@ GroveコネクターとSTM32F4マイコン、LTEモジュールが載ってお�
 |basic/GetRSSI|受信信号強度をシリアルモニタに表示します。|||
 |basic/GetTime|NTPサーバーと日時同期して、日時をシリアルモニタに表示します。|SIM||
 |basic/SDReadWrite|TFカードに書き込み/読み込みします。|TFカード||
+|gnss/GetGNSSLocation|現在地の座標を表示します。|||
 |grove/grove-button|Grove - ボタンのON/OFFをシリアルモニタに表示します。|[Grove - ボタン](https://www.seeedstudio.com/Grove-Button-p-766.html)|D38|
 |grove/grove-button-using-int|Grove - ボタンのON/OFFをシリアルモニタとLEDに表示します。|[Grove - ボタン](https://www.seeedstudio.com/Grove-Button-p-766.html)|D38|
 |grove/grove-buzzer|Grove - ブザーを鳴らします。|[Grove - ブザー](https://www.seeedstudio.com/Grove-Buzzer-p-768.html)|D38|

@@ -56,6 +56,9 @@
 ||[SocketClose](Reference-ja.md#socketclose)|
 ||[HttpGet](Reference-ja.md#httpget)|
 ||[HttpPost](Reference-ja.md#httppost)|
+||[EnableGNSS](Reference-ja.md#enablegnss)|
+||[DisableGNSS](Reference-ja.md#disablegnss)|
+||[GetGNSSLocation](Reference-ja.md#getgnsslocation)|
 ||[SystemReset](Reference-ja.md#systemreset)|
 
 ## 定数
@@ -854,6 +857,65 @@ bool HttpPost(const char* url, const char* data, int* responseCode, const WioLTE
 #### 説明
 
 指定したURLへ、HTTP通信でPOSTします。
+
+### EnableGNSS
+
+```cpp
+bool EnableGNSS()
+```
+
+#### 戻り値
+
+|説明|
+|:--|
+|成功したときはtrue、失敗したときはfalseを返します。|
+
+#### 説明
+
+GNSS/GPS機能を有効にします。
+日本版Wio LTEにはGNSS/GPS機能が無いので、本関数を使うことはありません。
+
+### DisableGNSS
+
+```cpp
+bool DisableGNSS()
+```
+
+#### 戻り値
+
+|説明|
+|:--|
+|成功したときはtrue、失敗したときはfalseを返します。|
+
+#### 説明
+
+GNSS/GPS機能を無効にします。
+日本版Wio LTEにはGNSS/GPS機能が無いので、本関数を使うことはありません。
+
+### GetGNSSLocation
+
+```cpp
+bool GetGNSSLocation(double* longitude, double* latitude, double* altitude = NULL, struct tm* tim = NULL)
+```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|longitude|経度。|
+|latitude|緯度。|
+|altitude|高度。[m]|
+|tim|日時。|
+
+#### 戻り値
+
+|説明|
+|:--|
+|成功したときはtrue、失敗したときはfalseを返します。|
+
+#### 説明
+
+GNSS/GPS機能を使って、現在地を取得します。
 
 ### SystemReset
 
