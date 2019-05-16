@@ -6,9 +6,10 @@ Wio 3GとWio LTE M1/NB1(BG96)のArduino IDE用ライブラリです。
 * [Documents - Japanese](Wio_cell_lib_for_Arduino/home-ja.md)
 * [Arduino Library](https://github.com/SeeedJP/Wio_cell_lib_for_Arduino)
 
-## Wio 3G as Arm Mbed Enabled board
+## Wio 3G and Wio LTE M1/NB1(BG96) as Arm Mbed Enabled board
 
-* [Board page - English](https://os.mbed.com/platforms/Seeed-Wio-3G/)
+* [Wio 3G Board page - English](https://os.mbed.com/platforms/Seeed-Wio-3G/)
+* [Wio LTE M1/NB1(BG96) Board page - English](https://os.mbed.com/platforms/Seeed-Wio-BG96/)
 
 ## Wio LTE for Arduino
 
@@ -17,6 +18,12 @@ Wio LTE JP Version v1.3- 4G, Cat.1のArduino IDE用ライブラリです。
 
 * [Documents - Japanese](Wio_LTE_for_Arduino/Home-ja.md)
 * [Arduino Library](https://github.com/SeeedJP/WioLTEforArduino)
+
+---
+
+## Seeed ReButton
+
+* [Documents - English](https://seeedjp.github.io/ReButton/)
 
 ---
 
