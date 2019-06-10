@@ -24,6 +24,7 @@ Wio LTE JP Version v1.3- 4G, Cat.1のArduino IDE用ライブラリです。
 ## Seeed ReButton
 
 * [Documents - English](https://seeedjp.github.io/ReButton/)
+* [Documents - Japanese](https://seeedjp.github.io/ReButton/README-ja)
 
 ---
 
