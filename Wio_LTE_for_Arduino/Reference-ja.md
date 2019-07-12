@@ -861,8 +861,14 @@ bool HttpPost(const char* url, const char* data, int* responseCode, const WioLTE
 ### EnableGNSS
 
 ```cpp
-bool EnableGNSS()
+bool EnableGNSS(long timeout = 60000)
 ```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|timeout|タイムアウト時間[ミリ秒]。|
 
 #### 戻り値
 
