@@ -19,7 +19,7 @@ Wio LTE M1/NB1(BG96) hardware information is [here](hardware-bg96-en.md).
 
 ## Reference manual
 
-Reference manual is [here](reference-en.md)。
+Reference manual is [here](reference-ja.md). Not yet translated.
 
 ## Sample sketch
 
