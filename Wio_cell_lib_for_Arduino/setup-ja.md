@@ -52,7 +52,6 @@ Wio 3GをパソコンにUSB接続しておき、ファイル > スケッチ例 >
 1. Wio 3G/Wio LTE M1/NB1(BG96)をパソコンにUSB接続してください。（DAPLINKというドライブがパソコンに認識されます。）
 1. Arduino IDEを起動してください。
 1. Arduino IDEのボード選択を`Seeed Wio 3G`もしくは`Seeed Wio LTE M1/NB1(BG96)`に変更してください。（ツール > ボード > ）
-1. Arduino IDEのマイコンボードに書き込む手段を`OpenOCD`に変更してください。（ツール > マイコンボードに書き込む > OpenOCD）
 1. スケッチ例の`basic/LedSetRGB`を開いてください。（ファイル > スケッチ例 > Wio cell lib for Arduino > basic > LedSetRGB）
 1. スケッチをWio 3G/Wio LTE M1/NB1(BG96)に書き込んでください。（スケッチ > マイコンボードに書き込む）
 1. ボードへの書き込みが完了するまで待ってください。（完了すると、DAPLINKドライブが自動的に外れ、再度、認識されます。書き込んだファイルはマイコンに転送され自動的に消えます。）
