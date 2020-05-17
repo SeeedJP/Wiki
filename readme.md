@@ -28,6 +28,12 @@ Wio LTE JP Version v1.3- 4G, Cat.1のArduino IDE用ライブラリです。
 
 ---
 
+## ドキュメントガイド
+
+* [Wio Terminal - 日本語](Document_Guide/Wio_Terminal.md)
+
+---
+
 ## Azure Sphere MT3620開発キット
 
 Azure Sphereは、Azure Sphere MCU、Azure Sphere OS、および Azure Sphere Security Service を三位一体で提供することで、セキュリティに対する開発リソースやコストをかけずにインテリジェントな製品とエクスペリエンスを実現することができます。
