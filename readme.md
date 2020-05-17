@@ -31,6 +31,7 @@ Wio LTE JP Version v1.3- 4G, Cat.1のArduino IDE用ライブラリです。
 ## ドキュメントガイド
 
 * [Wio Terminal - 日本語](Document_Guide/Wio_Terminal.md)
+* [Seeeduino XIAO - 日本語](Document_Guide/XIAO.md)
 
 ---
 
