@@ -25,3 +25,15 @@ Seeeduino XIAOに関する注目記事をピックアップしました。
 - [コインサイズ Arduino互換機 Seeeduino XIAO を使ってみた](https://qiita.com/nanase/items/0fed598975c49b1d707e) by nanase
 - [Seeeduino XIAOを使ってみた](https://homemadegarbage.com/xiao01) by HomeMadeGarbage
 - [Seeeduino XIAO](https://lab.seeed.co.jp/entry/2020/04/08/120000) by Seeed 松岡
+- [Seeeduino XIAO (Arduino XIAO) ちょこっとお試し。](https://www.youtube.com/watch?v=EkmFd_bOb5Y) YouTube by 和多田 清
+
+## I/O
+
+- [Seeeduino XIAOのデジタル出力](https://matsujirushi.hatenablog.jp/entry/2020/04/19/070000) by matsujirushi
+- [Seeeduino XIAOのデジタル入力](https://matsujirushi.hatenablog.jp/entry/2020/04/18/201940) by matsujirushi
+- [Seeeduino XIAOのタッチ入力](https://matsujirushi.hatenablog.jp/entry/2020/04/23/173722) by matsujirushi
+
+## 作例
+
+- [Arduino XIAO で巨大ステップモーターを回す。](https://www.youtube.com/watch?v=ayJzEm4bs78) YouTube by 和多田 清
+- [Arduino XIAO でMidi音源を鳴らしてみよう！](https://www.youtube.com/watch?v=Hd8Jb1o405s) YouTube by 和多田 清
