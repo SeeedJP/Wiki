@@ -58,6 +58,7 @@ SeeedのECサイトであるBazaarでも販売をしていますが、現在は�
 - [Wio Terminal でパルスオキシメータを制作](https://homemadegarbage.com/wioterminal02) by HomeMadeGarbage
 - [話題のマイコン「Wio Terminal」を買ってクソゲー作って動かしてみました](https://karaage.hatenadiary.jp/entry/2020/05/18/073000) by からあげ
 - [Wio TerminalでBad Apple!!の影絵を再生してみた](https://neocat.hatenablog.com/entry/2020/05/17/133133) by NeoCat
+- [Wio Terminalを使ってGPSなし・Wi-Fiだけで測位してみる(Google Geolocation API使用)](https://blog.nyancotech.online/2020/05/wio-terminalgpswi-figoogle-geolocation.html) by じてんしゃP
 
 ## Baremetal
 
@@ -66,3 +67,7 @@ SeeedのECサイトであるBazaarでも販売をしていますが、現在は�
 ## 他の言語
 
 - [Rust Library for Arduino](https://github.com/kamiyaowl/rust_lib_for_arduino_example) by kamiya
+
+## その他参考
+
+- [Github ActionsでArduinoプロジェクトのビルドを行う](https://kamiyaowl.github.io/blog/arduino-github-ci/) by kamiya
