@@ -56,7 +56,7 @@ SeeedのECサイトであるBazaarでも販売をしていますが、現在は�
 
 - [Wio Terminal：なんでもない何かっぽいヘッドラインLGFX版](http://shikarunochi.matrix.jp/?p=4024) by shikarunochi
 - [Wio Terminal でパルスオキシメータを制作](https://homemadegarbage.com/wioterminal02) by HomeMadeGarbage
-- [wio-terminal-flappy-bird](https://github.com/karaage0703/wio-terminal-flappy-bird) by からあげ
+- [話題のマイコン「Wio Terminal」を買ってクソゲー作って動かしてみました](https://karaage.hatenadiary.jp/entry/2020/05/18/073000) by からあげ
 - [Wio TerminalでBad Apple!!の影絵を再生してみた](https://neocat.hatenablog.com/entry/2020/05/17/133133) by NeoCat
 
 ## Baremetal
