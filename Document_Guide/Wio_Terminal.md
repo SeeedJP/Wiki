@@ -71,3 +71,4 @@ SeeedのECサイトであるBazaarでも販売をしていますが、現在は�
 ## その他参考
 
 - [Github ActionsでArduinoプロジェクトのビルドを行う](https://kamiyaowl.github.io/blog/arduino-github-ci/) by kamiya
+- [WioTerminalの裏蓋を改良しGroveコネクタを利用可能にする](https://qiita.com/carcon999/items/e7a8a652bf809f520310) by carcon999
