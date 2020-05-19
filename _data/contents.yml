@@ -1,0 +1,35 @@
+- path: Wio_cell_lib_for_Arduino
+  title: Wio cell lib for Arduino
+  filename: home-ja
+  sub:
+  - title: 開発環境のセットアップ
+    filename: setup-ja
+  - title: ハードウェア / Wio 3G
+    filename: hardware-ja
+  - title: ハードウェア / Wio LTE M1/NB1(BG96)
+    filename: hardware-bg96-ja
+  - title: リファレンスマニュアル
+    filename: reference-ja
+
+- path: Wio_LTE_for_Arduino
+  title: Wio LTE for Arduino
+  filename: Home-ja
+  sub:
+  - title: 開発環境のセットアップ
+    filename: Setup-ja
+  - title: ハードウェア / Wio LTE Cat.1
+    filename: Hardware-ja
+  - title: リファレンスマニュアル
+    filename: Reference-ja
+
+- path: MT3620
+  title: Azure Sphere MT3620 開発キット
+  filename: index
+
+- path: Document_Guide
+  title: ドキュメントガイド
+  sub:
+  - title: Wio Terminal
+    filename: Wio_Terminal
+  - title: Seeeduino XIAO
+    filename: XIAO

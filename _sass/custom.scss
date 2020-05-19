@@ -1,0 +1,45 @@
+.inner {
+    border-left: auto;
+    border-right: auto;
+    max-width: 960px;
+}
+
+.container {
+    position: absolute;
+    left: 0;
+    display: flex;
+    width: 100%;
+}
+
+.side-bar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+}
+
+.navigation {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #fff;
+    background: #535353;
+}
+
+.navi-category-link {
+    color: #fff;
+}
+
+.navi-sub-link {
+    color: #fff;
+}
+
+div#navi h1 {
+    font-size: 18px;
+    color: #fff;
+}
+
+div#navi li {
+    font-size: 14px;
+    color: #fff;
+}

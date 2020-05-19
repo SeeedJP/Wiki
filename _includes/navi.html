@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="ja-jp">
+<body>
+    {% capture root %}{{site.url}}{{site.baseurl}}{% endcapture %}
+
+    <div id="navi">
+        <h1><a href="{{root}}" class="navi-category-link">TOP</a></h1>
+        {% for category in site.data.contents %}
+            {% capture url1 %} {{root}}/{{category.path}}/{{category.filename}}{% endcapture %}
+            {% if category.filename != nil %}
+                <h1><a href="{{url1}}" class="navi-category-link">{{category.title}}</a></h1>
+            {% else %}
+                <h1 class="navi-category">{{category.title}}</h1>
+            {% endif %}
+
+            {% if category.sub != nil %}
+            <ul>
+                {% for sub in category.sub %}
+                    {% capture url2 %} {{root}}/{{category.path}}/{{sub.filename}}{% endcapture %}
+                    <li><a href="{{url2}}" class="navi-sub-link">{{sub.title}}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        {% endfor %}
+    </div>
+</body>

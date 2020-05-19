@@ -17,7 +17,7 @@
         <header class="inner">
           <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
 
-          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+          <h1 id="project_title">{{ "Seeed K.K. Wiki" | default: site.github.repository_name }}</h1>
           <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
 
           {% if site.show_downloads %}
@@ -29,8 +29,16 @@
         </header>
     </div>
 
+    <div class="container">
+        <div class="side-bar">
+            <div class="navigation">
+                {% include navi.html %}
+            </div>
+        </div>
+
+        <div id="main_content_wrap" class="outer">
     <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
+    <div id="main_content_wrap2" class="inner">
       <section id="main_content" class="inner">
         {{ content }}
       </section>
@@ -44,6 +52,9 @@
         {% endif %}
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
+    </div>
+
+        </div>
     </div>
 
     {% if site.google_analytics %}
