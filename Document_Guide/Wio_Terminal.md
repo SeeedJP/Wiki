@@ -39,6 +39,7 @@ SeeedのECサイトであるBazaarでも販売をしていますが、現在は�
 - [M5 Stack/M5 StickC/Wio Terminalで使える高性能グラフィックライブラリ「LovyanGFX」](https://qiita.com/karaage0703/items/5c1a1d87ff7452ba3d9a) by からあげ
 - [Delphi で Wio Terminal 用画像コンバータを作ってみる](https://qiita.com/ht_deko/items/e5984b9a5d61e607b316) by ht_deko
 - [Online image converter for Wio Terminal](http://www.nada.co.jp/tool/image_converter_wio_terminal/) [source](https://github.com/NADA-ELECTRONICS/Online-image-converter-for-Wio-Terminal) by 特機課@ナダ電子
+- [BitmapConverterWeb](https://github.com/yamamaya/BitmapConverterWeb) by やまねこ
 
 ## 無線LAN
 
@@ -63,6 +64,7 @@ SeeedのECサイトであるBazaarでも販売をしていますが、現在は�
 ## Flash
 
 - [外付けフラッシュに書き込んだプログラムを実行してみるコード。 実行すると、コードの先頭にある配列のプログラムを外付けフラッシュに書き込んで実行します。](https://gist.github.com/ciniml/21cbc7cf91caf6bebace2ed43177626d) by Kenta IDA
+- [External Flash Loader library for Wio Terminal](https://github.com/ciniml/ExtFlashLoader) by Kenta IDA
 
 ## UF2
 

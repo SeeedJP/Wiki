@@ -32,6 +32,7 @@ Seeeduino XIAOに関する注目記事をピックアップしました。
 - [Seeeduino XIAOのデジタル出力](https://matsujirushi.hatenablog.jp/entry/2020/04/19/070000) by matsujirushi
 - [Seeeduino XIAOのデジタル入力](https://matsujirushi.hatenablog.jp/entry/2020/04/18/201940) by matsujirushi
 - [Seeeduino XIAOのタッチ入力](https://matsujirushi.hatenablog.jp/entry/2020/04/23/173722) by matsujirushi
+- [Seeeduino XIAO 背面パッドをGPIOとして使う](https://qiita.com/nanase/items/37ecca24aee8fbd4492e) by nanase
 
 ## 作例
 
