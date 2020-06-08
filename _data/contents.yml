@@ -22,10 +22,6 @@
   - title: リファレンスマニュアル
     filename: Reference-ja
 
-- path: MT3620
-  title: Azure Sphere MT3620 開発キット
-  filename: index
-
 - path: Document_Guide
   title: ドキュメントガイド
   sub:
@@ -33,3 +29,8 @@
     filename: Wio_Terminal
   - title: Seeeduino XIAO
     filename: XIAO
+
+- path: MT3620
+  title: Azure Sphere MT3620 開発キット
+  filename: index
+  
