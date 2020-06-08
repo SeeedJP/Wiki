@@ -55,6 +55,10 @@ SeeedのECサイトであるBazaarでも販売をしていますが、現在は�
 
 ## USB Host
 
+- [USB Host - Overview](https://wiki.seeedstudio.com/Wio-Terminal-USBH-Overview/) by Seeed
+
+  
+
 - [Wio Terminal でUSB Host機能を堪能](https://homemadegarbage.com/wioterminal03) by HomeMadeGarbage
 
 ## UART
@@ -70,9 +74,15 @@ SeeedのECサイトであるBazaarでも販売をしていますが、現在は�
 
 - [Seeed fork of USB Mass Storage bootloader sourcecode](https://github.com/Seeed-Studio/uf2-samdx1) by Seeed
 
+- [Wio Terminalの実行ファイルを配布するなら.UF2を](https://qiita.com/matsujirushi/items/98c5fb71e0219eae11fb) by matsujirushi
+
+## 機械学習
+
+- [TensorFlow Lite - Overview](https://wiki.seeedstudio.com/Wio-Terminal-TensorFlow/) by Seeed
+
   
 
-- [Wio Terminalの実行ファイルを配布するなら.UF2を](https://qiita.com/matsujirushi/items/98c5fb71e0219eae11fb) by matsujirushi
+- [Wio TerminalでTensorflow liteのHello world](https://qiita.com/ghibi/items/fcfc48cd6e9d0c254613) by ghibi
 
 ## 作例
 
