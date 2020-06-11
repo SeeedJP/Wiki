@@ -23,6 +23,8 @@
 ||[WIOLTE_TCP](Reference-ja.md#wiolte_tcp)|
 ||[WIOLTE_UDP](Reference-ja.md#wiolte_udp)|
 |関数|[GetLastError](Reference-ja.md#getlasterror)|
+||[SetDelayFunction](Reference-ja.md#setdelayfunction)|
+||[SetDoWorkInWaitForAvailableFunction](Reference-ja.md#setdoworkinwaitforavailablefunction)|
 ||[Init](Reference-ja.md#init)|
 ||[PowerSupplyLTE](Reference-ja.md#powersupplylte)|
 ||[PowerSupplyCellular](Reference-ja.md#powersupplycellular)|
@@ -35,6 +37,7 @@
 ||[TurnOff](Reference-ja.md#turnoff)|
 ||[Sleep](Reference-ja.md#sleep)|
 ||[Wakeup](Reference-ja.md#wakeup)|
+||[GetRevision](Reference-ja.md#getrevision)|
 ||[GetIMEI](Reference-ja.md#getimei)|
 ||[GetIMSI](Reference-ja.md#getimsi)|
 ||[GetICCID](Reference-ja.md#geticcid)|
@@ -179,6 +182,41 @@ ErrorCodeType GetLastError() const
 
 一番最後に実行した関数のエラーコードを返します。エラーが無いときはE_OKを返します。
 
+### SetDelayFunction
+
+```cpp
+void SetDelayFunction(std::function<void(int)> func)
+```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|func|ライブラリ内部で待機(delay)するときに呼び出す関数。|
+
+#### 説明
+
+ライブラリ内部で待機(delay)するときに呼び出す関数を設定します。
+RTOSなどでスレッド/タスクを適切に待機させたいときに使用してください。
+
+### SetDoWorkInWaitForAvailableFunction
+
+```cpp
+void SetDoWorkInWaitForAvailableFunction(std::function<void()> func)
+```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|func|ライブラリ内部でUART受信待ちしているときに呼び出す関数。|
+
+#### 説明
+
+ライブラリ内部でUART受信待ちしているときに呼び出す関数を設定します。
+RTOSなどでUART受信待ち時に待機させたいときに使用してください。
+（ここに時間のかかる処理を加えると、UART受信で取りこぼしが発生する場合があります。）
+
 ### Init
 
 ```cpp
@@ -314,8 +352,14 @@ Wio LTE上のフルカラーLEDを点灯します。
 ### TurnOnOrReset
 
 ```cpp
-bool TurnOnOrReset()
+bool TurnOnOrReset(long timeout = 12000)
 ```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|timeout|タイムアウト時間[ミリ秒]。|
 
 #### 戻り値
 
@@ -371,6 +415,29 @@ bool Wakeup()
 #### 説明
 
 LTEモジュールを省電力モードから通常モードに復帰します。
+
+### GetRevision
+
+```cpp
+int GetRevision(char* revision, int revisionSize)
+```
+
+#### 引数
+
+|引数|説明|
+|:--|:--|
+|revision|レビジョンを取得する変数。文字列。|
+|revisionSize|revisionのバイト数。|
+
+#### 戻り値
+
+|説明|
+|:--|
+|成功したときはレビジョンの文字数、失敗したときはマイナス値を返します。|
+
+#### 説明
+
+Wio LTEのレビジョンを取得します。
 
 ### GetIMEI
 
