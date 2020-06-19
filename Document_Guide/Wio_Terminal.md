@@ -26,6 +26,7 @@ SeeedのECサイトであるBazaarでも販売をしていますが、現在は�
 - [VSCode settings for Wio Terminal + arduino-cli](https://gist.github.com/ciniml/1d91bc58d07ea2a8095e8b01b4405a3b) by Kenta IDA
 - [SeeedのWioTerminalを使ってみた](https://qiita.com/akita11/items/4dc920105c2e765f73a5) by akita11
 - [Wio Terminal](https://ht-deko.com/arduino/wio_terminal.html) by DEKO
+- [Introduction to Wio Terminal](https://macsbug.wordpress.com/2020/05/31/introduction-to-wio-terminal/) by macsbug
 
 ## SDカード
 
@@ -44,13 +45,11 @@ SeeedのECサイトであるBazaarでも販売をしていますが、現在は�
 ## 無線LAN
 
 - [Network - Overview](https://wiki.seeedstudio.com/Wio-Terminal-Network-Overview/) by Seeed
-
 - [Seeed RTL87XX AT firmware sourcecode](https://github.com/Seeed-Studio/seeed-ambd-sdk) by Seeed
 
   
 
 - [Wio TerminalをWi-Fiに繋ぐ](https://qiita.com/jksoft/items/cb11eb171002c0ed1f25) by jksoft
-
 - [Wio Terminal：Wi-Fi接続してHTTPSでデータ取得！（失敗）](http://shikarunochi.matrix.jp/?p=4013) by shikarunochi
 
 ## USB Host
@@ -73,6 +72,8 @@ SeeedのECサイトであるBazaarでも販売をしていますが、現在は�
 ## UF2
 
 - [Seeed fork of USB Mass Storage bootloader sourcecode](https://github.com/Seeed-Studio/uf2-samdx1) by Seeed
+
+  
 
 - [Wio Terminalの実行ファイルを配布するなら.UF2を](https://qiita.com/matsujirushi/items/98c5fb71e0219eae11fb) by matsujirushi
 
@@ -98,6 +99,9 @@ SeeedのECサイトであるBazaarでも販売をしていますが、現在は�
 - [Wio Electronic Animated Eyes](https://macsbug.wordpress.com/2020/05/26/wio-electronic-animated-eyes/) by macsbug
 - [Wio Space Shooter](https://macsbug.wordpress.com/2020/05/27/wio-space-shooter/) by macsbug
 - [Wio Audio Spectrum Display](https://macsbug.wordpress.com/2020/05/28/wio-audio-spectrum-display/) by macsbug
+- [Wio Thermal Camera AMG8833](https://macsbug.wordpress.com/2020/06/01/wio-thermal-camera-amg8833/) by macsbug
+- [Wio ThermalCamera](https://macsbug.wordpress.com/2020/06/02/wio-thermalcamera/) by macsbug
+- [オシロスコープ（もどき）](https://goji2100.com/blog/?p=1353) by Goji
 
 ## Baremetal
 
