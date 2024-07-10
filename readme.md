@@ -1,3 +1,9 @@
+## Wio BG770A
+
+Wio BG770Aのドキュメントです。
+
+* [Documents - Japanese](Wio_BG770A/home.md)
+
 ## Wio cell lib for Arduino
 
 A library for Wio 3G and Wio LTE M1/NB1(BG96).  
