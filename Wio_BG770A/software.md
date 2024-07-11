@@ -67,10 +67,11 @@ flowchart LR
     Seeed K.K.が維持管理するnRF52ボードのボードサポートパッケージです。
     これにWio BG770Aの開発ツールチェーンが含まれています。
 
-    Arduino IDEへのインストールに使えるBoard manager URLは`https://www.seeed.co.jp/package_SeeedJP_index.json`です。
+    Arduino IDEのボードマネージャ画面で検索、インストールできます。
+    ボードマネージャのURLは`https://www.seeed.co.jp/package_SeeedJP_index.json`です。
 
 * Wio Cellularライブラリ
 
     Wio BG770Aのセルラーモジュールを操作するライブラリです。
 
-    `https://github.com/SeeedJP/wio_cellular`
+    Arduino IDEのライブラリマネージャ―画面で検索、インストールできます。
