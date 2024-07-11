@@ -110,3 +110,7 @@ Wio BG770Aの内部では、電源は3つのドメインに分かれていて、
 ### 寸法
 
 <img src="media/26.png" width="800">
+
+## 資料
+
+* [回路図(v1.0)](media/WioBG770A.v1.0.pdf)
