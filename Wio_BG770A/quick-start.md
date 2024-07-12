@@ -46,3 +46,13 @@
     正しく書き込みできると、USER LEDが点滅します。(0.2秒点灯/0.8秒消灯)
 
     [![](https://img.youtube.com/vi/kh8cEM4pA-c/0.jpg)](https://www.youtube.com/watch?v=kh8cEM4pA-c)
+
+## アンテナとSIMを取り付けよう
+
+1. LTEアンテナを取付
+
+    [![](https://img.youtube.com/vi/brZZu70qjm4/0.jpg)](https://www.youtube.com/watch?v=brZZu70qjm4)
+
+1. nanoSIMを取付
+
+    [![](https://img.youtube.com/vi/OvDVqKqDIgI/0.jpg)](https://www.youtube.com/watch?v=OvDVqKqDIgI)
