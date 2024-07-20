@@ -50,6 +50,30 @@ GROVE LEDはGroveインターフェースの電源供給状態を示します。
 |点灯|Groveの電源投入|
 |消灯|Groveの電源開放|
 
+### SIMスロット
+
+セルラー通信で使用するnanoSIMを取り付けるスロットです。
+フリップ方式のスロットで、金属カバーをOPEN方向へスライドすると金属カバーを開くことができます。
+
+<img src="media/37.jpg" width="300">
+
+### LTEアンテナコネクタ
+
+セルラー通信で使用するLTEアンテナを接続するU.FLコネクタです。
+
+LTEアンテナは添付のPCBアンテナを使用してください。
+
+<img src="media/38.jpg" width="300">
+
+### GNSSアンテナコネクタ
+
+GNSS受信で使用するGNSSアンテナを接続するU.FLコネクタです。
+
+次のアンテナが使えることを確認済みです。
+
+* [JCA043SM3M20R](https://akizukidenshi.com/catalog/g/g117268/) + [JC-SMA-J-IPEX(IPX/U.FL)](https://akizukidenshi.com/catalog/g/g112225/)
+
+
 ### Groveインターフェース
 
 Wio BG770Aは4つのGroveインターフェースを持っています。
@@ -96,8 +120,8 @@ Wio BG770Aの内部では、電源は3つのドメインに分かれていて、
 |LED|USER LED (青色)<br>STATUS LED (緑色)<br>NET LED (緑色)<br>GROVE LED (赤色)|
 |ボタン|USERボタン<br>RESETボタン|
 |SIMスロット|nanoSIM|
-|LTEアンテナコネクタ|U.FL|
-|GNSSアンテナコネクタ|U.FL|
+|LTEアンテナコネクタ|U.FL<br>**NOTE:** 挿抜回数は30です。|
+|GNSSアンテナコネクタ|U.FL<br>**NOTE:** アクティブアンテナには対応していません。<br>**NOTE:** 挿抜回数は30です。|
 |Groveインターフェース|x1 Grove - Digital<br>x1 Grove - Analog<br>x1 Grove - I2C<br>x1 Grove - UART<br>**NOTE:** 全て3.3Vです。5Vには対応していません。|
 |USBインターフェース|x1 USB Type-C USB 2.0 Full Speed (**NOTE:** 電源コネクタと兼用です。)|
 |デバッグインターフェース|SWD (Tag-Connect TC2030-*-NL with TC2030-CLIP)<br>SWD+Trace (2x10 1.27mm SMT header)
@@ -109,7 +133,7 @@ Wio BG770Aの内部では、電源は3つのドメインに分かれていて、
 
 ### 寸法
 
-<img src="media/26.png" width="800">
+<img src="media/26.png" width="600">
 
 ## 資料
 

@@ -1,58 +1,96 @@
 # Wio BG770A クイックスタートガイド
 
-## PCにソフトウェアをインストールしよう
+## 開発環境
 
-1. Arduino IDEをインストール
+Wio BG770Aを開発するには、PCに3つのソフトウェアをインストールする必要があります。
 
-    ArduinoのWebサイトからArduino IDEをダウンロードしてPCにインストールしてください。
+* Arduino IDE
 
-    https://www.arduino.cc/en/software
+    統合開発環境です。
+    コードの編集、コンパイル、Wio BG770Aへアップロード、Wio BG770Aのモニタリングが1つのソフトウェアで出来ます。
 
-1. ボードサポートパッケージとWio Cellularライブラリをインストール
+* SeeedJP nRF52 Boards
 
-    1. 基本設定画面（メニューの、ファイル > 基本設定）にある`追加のボードマネージャのURL`に`https://www.seeed.co.jp/package_SeeedJP_index.json`を追加してください。
+    Wio BG770A用のコンパイラや基本ライブラリが含まれているボードサポートパッケージです。
+    Arduino IDEは標準ではArduino公式ボードしか対応していませんが、このボードサポートパッケージをインストールすると、Wio BG770Aの開発が出来るようになります。
 
-    1. ボードマネージャ画面で`wio bg770a`を検索して、`SeeedJP nRF52 Boards by Seeed K.K.`をインストールしてください。
+* Wio Cellular
 
-    1. ライブラリマネージャ―画面で`wio cellular`を検索して、`Wio Cellular by Seeed K.K.`をインストールしてください。
+    セルラーモジュールを操作するライブラリです。
+    このライブラリを利用すると自らコーディングするよりも短期間でセルラー通信を実現できます。
 
-    [![](https://img.youtube.com/vi/t8lNZ8HixHk/0.jpg)](https://www.youtube.com/watch?v=t8lNZ8HixHk)
+### 手順1: Arduino IDEをインストール
 
-## Wio BG770Aにスケッチを書き込んでみよう
+ArduinoのWebサイト(https://www.arduino.cc/en/software)からArduino IDEをダウンロードしてPCにインストールしてください。
+インストールの手順はArduinoの「Downloading and installing the Arduino IDE 2」(https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing/)にあります。
 
-1. PCにWio BG770Aを接続
+### 手順2:SeeedJP nRF52 Boardsをインストール
 
-    PCとWio BG770AをUSBケーブルで接続してください。
+-> 動画([Install SeeedJP nRF52 Boards.mp4](media/Install%20SeeedJP%20nRF52%20Boards.mp4))
 
-    [![](https://img.youtube.com/vi/lbEq_0Bwr9A/0.jpg)](https://www.youtube.com/watch?v=lbEq_0Bwr9A)
+Arduino IDEからSeeedJP nRF52 Boardsを探し出せるよう、ボードサポートパッケージインデックスのURLをArduino IDEに登録します。
+Arduino IDEの基本設定画面(メニューの「ファイル」>「基本設定」)を開いて、「追加のボードマネージャのURL」に`https://www.seeed.co.jp/package_SeeedJP_index.json`を追加してください。
 
-1. DFUモードに切替
+次に、Arduino IDEにSeeedJP nRF52 Boardsをインストールします。ボードマネージャ画面で`wio bg770a`を検索して、一覧に表示された「SeeedJP nRF52 Boards by Seeed K.K.」のところにある「インストール」をクリックしてください。
 
-    RESETボタンをダブルクリックしてDFUモードに切り替えてください。
-    正しく切り替わると、USER LEDがフワフワと点滅して、PCに`BOOT`というボリューム名のドライブが表示されます。
+正常にインストールされると「インストール」の表示が「削除」に変わります。
 
-    [![](https://img.youtube.com/vi/T-7dgf2oDV0/0.jpg)](https://www.youtube.com/watch?v=T-7dgf2oDV0)
+<img src="media/27.png" width="300">
+<img src="media/28.png" width="300">
+<img src="media/30.png" width="300">
 
-1. blinkスケッチをアップロード
+### 手順3: Wio Cellularをインストール
 
-    1. スケッチ例にあるblinkスケッチを開いてください。（メニューの、ファイル > スケッチ例 > Wio Cellular > basic > blink）
+ライブラリマネージャー画面で`wio cellular`を検索して、一覧に表示された「Wio Cellular by Seeed K.K.」のところにある「インストール」をクリックしてください。
 
-    1. ボードを`Seeed Wio BG770A COMx`にしてください。
-    一覧にSeeed Wio BG770Aが表示されないときは、DFUモードに切り替えできているかを確認してください。（USER LEDがフワフワと点滅している？）
+正常にインストールされると「インストール」の表示が「削除」に変わります。
 
-    1. `Board Version`（メニューの、ツール > Board Version）を`1.0`にしてください。
+## スケッチを書き込む
 
-    1. 書き込みを実行してください。
-    正しく書き込みできると、USER LEDが点滅します。(0.2秒点灯/0.8秒消灯)
+### 手順1: PCにWio BG770Aを接続
 
-    [![](https://img.youtube.com/vi/kh8cEM4pA-c/0.jpg)](https://www.youtube.com/watch?v=kh8cEM4pA-c)
+PCとWio BG770AをUSBケーブルで接続してください。
 
-## アンテナとSIMを取り付けよう
+<img src="media/29.jpg" width="300">
 
-1. LTEアンテナを取付
+### 手順2: DFUモードに切替
 
-    [![](https://img.youtube.com/vi/brZZu70qjm4/0.jpg)](https://www.youtube.com/watch?v=brZZu70qjm4)
+-> 動画([Switch to DFU mode.mp4](media/Switch%20to%20DFU%20mode.mp4))
 
-1. nanoSIMを取付
+RESETボタンをダブルクリックしてください。
+DFUモードに切り替わると、USER LEDがフワフワと点滅してPCに`BOOT`というボリューム名のドライブが表示されます。
 
-    [![](https://img.youtube.com/vi/OvDVqKqDIgI/0.jpg)](https://www.youtube.com/watch?v=OvDVqKqDIgI)
+<img src="media/31.jpg" width="300">
+<img src="media/32.jpg" width="300">
+
+### 手順3: blinkスケッチをアップロード
+
+-> 動画([Write sketch.mp4](media/Write%20sketch.mp4))
+
+blinkスケッチを開きます。
+Arduino IDEのメニュー「ファイル」>「スケッチ例」>「Wio Cellular」>「basic」>「blink」を選んでください。
+すると、blinkスケッチのArduino IDEウィンドウが起動します。
+元のArduino IDEウィンドウは閉じてください。
+
+ボードをWio BG770Aに切り替えます。
+画面上部のボード選択欄で「Seeed Wio BG770A COMx」を選んでください。
+一覧にSeeed Wio BG770Aが表示されないときは、DFUモードに切り替えができていない可能性が高いです。
+手順2を確認してください。
+
+ボードのオプションを設定します。
+Arduino IDEのメニュー「ツール」配下に表示されている下記項目を設定してください。
+
+* Board Version ... "1.0"
+* Print Port ... "None"
+* SoftDevice ... "S140 7.3.0"
+
+blinkスケッチをコンパイルして、Wio BG770Aへ書き込みます。
+書き込みボタンをクリックしてください。
+
+正しく書き込みできると、USER LEDが点滅します。(0.2秒点灯/0.8秒消灯)
+
+<img src="media/33.png" width="300">
+<img src="media/34.png" width="300">
+<img src="media/35.png" width="300">
+<img src="media/36.png" width="300">
+
