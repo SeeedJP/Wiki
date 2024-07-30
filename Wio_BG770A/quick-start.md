@@ -14,7 +14,7 @@ Wio BG770Aを開発するには、PCに3つのソフトウェアをインスト�
     Wio BG770A用のコンパイラや基本ライブラリが含まれているボードサポートパッケージです。
     Arduino IDEは標準ではArduino公式ボードしか対応していませんが、このボードサポートパッケージをインストールすると、Wio BG770Aの開発が出来るようになります。
 
-* Wio Cellular
+* WioCellular
 
     セルラーモジュールを操作するライブラリです。
     このライブラリを利用すると自らコーディングするよりも短期間でセルラー通信を実現できます。
@@ -39,11 +39,14 @@ Arduino IDEの基本設定画面(メニューの「ファイル」>「基本設�
 <img src="media/28.png" width="300">
 <img src="media/30.png" width="300">
 
-### 手順3: Wio Cellularをインストール
+### 手順3: WioCellularをインストール
 
-ライブラリマネージャー画面で`wio cellular`を検索して、一覧に表示された「Wio Cellular by Seeed K.K.」のところにある「インストール」をクリックしてください。
+ライブラリマネージャー画面で`wiocellular`を検索して、一覧に表示された「WioCellular by Seeed K.K.」のところにある「インストール」をクリックしてください。
 
 正常にインストールされると「インストール」の表示が「削除」に変わります。
+
+<img src="media/39.png" width="300">
+<img src="media/40.png" width="300">
 
 ## スケッチを書き込む
 
