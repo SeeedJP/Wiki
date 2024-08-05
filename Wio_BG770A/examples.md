@@ -14,6 +14,7 @@
 |grove/grove-gps|GPSの位置情報をシリアルモニタに表示します。||[Grove - GPS Module](https://www.seeedstudio.com/Grove-GPS-Module.html)|Grove-UART|
 |grove/grove-rotary-angle-sensor|可変抵抗の回転量をシリアルモニタに表示します。||[Grove - Rotary Angle Sensor](https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor.html)|Grove-Analog|
 |grove/grove-ultrasonic-ranger|Grove - 超音波距離センサーの距離をシリアルモニタに表示します。|[Grove Ultrasonic Ranger 1.0.1](https://github.com/Seeed-Studio/Seeed_Arduino_UltrasonicRanger)|[Grove - Ultrasonic Distance Sensor](https://www.seeedstudio.com/Grove-Ultrasonic-Distance-Sensor.html)|Grove-Digital|
+|soracom/soracom-connectivity-diagnostics|SORACOMプラットフォームへの接続を確認します。<br>[追加情報](#soracomsoracom-connectivity-diagnostics)||SORACOM Air for セルラー||
 |soracom/soracom-uptime|稼働時間をSORACOM Unified Endpointへ送信します。|[ArduinoJson 7.0.4](https://github.com/bblanchon/ArduinoJson)|SORACOM Air for セルラー||
 |soracom/soracom-uptime-lp|稼働時間をSORACOM Unified Endpointへ送信します。PSM機能を使って電力消費を抑止しています。|[ArduinoJson 7.0.4](https://github.com/bblanchon/ArduinoJson)|SORACOM Air for セルラー||
 |soracom/soracom-uptime-tcpclient|稼働時間をSORACOM Unified Endpointへ送信します。<br>WioCellularTcpClientクラスを使用して実装しています。|[ArduinoJson 7.0.4](https://github.com/bblanchon/ArduinoJson)|SORACOM Air for セルラー||
@@ -113,4 +114,80 @@ flowchart TD
     AT+QHTTPCFG="contenttype",1
     AT+QHTTPPOST=5
     hello
+    ```
+
+## soracom/soracom-connectivity-diagnostics
+
+
+1. タイトル
+
+    ```
+    ****************************
+    * Connectivity diagnostics *
+    ****************************
+    ```
+
+1. 通信モジュールの初期化
+
+    ```
+    --- Initializing modem, please wait for a while...[OK]
+    Target modem: BG770AGLAAR02A05_JP_01.200.01.200
+    ```
+
+1. 通信モジュールおよびIoT SIMの状態表示
+
+    ```
+    --- Getting modem info...
+    > AT+GSN
+    865502060000279
+    > AT+CIMI
+    440103167698583
+    > AT+QSIMSTAT?
+    +QSIMSTAT: 0,1
+    ```
+
+1. ネットワーク設定の書き込み
+
+    ```
+    --- Executing AT commands to connect SORACOM network...
+    > AT+CGDCONT=1,"IP","soracom.io","0.0.0.0",0,0,0
+    Ok
+    > AT+QCFG="iotopmode",0,1
+    Ok
+    > AT+QCFG="nwscanseq",00,1
+    Ok
+    ```
+
+1. セルラー網への接続
+
+    ```
+    --- Connecting to cellular network, please wait for a while...[OK]
+    ```
+
+1. ネットワーク接続の状態表示
+
+    ```
+    --- Getting network info...
+    > AT+QIACT?
+    +QIACT: 1,1,1,"10.225.154.84"
+    > AT+QCSQ
+    +QCSQ: "eMTC",-84,-91,165,-6
+    > AT+COPS?
+    +COPS: 0,0,"NTT DOCOMO",7
+    > AT+CGPADDR=1
+    +CGPADDR: 1,"10.225.154.84"
+    ```
+
+1. SORACOMプラットフォームへの接続確認
+
+    ```
+    --- Conntectivity test: Ping to pong.soracom.io...
+    > AT+QPING=1,"pong.soracom.io",3,3
+    Ok
+    Dest="100.127.100.127", Bytes=32, Time=56, TTL=64
+    Dest="100.127.100.127", Bytes=32, Time=67, TTL=64
+    Dest="100.127.100.127", Bytes=32, Time=93, TTL=64
+    Sent=3, Received=3, Lost=0, Min=56, Max=93, Avg=72
+
+    --- Execution completed, please write your own sketch and enjoy it.
     ```
