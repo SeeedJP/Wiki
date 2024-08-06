@@ -1,49 +1,218 @@
-# Wio BG770A サンプルプログラム
+# Wio BG770A サンプルスケッチ
 
-|スケッチ|内容|依存ライブラリ|必要なもの|Groveコネクタ|
-|:--|:--|:--|:--|:--|
-|application/soracom-gps-tracker|GPSで取得した位置情報をSORACOM Unified Endpointへ送信します。|[ArduinoJson 7.0.4](https://github.com/bblanchon/ArduinoJson)|[Grove - GPS Module](https://www.seeedstudio.com/Grove-GPS-Module.html)<br>SORACOM Air for セルラー|Grove-UART|
-|basic/blink|USER LEDを点滅します。||||
-|basic/flash|USERボタンを押すと、FeRAMに書かれているカウント値を加算します。USERボタンを押しながら起動するとカウント値をゼロにリセットします。<br>[追加情報](#basicflash)|[Adafruit SPIFlash 4.3.4](https://github.com/adafruit/Adafruit_SPIFlash)<br>[SdFat - Adafruit Fork 2.2.3](https://github.com/adafruit/SdFat)|||
-|basic/watchdog|USERボタンを押さずに10秒経過すると、ウォッチドックがCPUをリセットします。||||
-|cellular/shell|セルラーモジュールをシリアルモニタから操作するシェルです。<br>> [追加情報](#cellularshell)|[Natural Tiny Shell 0.3.1](https://github.com/matsujirushi/ntshell)|nanoSIM||
-|cellular/transparent|セルラーモジュールをシリアルモニタからATコマンドで操作します。<br>> [追加情報](#cellulartransparent)||nanoSIM||
-|grove/grove-accelerometer|加速度センサーの値をシリアルモニタに表示します。||[Grove - ADXL345 - 3-Axis Digital Accelerometer(±16g)](https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-16g.html)|Grove-I2C|
-|grove/grove-button|ボタンのON/OFFをシリアルモニタに表示します。||[Grove - Button](https://www.seeedstudio.com/Grove-Button.html)|Grove-Digital|
-|grove/grove-buzzer|ブザーを鳴らします。||[Grove - Piezo Buzzer/Active Buzzer](https://www.seeedstudio.com/Grove-Buzzer.html)|Grove-Digital|
-|grove/grove-gps|GPSの位置情報をシリアルモニタに表示します。||[Grove - GPS Module](https://www.seeedstudio.com/Grove-GPS-Module.html)|Grove-UART|
-|grove/grove-rotary-angle-sensor|可変抵抗の回転量をシリアルモニタに表示します。||[Grove - Rotary Angle Sensor](https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor.html)|Grove-Analog|
-|grove/grove-ultrasonic-ranger|Grove - 超音波距離センサーの距離をシリアルモニタに表示します。|[Grove Ultrasonic Ranger 1.0.1](https://github.com/Seeed-Studio/Seeed_Arduino_UltrasonicRanger)|[Grove - Ultrasonic Distance Sensor](https://www.seeedstudio.com/Grove-Ultrasonic-Distance-Sensor.html)|Grove-Digital|
-|soracom/soracom-connectivity-diagnostics|SORACOMプラットフォームへの接続を確認します。<br>[追加情報](#soracomsoracom-connectivity-diagnostics)||SORACOM Air for セルラー||
-|soracom/soracom-uptime|稼働時間をSORACOM Unified Endpointへ送信します。|[ArduinoJson 7.0.4](https://github.com/bblanchon/ArduinoJson)|SORACOM Air for セルラー||
-|soracom/soracom-uptime-lp|稼働時間をSORACOM Unified Endpointへ送信します。PSM機能を使って電力消費を抑止しています。|[ArduinoJson 7.0.4](https://github.com/bblanchon/ArduinoJson)|SORACOM Air for セルラー||
-|soracom/soracom-uptime-tcpclient|稼働時間をSORACOM Unified Endpointへ送信します。<br>WioCellularTcpClientクラスを使用して実装しています。|[ArduinoJson 7.0.4](https://github.com/bblanchon/ArduinoJson)|SORACOM Air for セルラー||
+## 一覧
+
+### 基本
+
+|難易度|スケッチ|内容|必要なもの|
+|:--|:--|:--|:--|
+|🌶️|basic/blink|USER LEDを点滅します。<br>> [追加情報](#basicblink)||
+|🌶️|basic/flash|USERボタンを押すと、FeRAMに書かれているカウント値を加算します。USERボタンを押しながら起動するとカウント値をゼロにリセットします。<br>> [追加情報](#basicflash)||
+|🌶️|basic/watchdog|USERボタンを押さずに10秒経過すると、ウォッチドックがCPUをリセットします。> [追加情報](#basicwatchdog)||
+
+### Grove
+
+|難易度|スケッチ|内容|必要なもの|
+|:--|:--|:--|:--|
+|🌶️|grove/grove-buzzer|ブザーを鳴らします。|[Grove - Piezo Buzzer/Active Buzzer](https://www.seeedstudio.com/Grove-Buzzer.html)|
+|🌶️|grove/grove-button|ボタンのON/OFFをシリアルモニタに表示します。|[Grove - Button](https://www.seeedstudio.com/Grove-Button.html)|
+|🌶️|grove/grove-rotary-angle-sensor|可変抵抗の回転量をシリアルモニタに表示します。|[Grove - Rotary Angle Sensor](https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor.html)|
+|🌶️|grove/grove-accelerometer|加速度センサーの値をシリアルモニタに表示します。|[Grove - ADXL345 - 3-Axis Digital Accelerometer(±16g)](https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-16g.html)|
+|🌶️|grove/grove-gps|GPSの位置情報をシリアルモニタに表示します。|[Grove - GPS Module](https://www.seeedstudio.com/Grove-GPS-Module.html)|
+|🌶️|grove/grove-ultrasonic-ranger|Grove - 超音波距離センサーの距離をシリアルモニタに表示します。|[Grove - Ultrasonic Distance Sensor](https://www.seeedstudio.com/Grove-Ultrasonic-Distance-Sensor.html)|
+
+### セルラー通信
+
+|難易度|スケッチ|内容|必要なもの|
+|:--|:--|:--|:--|
+|🌶️|cellular/transparent|セルラーモジュールをシリアルモニタからATコマンドで操作します。<br>> [追加情報](#cellulartransparent)|nanoSIM|
+|🌶️🌶️|cellular/shell|セルラーモジュールをシリアルモニタから操作するシェルです。<br>> [追加情報](#cellularshell)|nanoSIM|
+
+### セルラー通信（SORACOMプラットフォーム）
+
+|難易度|スケッチ|内容|必要なもの|
+|:--|:--|:--|:--|
+|🌶️🌶️|soracom/soracom-connectivity-diagnostics|SORACOMプラットフォームへの接続を確認します。<br>> [追加情報](#soracomsoracom-connectivity-diagnostics)|SORACOM Air for セルラー|
+|🌶️|soracom/soracom-uptime|稼働時間をSORACOM Unified Endpointへ送信します。|SORACOM Air for セルラー|
+|🌶️|soracom/soracom-uptime-tcpclient|稼働時間をSORACOM Unified Endpointへ送信します。<br>WioCellularTcpClientクラスを使用して実装しています。|SORACOM Air for セルラー|
+|🌶️🌶️🌶️|soracom/soracom-uptime-lp|稼働時間をSORACOM Unified Endpointへ送信します。PSM機能を使って電力消費を抑止しています。|SORACOM Air for セルラー|
+|🌶️🌶️🌶️|application/soracom-gps-tracker|GPSで取得した位置情報をSORACOM Unified Endpointへ送信します。|[Grove - GPS Module](https://www.seeedstudio.com/Grove-GPS-Module.html)<br>SORACOM Air for セルラー|
+
+## basic/blink
+
+### 概要
+
+プログラムをコンパイル、アップロード、実行できるかを確認するためのスケッチです。
+
+### 動作
+
+USER LEDを点滅します。
+点灯時間は0.2秒で、消灯時間は0.8秒です。
+
+### 詳細
+
+USER LED点灯 -> 0.2秒待機 -> USER LED消灯 -> 0.8秒待機、を繰り返します。
+
+```cpp
+digitalWrite(LED_BUILTIN, HIGH);    // USER LEDを点灯
+delay(200);                         // 200ミリ秒、待機
+digitalWrite(LED_BUILTIN, LOW);     // USER LEDを消灯
+delay(800);                         // 800ミリ秒、待機
+```
 
 ## basic/flash
 
-```mermaid
-flowchart TD
-    Start((Start))
-    J1{USERボタンが押されている？}
-    T1[FeRAMへゼロを書き込み]
-    T2[FeRAMからカウント値を読み出して表示]
-    T3[0.5秒待機]
-    T4[USERボタンが押されるまで待機]
-    T5[カウント値を加算してFeRAMへ書き込み]
+### 概要
 
-    Start --> J1
-    J1 -->|Yes| T1
-    T1 --> T2
-    J1 -->|No| T2
-    T2 --> T3
-    T3 --> T4
-    T4 --> T5
-    T5 --> T2
+不揮発性メモリFeRAMにデータを書き込み、読み込む基本的な操作を示すスケッチです。
+
+### 動作
+
+USERボタンを押す都度、FeRAMに保存しているカウント値を1つ加算します。
+カウント値はFeRAMの0番地から4バイトに保存しています。
+
+FeRAMに保存しているカウント値はシリアルモニタに表示します。
+
+USERボタンを押しながら起動もしくはRESETボタンをクリックすると、FeRAMに保存しているカウント値をゼロにします。
+
+### 詳細
+
+FeRAMの操作にAdafruit SPIFlashライブラリを使用します。
+
+下記コードで、Flashインスタンスを使えるようにします。
+
+```cpp
+#include <Adafruit_SPIFlash.h>
+
+static const SPIFlash_Device_t SPIFLASH_DEVICE = FERAM_DEVICE_CONFIG;
+
+static SPIClass FlashSpi(FERAM_SPI, PIN_FERAM_SO, PIN_FERAM_SCK, PIN_FERAM_SI);
+static Adafruit_FlashTransport_SPI FlashTransport(PIN_FERAM_CS, FlashSpi);
+static Adafruit_SPIFlash Flash(&FlashTransport);
 ```
+
+`Flash.begin()`でFlashインスタンスを初期化します。くわえて、
+WPピンとHOLDピンを`pinMode()`と`digitalWrite()`で初期化します。FlashインスタンスはFeRAMのWPピンとHOLDピンを操作しないからです。
+
+```cpp
+digitalWrite(PIN_FERAM_WP, HIGH);
+digitalWrite(PIN_FERAM_HOLD, HIGH);
+pinMode(PIN_FERAM_WP, OUTPUT);
+pinMode(PIN_FERAM_HOLD, OUTPUT);
+Flash.begin(&SPIFLASH_DEVICE, 1);
+```
+
+FeRAMからの読み込みは`Flash.readBuffer()`、書き込みは`Flash.writeBuffer()`を呼びます。
+
+```cpp
+  if (Flash.readBuffer(0, reinterpret_cast<uint8_t*>(&value), sizeof(value)) != sizeof(value)) abort();
+```
+```cpp
+  if (Flash.writeBuffer(0, reinterpret_cast<uint8_t*>(&value), sizeof(value)) != sizeof(value)) abort();
+```
+
+## basic/watchdog
+
+### 概要
+
+ウォッチドッグタイマでプログラムが暴走したり停止したときにCPUを再起動させる操作を示すスケッチです。
+
+### 動作
+
+USERボタンを定期的にクリックしているとプログラムは動き続けますが、クリックせず10秒経過するとCPUが再起動します。
+ウォッチドックタイマがCPUをリセット、再起動させます。
+
+### 詳細
+
+ウォッチドッグタイマの操作にAdafruit SleepyDog Libraryを使用します。
+
+Adafruit_SleepyDog.hをインクルードするとWatchdogインスタンスが使えるようになります。
+
+```cpp
+#include <Adafruit_SleepyDog.h>
+```
+
+ウォッチドッグタイマのタイムアウト時間を`Watchdog.enable()`で設定します。
+
+```cpp
+Watchdog.enable(10000);
+```
+
+以降、指定した時間以内に定期的に`Watchdog.reset()`を呼んでください。呼ばないとウォッチドッグタイマがCPUをリセット、再起動させます。
+
+```cpp
+Watchdog.reset();
+```
+
+## cellular/transparent
+
+### 概要
+
+セルラーモジュールをATコマンドの手入力で操作するスケッチです。
+
+### 動作
+
+セルラーモジュールの電源をオンして、シリアルモニタとセルラーモジュール透過的につなぎます。
+シリアルモニタからの入力をセルラーモジュールへ送信し、セルラーモジュールからの受信をシリアルモニタに出力します。
+
+### よく使うATコマンド
+
+* 初期化
+
+    ```
+    AT&F1           // 工場出荷時の設定に戻す
+    AT+IFC=2,2      // ハードウェアフロー制御を有効化
+    AT+QSCLK=2      // スリープモードを有効化
+    ```
+
+* ネットワークオペレーター
+
+    ```
+    AT+COPS=?       // 接続できるネットワークオペレーターを取得
+    AT+COPS?        // 接続しているネットワークオペレーターを取得
+    ```
+
+* PDPコンテキストを設定
+
+    ```
+    AT+CGDCONT?                                         // PDPコンテキストを取得
+        AT+CFUN=0                                       // 機能レベルを最小化
+        AT+CGDCONT=1,"IP","soracom.io","0.0.0.0",0,0,0  // PDPコンテキストを設定
+        AT+CFUN=1                                       // 機能レベルを最大化
+    ```
+
+* セルラーモジュールやSIMの情報
+
+    ```
+    AT+QGMR         // ファームウェアのレビジョンを取得
+    AT+GSN          // IMEIを取得
+    AT+CPIN?        // PIN状態を取得
+    AT+CIMI         // IMSIを取得
+    AT+QCCID        // ICCIDを取得
+    AT+CNUM         // 電話番号を取得
+    ```
+
+* ネットワーク登録状態
+
+    ```
+    AT+CEREG?       // EPSネットワーク登録状態を取得
+    AT+COPS?        // 接続しているネットワークオペレーターを取得
+    AT+CGATT?       // パケットドメインサービスの状態を取得
+    ```
+
+* SORACOM HarvestへHTTP POST
+
+    ```
+    AT+QHTTPURL=25                  // HTTPのURLを設定(25バイト)
+    http://harvest.soracom.io
+    AT+QHTTPCFG="contenttype",1     // HTTPのContent-Typeをtext/plainに設定
+    AT+QHTTPPOST=5                  // HTTP POST(5バイト)
+    hello
+    ```
 
 ## cellular/shell
 
-### コマンド例
+### よく使うコマンド
 
 * ヘルプ表示
 
@@ -59,65 +228,7 @@ flowchart TD
     socketclose
     ```
 
-## cellular/transparent
-
-### ATコマンド例
-
-* 初期化
-
-    ```
-    AT&F1
-    AT+IFC=2,2
-    AT+QSCLK=2
-    ```
-
-* ネットワークオペレーターを取得
-
-    ```
-    AT+COPS=?
-    AT+COPS?
-    ```
-
-* PDPコンテキストを設定
-
-    ```
-    AT+CGDCONT?
-        AT+CFUN=0
-        AT+CGDCONT=1,"IP","soracom.io","0.0.0.0",0,0,0
-        AT+CFUN=1
-    ```
-
-* セルラーモジュールやSIMの情報
-
-    ```
-    AT+QGMR         // Revision
-    AT+GSN          // IMEI
-    AT+CPIN?        // SIM State
-    AT+CIMI         // IMSI
-    AT+QCCID        // ICCID
-    AT+CNUM         // Phone Number
-    ```
-
-* ネットワーク登録状態
-
-    ```
-    AT+CEREG?       // Registration State
-    AT+COPS?        // Operator
-    AT+CGATT?       // Packet Domain State
-    ```
-
-* SORACOM HarvestへHTTPポスト
-
-    ```
-    AT+QHTTPURL=25
-    http://harvest.soracom.io
-    AT+QHTTPCFG="contenttype",1
-    AT+QHTTPPOST=5
-    hello
-    ```
-
 ## soracom/soracom-connectivity-diagnostics
-
 
 1. タイトル
 
