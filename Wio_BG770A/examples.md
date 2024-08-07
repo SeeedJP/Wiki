@@ -204,6 +204,15 @@ Watchdog.reset();
     AT+CGATT?       // パケットドメインサービスの状態を取得
     ```
 
+* SORACOMメタデータサービスからタグをHTTP GET
+
+    ```
+    AT+QHTTPURL=45                  // HTTPのURLを設定(45バイト)
+    http://metadata.soracom.io/v1/subscriber.tags
+    AT+QHTTPGET                     // HTTP GET
+    AT+QHTTPREAD                    // レスポンスを取得
+    ```
+
 * SORACOM HarvestへHTTP POST
 
     ```
