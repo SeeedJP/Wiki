@@ -19,7 +19,7 @@ Wio BG770Aは、**低消費電力セルラーIoTデバイス開発ボード**で
 
 * 入門
     * [クイックスタートガイド](quick-start.md)
-    * [サンプルプログラム](examples.md)
+    * [サンプルスケッチ](examples.md)
 * マニュアル
     * [ハードウェアマニュアル](hardware.md)
     * [ソフトウェアマニュアル](software.md)

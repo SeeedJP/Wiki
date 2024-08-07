@@ -2,41 +2,45 @@
 
 ## 一覧
 
+* 💪 ... スキルアップ。スケッチの中身を読んでみましょう。
+* 🌶️ ... 難易度、中。（中辛）
+* 🌶️🌶️ ... 難易度、高。（激辛）
+
 ### 基本
 
-|難易度|スケッチ|内容|必要なもの|
+||スケッチ|内容|必要なもの|
 |:--|:--|:--|:--|
-|🌶️|basic/blink|USER LEDを点滅します。<br>> [追加情報](#basicblink)||
-|🌶️|basic/flash|USERボタンを押すと、FeRAMに書かれているカウント値を加算します。USERボタンを押しながら起動するとカウント値をゼロにリセットします。<br>> [追加情報](#basicflash)||
-|🌶️|basic/watchdog|USERボタンを押さずに10秒経過すると、ウォッチドックがCPUをリセットします。> [追加情報](#basicwatchdog)||
+||basic/blink|USER LEDを点滅します。<br>> [追加情報](#basicblink)||
+|💪|basic/flash|USERボタンを押すと、FeRAMに書かれているカウント値を加算します。USERボタンを押しながら起動するとカウント値をゼロにリセットします。<br>> [追加情報](#basicflash)||
+|💪|basic/watchdog|USERボタンを押さずに10秒経過すると、ウォッチドックがCPUをリセットします。> [追加情報](#basicwatchdog)||
 
 ### Grove
 
-|難易度|スケッチ|内容|必要なもの|
+||スケッチ|内容|必要なもの|
 |:--|:--|:--|:--|
-|🌶️|grove/grove-buzzer|ブザーを鳴らします。|[Grove - Piezo Buzzer/Active Buzzer](https://www.seeedstudio.com/Grove-Buzzer.html)|
-|🌶️|grove/grove-button|ボタンのON/OFFをシリアルモニタに表示します。|[Grove - Button](https://www.seeedstudio.com/Grove-Button.html)|
-|🌶️|grove/grove-rotary-angle-sensor|可変抵抗の回転量をシリアルモニタに表示します。|[Grove - Rotary Angle Sensor](https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor.html)|
-|🌶️|grove/grove-accelerometer|加速度センサーの値をシリアルモニタに表示します。|[Grove - ADXL345 - 3-Axis Digital Accelerometer(±16g)](https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-16g.html)|
-|🌶️|grove/grove-gps|GPSの位置情報をシリアルモニタに表示します。|[Grove - GPS Module](https://www.seeedstudio.com/Grove-GPS-Module.html)|
-|🌶️|grove/grove-ultrasonic-ranger|Grove - 超音波距離センサーの距離をシリアルモニタに表示します。|[Grove - Ultrasonic Distance Sensor](https://www.seeedstudio.com/Grove-Ultrasonic-Distance-Sensor.html)|
+|💪|grove/grove-buzzer|ブザーを鳴らします。|[Grove - Piezo Buzzer/Active Buzzer](https://www.seeedstudio.com/Grove-Buzzer.html)|
+|💪|grove/grove-button|ボタンのON/OFFをシリアルモニタに表示します。|[Grove - Button](https://www.seeedstudio.com/Grove-Button.html)|
+|💪|grove/grove-rotary-angle-sensor|可変抵抗の回転量をシリアルモニタに表示します。|[Grove - Rotary Angle Sensor](https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor.html)|
+|💪|grove/grove-accelerometer|加速度センサーの値をシリアルモニタに表示します。|[Grove - ADXL345 - 3-Axis Digital Accelerometer(±16g)](https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-16g.html)|
+|💪|grove/grove-gps|GPSの位置情報をシリアルモニタに表示します。|[Grove - GPS Module](https://www.seeedstudio.com/Grove-GPS-Module.html)|
+|💪|grove/grove-ultrasonic-ranger|Grove - 超音波距離センサーの距離をシリアルモニタに表示します。|[Grove - Ultrasonic Distance Sensor](https://www.seeedstudio.com/Grove-Ultrasonic-Distance-Sensor.html)|
 
 ### セルラー通信
 
-|難易度|スケッチ|内容|必要なもの|
+||スケッチ|内容|必要なもの|
 |:--|:--|:--|:--|
-|🌶️|cellular/transparent|セルラーモジュールをシリアルモニタからATコマンドで操作します。<br>> [追加情報](#cellulartransparent)|nanoSIM|
-|🌶️🌶️|cellular/shell|セルラーモジュールをシリアルモニタから操作するシェルです。<br>> [追加情報](#cellularshell)|nanoSIM|
+||cellular/transparent|セルラーモジュールをシリアルモニタからATコマンドで操作します。<br>> [追加情報](#cellulartransparent)|nanoSIM|
+||cellular/shell🌶️|セルラーモジュールをシリアルモニタから操作するシェルです。<br>> [追加情報](#cellularshell)|nanoSIM|
 
 ### セルラー通信（SORACOMプラットフォーム）
 
-|難易度|スケッチ|内容|必要なもの|
+||スケッチ|内容|必要なもの|
 |:--|:--|:--|:--|
-|🌶️🌶️|soracom/soracom-connectivity-diagnostics|SORACOMプラットフォームへの接続を確認します。<br>> [追加情報](#soracomsoracom-connectivity-diagnostics)|SORACOM Air for セルラー|
-|🌶️|soracom/soracom-uptime|稼働時間をSORACOM Unified Endpointへ送信します。|SORACOM Air for セルラー|
-|🌶️|soracom/soracom-uptime-tcpclient|稼働時間をSORACOM Unified Endpointへ送信します。<br>WioCellularTcpClientクラスを使用して実装しています。|SORACOM Air for セルラー|
-|🌶️🌶️🌶️|soracom/soracom-uptime-lp|稼働時間をSORACOM Unified Endpointへ送信します。PSM機能を使って電力消費を抑止しています。|SORACOM Air for セルラー|
-|🌶️🌶️🌶️|application/soracom-gps-tracker|GPSで取得した位置情報をSORACOM Unified Endpointへ送信します。|[Grove - GPS Module](https://www.seeedstudio.com/Grove-GPS-Module.html)<br>SORACOM Air for セルラー|
+||soracom/soracom-connectivity-diagnostics🌶️|SORACOMプラットフォームへの接続を確認します。<br>> [追加情報](#soracomsoracom-connectivity-diagnostics)|SORACOM Air for セルラー|
+|💪|soracom/soracom-uptime|稼働時間をSORACOM Unified Endpointへ送信します。|SORACOM Air for セルラー|
+|💪|soracom/soracom-uptime-tcpclient|稼働時間をSORACOM Unified Endpointへ送信します。<br>WioCellularTcpClientクラスを使用して実装しています。|SORACOM Air for セルラー|
+|💪|soracom/soracom-uptime-lp🌶️🌶️|稼働時間をSORACOM Unified Endpointへ送信します。PSM機能を使って電力消費を抑止しています。|SORACOM Air for セルラー|
+|💪|application/soracom-gps-tracker🌶️🌶️|GPSで取得した位置情報をSORACOM Unified Endpointへ送信します。|[Grove - GPS Module](https://www.seeedstudio.com/Grove-GPS-Module.html)<br>SORACOM Air for セルラー|
 
 ## basic/blink
 
@@ -155,7 +159,7 @@ Watchdog.reset();
 セルラーモジュールの電源をオンして、シリアルモニタとセルラーモジュール透過的につなぎます。
 シリアルモニタからの入力をセルラーモジュールへ送信し、セルラーモジュールからの受信をシリアルモニタに出力します。
 
-### よく使うATコマンド
+### ATコマンド例
 
 * 初期化
 
@@ -212,13 +216,35 @@ Watchdog.reset();
 
 ## cellular/shell
 
-### よく使うコマンド
+### 概要
 
-* ヘルプ表示
+セルラーモジュールを独自コマンドで操作するスケッチです。
 
-    ```
-    help
-    ```
+### 動作
+
+セルラーモジュールの電源をオンして、PDPコンテキストを設定します。APNは`soracom.io`です。
+シリアルモニタからコマンドを受けて、コマンドに応じた処理を実行します。
+
+|コマンド|内容|
+|:--|:--|
+|info|セルラーモジュールやSIMの情報(ファームウェアのレビジョン、IMEIなど)を表示します。|
+|status|セルラー通信の状態を表示します。|
+|pdpctx|PDPコンテキストを表示します。|
+|socket|接続しているソケットの状態を表示します。|
+|socketopen TCP \<host> \<port>|TCPソケットで指定したホストに接続します。|
+|socketsend \<payload>|ソケットへ送信します。|
+|socketreceive|ソケットから受信します。|
+|socketsendreceive \<payload>|ソケットへ送信して、受信します。|
+|socketclose|ソケットを切断します。|
+|sleep|**実験段階** セルラーモジュールをスリープモードへ遷移します。|
+|wakeup|**実験段階** セルラーモジュールをスリープモードから復帰します。|
+|edrx|**実験段階** eDRXを有効にします。|
+|psm|**実験段階** PSMを有効にします。|
+|resetallsettings|セルラーモジュールを工場出荷時の設定に戻します。|
+|transparent|シリアルモニタとセルラーモジュール透過的につなぎます。USERボタンをクリックするとプロンプトに戻ります。|
+|help|コマンド一覧を表示します。|
+
+### コマンド例
 
 * SORACOM Unified Endpointへ送信
 
@@ -229,6 +255,14 @@ Watchdog.reset();
     ```
 
 ## soracom/soracom-connectivity-diagnostics
+
+### 概要
+
+SORACOMプラットフォームへの接続を確認するスケッチです。
+
+### 動作
+
+SORACOMプラットフォームの`pong.soracom.io`にpingパケットが通信できるかを、状況を表示しながら確認します。
 
 1. タイトル
 
