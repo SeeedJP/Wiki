@@ -4,16 +4,21 @@
 
 ## 概要
 
-USER LEDを点滅します。
-点灯時間は0.2秒で、消灯時間は0.8秒です。
+このスケッチはUSER LEDを点滅します。
+USER LEDが点滅することで、アップロードしたプログラムがWio BG770AのCPUで動いていることがわかります。
+USER LEDの点滅は、点灯時間が0.2秒で消灯時間が0.8秒です。
 
 ## 詳細
 
-USER LED点灯 -> 0.2秒待機 -> USER LED消灯 -> 0.8秒待機、を繰り返します。
+`digitalWrite(LED_BUILTIN, HIGH)`を呼ぶとLEDが点灯します。
+`HIGH`を`LOW`にすると消灯します。
+
+点灯、消灯時間は`delay()`で調整します。
+引数の単位はミリ秒です。
 
 ```cpp
-digitalWrite(LED_BUILTIN, HIGH);    // USER LEDを点灯
-delay(200);                         // 200ミリ秒、待機
-digitalWrite(LED_BUILTIN, LOW);     // USER LEDを消灯
-delay(800);                         // 800ミリ秒、待機
+digitalWrite(LED_BUILTIN, HIGH);
+delay(200);
+digitalWrite(LED_BUILTIN, LOW);
+delay(800);
 ```
