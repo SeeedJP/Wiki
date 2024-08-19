@@ -35,9 +35,9 @@ Arduino IDEの基本設定画面(メニューの「ファイル」>「基本設�
 
 正常にインストールされると「インストール」の表示が「削除」に変わります。
 
-<img src="media/27.png" width="300">
-<img src="media/28.png" width="300">
-<img src="media/30.png" width="300">
+<a href="media/27.png"><img src="media/27.png" width="300"></a>
+<a href="media/28.png"><img src="media/28.png" width="300"></a>
+<a href="media/30.png"><img src="media/30.png" width="300"></a>
 
 ### 手順3: WioCellularをインストール
 
@@ -45,8 +45,8 @@ Arduino IDEの基本設定画面(メニューの「ファイル」>「基本設�
 
 正常にインストールされると「インストール」の表示が「削除」に変わります。
 
-<img src="media/39.png" width="300">
-<img src="media/40.png" width="300">
+<a href="media/39.png"><img src="media/39.png" width="300"></a>
+<a href="media/40.png"><img src="media/40.png" width="300"></a>
 
 ## スケッチを書き込む
 
@@ -54,7 +54,7 @@ Arduino IDEの基本設定画面(メニューの「ファイル」>「基本設�
 
 PCとWio BG770AをUSBケーブルで接続してください。
 
-<img src="media/29.jpg" width="300">
+<a href="media/29.jpg"><img src="media/29.jpg" width="300"></a>
 
 ### 手順2: DFUモードに切替
 
@@ -63,8 +63,8 @@ PCとWio BG770AをUSBケーブルで接続してください。
 RESETボタンをダブルクリックしてください。
 DFUモードに切り替わると、USER LEDがフワフワと点滅してPCに`BOOT`というボリューム名のドライブが表示されます。
 
-<img src="media/31.jpg" width="300">
-<img src="media/32.jpg" width="300">
+<a href="media/31.jpg"><img src="media/31.jpg" width="300"></a>
+<a href="media/32.jpg"><img src="media/32.jpg" width="300"></a>
 
 ### 手順3: blinkスケッチをアップロード
 
@@ -92,8 +92,7 @@ blinkスケッチをコンパイルして、Wio BG770Aへ書き込みます。
 
 正しく書き込みできると、USER LEDが点滅します。(0.2秒点灯/0.8秒消灯)
 
-<img src="media/33.png" width="300">
-<img src="media/34.png" width="300">
-<img src="media/35.png" width="300">
-<img src="media/36.png" width="300">
-
+<a href="media/33.png"><img src="media/33.png" width="300"></a>
+<a href="media/34.png"><img src="media/34.png" width="300"></a>
+<a href="media/35.png"><img src="media/35.png" width="300"></a>
+<a href="media/36.png"><img src="media/36.png" width="300"></a>

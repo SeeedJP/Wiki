@@ -8,9 +8,9 @@
 Grove - Analogコネクタに接続した[Grove - Rotary Angle Sensor](https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor.html)のノブ回転位置をシリアルモニタに表示します。
 表示の周期は0.5秒です。
 
-<img src="../../media/45.jpg" width="300">
+<a href="../../media/45.jpg"><img src="../../media/45.jpg" width="300"></a>
 
-<img src="../../media/46.gif" width="500">
+<a href="../../media/46.gif"><img src="../../media/46.gif" width="500"></a>
 
 ## 詳細
 

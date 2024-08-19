@@ -2,9 +2,9 @@
 
 ## 機能
 
-<img src="media/16.png" width="600">
+<a href="media/16.png"><img src="media/16.png" width="600"></a>
 
-<img src="media/6.png" width="600">
+<a href="media/6.png"><img src="media/6.png" width="600"></a>
 
 ### LEDとボタン
 
@@ -55,7 +55,7 @@ GROVE LEDはGroveインターフェースの電源供給状態を示します。
 セルラー通信で使用するnanoSIMを取り付けるスロットです。
 フリップ方式のスロットで、金属カバーをOPEN方向へスライドすると金属カバーを開くことができます。
 
-<img src="media/37.jpg" width="300">
+<a href="media/37.jpg"><img src="media/37.jpg" width="300"></a>
 
 ### LTEアンテナコネクタ
 
@@ -63,7 +63,7 @@ GROVE LEDはGroveインターフェースの電源供給状態を示します。
 
 LTEアンテナは添付のPCBアンテナを使用してください。
 
-<img src="media/38.jpg" width="300">
+<a href="media/38.jpg"><img src="media/38.jpg" width="300"></a>
 
 ### GNSSアンテナコネクタ
 
@@ -87,7 +87,7 @@ Wio BG770Aは4つのGroveインターフェースを持っています。
 |Grove - I2C|Y|Y|**Y**|n|
 |Grove - UART|Y|n|n|**Y**|
 
-<img src="media/17.png" width="600">
+<a href="media/17.png"><img src="media/17.png" width="600"></a>
 
 ### 電源
 
@@ -133,7 +133,7 @@ Wio BG770Aの内部では、電源は3つのドメインに分かれていて、
 
 ### 寸法
 
-<img src="media/26.png" width="600">
+<a href="media/26.png"><img src="media/26.png" width="600"></a>
 
 ## 資料
 

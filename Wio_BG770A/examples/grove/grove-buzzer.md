@@ -8,7 +8,7 @@
 Grove - Digitalコネクタに接続した[Grove - Piezo Buzzer/Active Buzzer](https://www.seeedstudio.com/Grove-Buzzer.html)でビープ音を鳴らします。
 0.1秒間ビープ音、3秒間消音を繰り返します。
 
-<img src="../../media/42.jpg" width="300">
+<a href="../../media/42.jpg"><img src="../../media/42.jpg" width="300"></a>
 
 ## 詳細
 

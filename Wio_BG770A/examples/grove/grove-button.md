@@ -8,9 +8,9 @@
 Grove - Digitalコネクタに接続した[Grove - Button](https://www.seeedstudio.com/Grove-Button.html)のプッシュ状態をシリアルモニタに表示します。
 表示の周期は0.1秒です。
 
-<img src="../../media/43.jpg" width="300">
+<a href="../../media/43.jpg"><img src="../../media/43.jpg" width="300"></a>
 
-<img src="../../media/44.gif" width="500">
+<a href="../../media/44.gif"><img src="../../media/44.gif" width="500"></a>
 
 ## 詳細
 

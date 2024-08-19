@@ -34,7 +34,7 @@ ABORT_IF_FAILED(WioCellular.setPsm(1, PSM_PERIOD, PSM_ACTIVE));
 
 スピンループで電力を消費しないために、セマフォを使ったイベント駆動型プログラミングで作られています。
 
-<img src="../../media/41.png" width="600">
+<a href="../../media/41.png"><img src="../../media/41.png" width="600"></a>
 
 3つのセマフォを、
 
