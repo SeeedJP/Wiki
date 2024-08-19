@@ -48,11 +48,7 @@ flowchart LR
 * **DFUモード** (Device Firmware Update mode)
 
     RESETボタンをダブルクリック、もしくは特殊なUSB CDCシーケンスで接続されると、ブートローダーはDFUモードで起動します。
-    DFUモードではアプリケーションをUSB CDCやUSB MSD、BLEで書き込むことができます。
-
-    DFUモードで起動するときにUSERボタンが押されていないと、USB CDCとUSB MSDが有効になります。
-
-    DFUモードで起動するときにUSERボタンが押されていると、BLEが有効になります。
+    DFUモードではアプリケーションをUSB CDCやUSB MSDで書き込むことができます。
 
 > **NOTE:** Arduino IDEからスケッチのアップロードができないときは、Wio BG770AをDFUモードに変更してからアップロードすると解決することがあります。
 
