@@ -4,7 +4,7 @@
 
 ## 概要
 
-15分周期に、稼働時間をSORACOM Unified Endpointへ送信します。
+5分周期に、稼働時間をSORACOM Unified Endpointへ送信します。
 送信にはTCPを使います。
 
 ## 詳細
