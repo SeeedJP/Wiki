@@ -39,5 +39,6 @@
 ||soracom/soracom-connectivity-diagnostics🌶️|SORACOMプラットフォームへの接続を確認します。<br>> [説明](examples/soracom/soracom-connectivity-diagnostics.md)|SORACOM Air for セルラー|
 |📝|soracom/soracom-uptime|稼働時間をSORACOM Unified Endpointへ送信します。<br>> [説明](examples/soracom/soracom-uptime.md)|SORACOM Air for セルラー|
 |📝|soracom/soracom-uptime-tcpclient|稼働時間をSORACOM Unified Endpointへ送信します。<br>WioCellularTcpClientクラスを使用して実装しています。<br>> [説明](examples/soracom/soracom-uptime-tcpclient.md)|SORACOM Air for セルラー|
+|📝|soracom/soracom-uptime-httpclient|稼働時間をIoT SIMのメタデータへ書き込みます。<br>WioCellularTcpClientクラスとHttpClientクラスを使用して実装しています。|SORACOM Air for セルラー|
 |📝|soracom/soracom-uptime-lp🌶️🌶️|稼働時間をSORACOM Unified Endpointへ送信します。PSM機能を使って電力消費を抑止しています。<br>> [説明](examples/soracom/soracom-uptime-lp.md)|SORACOM Air for セルラー|
 ||application/soracom-gps-tracker🌶️🌶️|GPSで取得した位置情報をSORACOM Unified Endpointへ送信します。|[Grove - GPS Module](https://www.seeedstudio.com/Grove-GPS-Module.html)<br>SORACOM Air for セルラー|
