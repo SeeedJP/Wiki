@@ -2,14 +2,12 @@
   title: Wio BG770A
   filename: home
   sub:
-  - title: クイックスタートガイド
-    filename: quick-start
-  - title: サンプルスケッチ
-    filename: examples
+  - title: ユーザーマニュアル
+    filename: user-manual
   - title: ハードウェアマニュアル
     filename: hardware
-  - title: ソフトウェアマニュアル
-    filename: software
+  - title: サンプルスケッチ
+    filename: examples
 
 - path: Wio_cell_lib_for_Arduino
   title: Wio cell lib for Arduino

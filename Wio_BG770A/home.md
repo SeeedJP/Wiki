@@ -17,13 +17,12 @@ Wio BG770Aは、**低消費電力セルラーIoTデバイス開発ボード**で
 |省電力|LTE通信の省電力機能(eDRX/PSM)をサポートしています。また、マイコンからGroveの電源供給をカットして電力消費を抑止することができます。|
 |電池駆動|PHコネクタを介して乾電池や塩化チオニルリチウム電池、LiPoバッテリーでデバイスを運用できます。|
 
-* 入門
-    * [クイックスタートガイド](quick-start.md)
-    * [サンプルスケッチ](examples.md)
 * マニュアル
+    * [ユーザーマニュアル](user-manual.md)
     * [ハードウェアマニュアル](hardware.md)
-    * [ソフトウェアマニュアル](software.md)
     * [WioCellularライブラリ リファレンスマニュアル](https://seeedjp.github.io/wio_cellular/)
+* サンプル
+    * [サンプルスケッチ](examples.md)
 * アプリケーションノート
     * [セルラー関連情報](cellular.md)
     * [消費電力](power-consumption.md)
