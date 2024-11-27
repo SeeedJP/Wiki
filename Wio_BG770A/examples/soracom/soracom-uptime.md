@@ -19,25 +19,17 @@ WioCellular.hをインクルードして、WioCellularインスタンスを使�
 
 ```cpp
 WioCellular.begin();
-ABORT_IF_FAILED(WioCellular.powerOn(POWER_ON_TIMEOUT));
+if (WioCellular.powerOn(POWER_ON_TIMEOUT) != WioCellularResult::Ok) abort();
 ```
 
-SORACOMプラットフォームのAPNを設定します。
-APNは一度設定するとセルラーモジュールで記憶するので、`WioCellular.getPdpContext()`で未設定かどうかを確認してからAPNを設定するようにします。
-APNを設定するときは電話の機能レベルを最小にしてセルラー通信を止めます。
+
+ネットワーク探索のアクセステクノロジーと順序、LTE-M周波数バンド、SORACOMプラットフォームのAPNを設定します。
 
 ```cpp
-std::vector<WioCellularModule::PdpContext> pdpContexts;
-ABORT_IF_FAILED(WioCellular.getPdpContext(&pdpContexts));
-
-if (std::find_if(pdpContexts.begin(), pdpContexts.end(), [](const WioCellularModule::PdpContext& pdpContext) {
-    return pdpContext.apn == APN;
-    })
-    == pdpContexts.end()) {
-ABORT_IF_FAILED(WioCellular.setPhoneFunctionality(0));
-ABORT_IF_FAILED(WioCellular.setPdpContext({ PDP_CONTEXT_ID, "IP", APN, "0.0.0.0", 0, 0, 0 }));
-ABORT_IF_FAILED(WioCellular.setPhoneFunctionality(1));
-}
+WioNetwork.config.searchAccessTechnology = SEARCH_ACCESS_TECHNOLOGY;
+WioNetwork.config.ltemBand = LTEM_BAND;
+WioNetwork.config.apn = APN;
+WioNetwork.begin();
 ```
 
 SORACOM Unified Endpointへ送信は`WioCellular.openSocket()`、`WioCellular.sendSocket()`、`WioCellular.receiveSocket()`、`WioCellular.closeSocket()`を呼びます。
