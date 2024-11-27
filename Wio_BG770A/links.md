@@ -9,3 +9,7 @@
 * Wio BG770Aの研究
   * https://note.com/susa_lab/m/m2207f165ba87
   * note . 高知のIoT屋
+
+* Wio BG770A 日本最速レビュー ~LTE-M対応通信モジュールの新たな選択肢~
+  * https://www.docswell.com/s/5779738433/53GE18-2024-11-23-230000
+  * Docswell . 高知のIoT屋
