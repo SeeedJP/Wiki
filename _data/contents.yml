@@ -6,6 +6,8 @@
     filename: user-manual
   - title: ハードウェアマニュアル
     filename: hardware
+  - title: ナレッジベース
+    filename: knowledgebase
   - title: サンプルスケッチ
     filename: examples
 
