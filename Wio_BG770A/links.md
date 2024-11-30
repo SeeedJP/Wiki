@@ -17,3 +17,7 @@
 * Wio BG770AをSORACOM Airでつないでみる
   * https://zenn.dev/showm001/articles/2024-12-01-01
   * zenn . しょーちゃん
+
+* Wio BG770Aへの道①検証前の準備
+  * https://note.com/anysonica/n/n4b74dfc93ce0
+  * note . anysonica
