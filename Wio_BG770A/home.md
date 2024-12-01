@@ -27,3 +27,8 @@ Wio BG770Aは、**低消費電力セルラーIoTデバイス開発ボード**で
 * アプリケーションノート
     * [セルラー関連情報](cellular.md)
     * [消費電力](power-consumption.md)
+* 記事
+    * [GitHub . Recipes for Wio BG770A](https://github.com/SeeedJP/wio_bg770a_recipes) . SeeedJP
+    * [note . Wio BG770Aの研究](https://note.com/susa_lab/m/m2207f165ba87) . 高知のIoT屋
+    * [Zenn . Wio BG770AをSORACOM Airでつないでみる](https://zenn.dev/showm001/articles/2024-12-01-01) . しょーちゃん
+    * [note . Wio BG770Aへの道①検証前の準備](https://note.com/anysonica/n/n4b74dfc93ce0) . anysonica
