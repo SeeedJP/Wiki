@@ -10,7 +10,7 @@
 
 ||スケッチ|内容|必要なもの|
 |:--|:--|:--|:--|
-||basic/blink|USER LEDを点滅します。<br>> [説明](examples/basic/blink.md)||
+||[basic/blink](https://github.com/SeeedJP/wio_cellular/tree/main/examples/basic/blink)|USER LEDを点滅します。<br>> [説明](examples/basic/blink.md)||
 |📝|basic/flash|USERボタンを押すと、FeRAMに書かれているカウント値を加算します。USERボタンを押しながら起動するとカウント値をゼロにリセットします。<br>> [説明](examples/basic/flash.md)||
 |📝|basic/watchdog|USERボタンを押さずに10秒経過すると、ウォッチドックがCPUをリセットします。<br>> [説明](examples/basic/watchdog.md)||
 
