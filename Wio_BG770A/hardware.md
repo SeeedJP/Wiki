@@ -61,9 +61,13 @@ GROVE LEDはGroveインターフェースの電源供給状態を示します。
 
 セルラー通信で使用するLTEアンテナを接続するU.FLコネクタです。
 
-LTEアンテナは添付のPCBアンテナを使用してください。
+LTEアンテナは下記アンテナを使用してください。
 
-<a href="media/38.jpg"><img src="media/38.jpg" width="300"></a>
+* 添付のPCBアンテナ
+
+    <a href="media/38.jpg"><img src="media/38.jpg" width="100"></a>
+
+* [SORACOM IoTストア . HW-MULTI-GA-RSMA](https://soracom.jp/store/5286/)
 
 ### GNSSアンテナコネクタ
 
