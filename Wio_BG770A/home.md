@@ -34,3 +34,4 @@ Wio BG770Aは、**低消費電力セルラーIoTデバイス開発ボード**で
     * [note . Wio BG770Aへの道①検証前の準備](https://note.com/anysonica/n/n4b74dfc93ce0) . anysonica
     * [Zenn . Wio BG770AのATコマンドを確認する](https://zenn.dev/matsujirushi/articles/474d1de60c7c9b) . matsujirushi
     * [YouTube . Seeed Studio新製品 Wio BG770Aを徹底解説。仕様や使い勝手、開発秘話など盛りだくさん！ [IBUKA LAB 025]](https://www.youtube.com/watch?v=8g5Je8jlzi8) . IBUKA LAB.
+    * [note . Wio BG770Aへの道②　乾電池で駆動するGPSユニットをつくる](https://note.com/anysonica/n/n7c6efc6c35a7) . anysonica
