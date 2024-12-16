@@ -40,9 +40,27 @@ analogReadResolution(14);
 const auto rotaryAngleRaw = analogRead(ROTARY_ANGLE_PIN);
 ```
 
-`analogRead()`の値を`/ 16383 * 0.6f * 6`するとアナログ入力の電圧(0~3.3[V])になります。
-さらに3.3で割ると、正規化した値(0~1)になります。
+`analogRead()`の値はADコンバーターで、
+
+1. アナログ入力の電圧を**ゲイン**で増幅
+2. 増幅した電圧を**基準電圧**で指定した**分解能**のデジタルに変換
+
+と計算されています。
+
+ADコンバーターは、
+
+* ゲイン ... 1/6
+* 基準電圧 ... 0.6V
+* 分解能 ... 14ビット
+
+と設定されているので、次の計算でアナログ入力をアナログ入力電圧に換算します。
 
 ```cpp
-const auto rotaryAngle = (float)rotaryAngleRaw / 16383 * 0.6f * 6 / 3.3f;
+const auto rotaryAngleVoltage = (float)rotaryAngleRaw / 16383 * 0.6f / (1.0f / 6);
+```
+
+そして、横棒グラフの長さを計算しやすいように、アナログ入力電圧0~3.3Vを0~1に正規化します。
+
+```cpp
+const auto rotaryAngle = rotaryAngleVoltage / 3.3f;
 ```
