@@ -29,6 +29,7 @@
 
 ||スケッチ|内容|必要なもの|
 |:--|:--|:--|:--|
+||[cellular/cellular-status](https://github.com/SeeedJP/wio_cellular/tree/main/examples/cellular/cellular-status)|セルラー通信の状況を表示します<br>> [説明](examples/cellular/cellular-status.md)|nanoSIM|
 ||[cellular/transparent](https://github.com/SeeedJP/wio_cellular/tree/main/examples/cellular/transparent)|セルラーモジュールをシリアルモニタからATコマンドで操作します。<br>> [説明](examples/cellular/transparent.md)|nanoSIM|
 ||[cellular/shell](https://github.com/SeeedJP/wio_cellular/tree/main/examples/cellular/shell)🌶️|セルラーモジュールをシリアルモニタから操作するシェルです。<br>> [説明](examples/cellular/shell.md)|nanoSIM|
 
