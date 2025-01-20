@@ -22,7 +22,6 @@ WioCellular.begin();
 if (WioCellular.powerOn(POWER_ON_TIMEOUT) != WioCellularResult::Ok) abort();
 ```
 
-
 ネットワーク探索のアクセステクノロジーと順序、LTE-M周波数バンド、SORACOMプラットフォームのAPNを設定します。
 
 ```cpp
@@ -32,11 +31,18 @@ WioNetwork.config.apn = APN;
 WioNetwork.begin();
 ```
 
-SORACOM Unified Endpointへ送信は`WioCellular.openSocket()`、`WioCellular.sendSocket()`、`WioCellular.receiveSocket()`、`WioCellular.closeSocket()`を呼びます。
+必要に応じて、通信可能になるまで待機します。
 
 ```cpp
-WioCellular.openSocket(PDP_CONTEXT_ID, SOCKET_ID, "TCP", HOST, PORT, 0);
-WioCellular.sendSocket(SOCKET_ID, data, size);
-WioCellular.receiveSocket(SOCKET_ID, recvData, sizeof(recvData), &recvSize, RECEIVE_TIMEOUT);
-WioCellular.closeSocket(SOCKET_ID);
+if (!WioNetwork.waitUntilCommunicationAvailable(NETWORK_TIMEOUT)) abort();
+```
+
+SORACOM Unified Endpointへ送信は`WioCellularTcpClient2.open()`、`WioCellularTcpClient2.waitforConnect()`、`WioCellularTcpClient2.send()`、`WioCellularTcpClient2.receive()`を呼びます。
+
+```cpp
+WioCellularTcpClient2<WioCellularModule> client{ WioCellular };
+client.open(WioNetwork.config.pdpContextId, HOST, PORT);
+client.waitforConnect();
+client.send(str.data(), str.size());
+client.receive(recvData, sizeof(recvData), &recvSize, RECEIVE_TIMEOUT);
 ```

@@ -1,6 +1,6 @@
 # soracom/soracom-uptime-tcpclient
 
-WioCellularTcpClientクラスで送受信するスケッチです。
+WioCellularArduinoTcpClientクラスで送受信するスケッチです。
 稼働時間をSORACOM Unified Endpointへ送信します。
 
 ## 概要
@@ -10,37 +10,36 @@ WioCellularTcpClientクラスで送受信するスケッチです。
 
 ## 詳細
 
-WioCellularTcpClientクラスはClientクラスを継承しているので、Clientクラスを使う通信プロトコルのライブラリを利用することができます。
+WioCellularArduinoTcpClientクラスはClientクラスを継承しているので、Clientクラスを使う通信プロトコルのライブラリを利用することができます。
 例えば、[ArduinoHttpClientライブラリ](https://www.arduino.cc/reference/en/libraries/arduinohttpclient/)ライブラリや[arduino-mqttライブラリ](https://www.arduino.cc/reference/en/libraries/mqtt/)があります。
 
-下記コードで、TcpClientインスタンスを使えるようにします。
+下記コードで、WioCellularArduinoTcpClientインスタンスを使えるようにします。
 
 ```cpp
-static WioCellularTcpClient<WioCellularModule> TcpClient{ WioCellular, PDP_CONTEXT_ID, SOCKET_ID };
+WioCellularArduinoTcpClient<WioCellularModule> client{ WioCellular, WioNetwork.config.pdpContextId };```
+
+WioCellularArduinoTcpClientインスタンスの使い方は、Clientクラスと同じです。
+
+`client.connect()`で接続しておき、
+
+```cpp
+client.connect(HOST, PORT);
 ```
 
-TcpClientインスタンスの使い方は、Clientクラスと同じです。
-
-`TcpClient.connect()`で接続しておき、
+送信は`client.write()`を呼びます。
 
 ```cpp
-TcpClient.connect(HOST, PORT);
+client.write(reinterpret_cast<const uint8_t*>(data), size);
 ```
 
-送信は`TcpClient.write()`を呼びます。
+受信は`client.read()`を呼びます。
 
 ```cpp
-TcpClient.write(reinterpret_cast<const uint8_t*>(data), size);
+const int recvSize = client.read(recvData, sizeof(recvData));
 ```
 
-受信は`TcpClient.read()`を呼びます。
+受信したデータがあるかどうかを確認したいときは`client.available()`を呼びます。
 
 ```cpp
-recvSize = TcpClient.read(recvData, sizeof(recvData));
-```
-
-受信したデータがあるかどうかを確認したいときは`TcpClient.available()`を呼びます。
-
-```cpp
-availableSize = TcpClient.available();
+availableSize = client.available();
 ```
