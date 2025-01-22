@@ -11,7 +11,7 @@ WioCellularArduinoTcpClientクラスで送受信するスケッチです。
 ## 詳細
 
 WioCellularArduinoTcpClientクラスはClientクラスを継承しているので、Clientクラスを使う通信プロトコルのライブラリを利用することができます。
-例えば、[ArduinoHttpClientライブラリ](https://www.arduino.cc/reference/en/libraries/arduinohttpclient/)ライブラリや[arduino-mqttライブラリ](https://www.arduino.cc/reference/en/libraries/mqtt/)があります。
+例えば、[ArduinoHttpClientライブラリ](https://docs.arduino.cc/libraries/arduinohttpclient/)ライブラリや[PubSubClientライブラリ](https://docs.arduino.cc/libraries/pubsubclient/)があります。
 
 下記コードで、WioCellularArduinoTcpClientインスタンスを使えるようにします。
 

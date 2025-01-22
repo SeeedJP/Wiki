@@ -27,19 +27,20 @@
 
 ### セルラー通信
 
-||スケッチ|内容|必要なもの|
-|:--|:--|:--|:--|
-||[cellular/cellular-status](https://github.com/SeeedJP/wio_cellular/tree/main/examples/cellular/cellular-status)|セルラー通信の状況を表示します<br>> [説明](examples/cellular/cellular-status.md)|nanoSIM|
-||[cellular/transparent](https://github.com/SeeedJP/wio_cellular/tree/main/examples/cellular/transparent)|セルラーモジュールをシリアルモニタからATコマンドで操作します。<br>> [説明](examples/cellular/transparent.md)|nanoSIM|
-||[cellular/shell](https://github.com/SeeedJP/wio_cellular/tree/main/examples/cellular/shell)🌶️|セルラーモジュールをシリアルモニタから操作するシェルです。<br>> [説明](examples/cellular/shell.md)|nanoSIM|
+||スケッチ|内容|通信プロトコル|必要なもの|
+|:--|:--|:--|:--|:--|
+||[cellular/cellular-status](https://github.com/SeeedJP/wio_cellular/tree/main/examples/cellular/cellular-status)|セルラー通信の状況を表示します<br>> [説明](examples/cellular/cellular-status.md)||nanoSIM|
+||[cellular/transparent](https://github.com/SeeedJP/wio_cellular/tree/main/examples/cellular/transparent)|セルラーモジュールをシリアルモニタからATコマンドで操作します。<br>> [説明](examples/cellular/transparent.md)||nanoSIM|
+||[cellular/shell](https://github.com/SeeedJP/wio_cellular/tree/main/examples/cellular/shell)🌶️|セルラーモジュールをシリアルモニタから操作するシェルです。<br>> [説明](examples/cellular/shell.md)||nanoSIM|
+|📝|[cellular/cellular-mqtt-pubsubclient](https://github.com/SeeedJP/wio_cellular/tree/main/examples/cellular/cellular-mqtt-pubsubclient)|MQTTブローカーへ稼働時間を送信（パブリッシュ）しながら、購読（サブスクライブ）したメッセージを受信し、シリアルモニタに表示します。|MQTT|nanoSIM|
 
 ### セルラー通信（SORACOMプラットフォーム）
 
-||スケッチ|内容|必要なもの|
-|:--|:--|:--|:--|
-||[soracom/soracom-connectivity-diagnostics](https://github.com/SeeedJP/wio_cellular/tree/main/examples/soracom/soracom-connectivity-diagnostics)🌶️|SORACOMプラットフォームへの接続を確認します。<br>> [説明](examples/soracom/soracom-connectivity-diagnostics.md)|SORACOM Air for セルラー|
-|📝|[soracom/soracom-uptime](https://github.com/SeeedJP/wio_cellular/tree/main/examples/soracom/soracom-uptime)|稼働時間をSORACOM Unified Endpointへ送信します。<br>> [説明](examples/soracom/soracom-uptime.md)|SORACOM Air for セルラー|
-|📝|[soracom/soracom-uptime-tcpclient](https://github.com/SeeedJP/wio_cellular/tree/main/examples/soracom/soracom-uptime-tcpclient)|稼働時間をSORACOM Unified Endpointへ送信します。<br>WioCellularArduinoTcpClientクラスを使用して実装しています。<br>> [説明](examples/soracom/soracom-uptime-tcpclient.md)|SORACOM Air for セルラー|
-|📝|[soracom/soracom-uptime-httpclient](https://github.com/SeeedJP/wio_cellular/tree/main/examples/soracom/soracom-uptime-httpclient)|稼働時間をIoT SIMのメタデータへ書き込みます。<br>WioCellularArduinoTcpClientクラスとHttpClientクラスを使用して実装しています。|SORACOM Air for セルラー|
-|📝|[soracom/soracom-uptime-lp](https://github.com/SeeedJP/wio_cellular/tree/main/examples/soracom/soracom-uptime-lp)🌶️🌶️|稼働時間をSORACOM Unified Endpointへ送信します。PSM機能を使って電力消費を抑止しています。<br>> [説明](examples/soracom/soracom-uptime-lp.md)|SORACOM Air for セルラー|
-||[application/soracom-gps-tracker](https://github.com/SeeedJP/wio_cellular/tree/main/examples/application/soracom-gps-tracker)🌶️🌶️|GPSで取得した位置情報をSORACOM Unified Endpointへ送信します。|[Grove - GPS Module](https://www.seeedstudio.com/Grove-GPS-Module.html)<br>SORACOM Air for セルラー|
+||スケッチ|内容|通信プロトコル|必要なもの|
+|:--|:--|:--|:--|:--|
+||[soracom/soracom-connectivity-diagnostics](https://github.com/SeeedJP/wio_cellular/tree/main/examples/soracom/soracom-connectivity-diagnostics)🌶️|SORACOMプラットフォームへの接続を確認します。<br>> [説明](examples/soracom/soracom-connectivity-diagnostics.md)||SORACOM Air for セルラー|
+|📝|[soracom/soracom-uptime](https://github.com/SeeedJP/wio_cellular/tree/main/examples/soracom/soracom-uptime)|稼働時間をSORACOM Unified Endpointへ送信します。<br>> [説明](examples/soracom/soracom-uptime.md)|TCP|SORACOM Air for セルラー|
+|📝|[soracom/soracom-uptime-tcpclient](https://github.com/SeeedJP/wio_cellular/tree/main/examples/soracom/soracom-uptime-tcpclient)|稼働時間をSORACOM Unified Endpointへ送信します。<br>WioCellularArduinoTcpClientクラスを使用して実装しています。<br>> [説明](examples/soracom/soracom-uptime-tcpclient.md)|TCP|SORACOM Air for セルラー|
+|📝|[soracom/soracom-uptime-httpclient](https://github.com/SeeedJP/wio_cellular/tree/main/examples/soracom/soracom-uptime-httpclient)|稼働時間をIoT SIMのメタデータへ書き込みます。<br>WioCellularArduinoTcpClientクラスとHttpClientクラスを使用して実装しています。|HTTP|SORACOM Air for セルラー|
+|📝|[soracom/soracom-uptime-lp](https://github.com/SeeedJP/wio_cellular/tree/main/examples/soracom/soracom-uptime-lp)🌶️🌶️|稼働時間をSORACOM Unified Endpointへ送信します。PSM機能を使って電力消費を抑止しています。<br>> [説明](examples/soracom/soracom-uptime-lp.md)|TCP|SORACOM Air for セルラー|
+||[application/soracom-gps-tracker](https://github.com/SeeedJP/wio_cellular/tree/main/examples/application/soracom-gps-tracker)🌶️🌶️|GPSで取得した位置情報をSORACOM Unified Endpointへ送信します。|TCP|[Grove - GPS Module](https://www.seeedstudio.com/Grove-GPS-Module.html)<br>SORACOM Air for セルラー|
