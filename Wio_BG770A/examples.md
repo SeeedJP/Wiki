@@ -32,7 +32,7 @@
 ||[cellular/cellular-status](https://github.com/SeeedJP/wio_cellular/tree/main/examples/cellular/cellular-status)|セルラー通信の状況を表示します<br>> [説明](examples/cellular/cellular-status.md)||nanoSIM|
 ||[cellular/transparent](https://github.com/SeeedJP/wio_cellular/tree/main/examples/cellular/transparent)|セルラーモジュールをシリアルモニタからATコマンドで操作します。<br>> [説明](examples/cellular/transparent.md)||nanoSIM|
 ||[cellular/shell](https://github.com/SeeedJP/wio_cellular/tree/main/examples/cellular/shell)🌶️|セルラーモジュールをシリアルモニタから操作するシェルです。<br>> [説明](examples/cellular/shell.md)||nanoSIM|
-|📝|[cellular/cellular-mqtt-pubsubclient](https://github.com/SeeedJP/wio_cellular/tree/main/examples/cellular/cellular-mqtt-pubsubclient)|MQTTブローカーへ稼働時間を送信（パブリッシュ）しながら、購読（サブスクライブ）したメッセージを受信し、シリアルモニタに表示します。|MQTT|nanoSIM|
+|📝|[cellular/cellular-mqtt-pubsubclient](https://github.com/SeeedJP/wio_cellular/tree/main/examples/cellular/cellular-mqtt-pubsubclient)|MQTTブローカーへ稼働時間を送信（パブリッシュ）しながら、購読（サブスクライブ）したメッセージを受信し、シリアルモニタに表示します。<br>> [説明](examples/cellular/cellular-mqtt-pubsubclient.md)|MQTT|nanoSIM|
 
 ### セルラー通信（SORACOMプラットフォーム）
 
