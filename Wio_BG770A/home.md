@@ -39,3 +39,4 @@ Wio BG770Aは、**低消費電力セルラーIoTデバイス開発ボード**で
     * [Zenn . Wio BG770Aのサンプルスケッチぶらり旅](https://zenn.dev/matsujirushi/articles/7a1de046f5f05b) . matsujirushi
     * [Hatena Blog . Wio BG770Aでミニサイネージを作ってみた](https://supernove.hatenadiary.jp/entry/2024/12/21/235847) . KMiura
     * [aadojo . arduino-cliとGitHub Actions self hosted runnerを使ってマイコン開発でもCI/CDを実現する](https://aadojo.alterbooth.com/entry/2024/12/22/111610) . showm001
+    * [note . WioBG770Aへの道③超音波距離センサー＋乾電池駆動＋PSM](https://note.com/anysonica/n/n7c99611a1a4c) . anysonica
