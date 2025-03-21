@@ -24,7 +24,7 @@ WioCellular.hをインクルードして、WioCellularインスタンスを使�
 
 ```cpp
 WioCellular.begin();
-WioCellular.enableGrovePower();
+digitalWrite(PIN_VGROVE_ENABLE, LOW);
 ```
 
 Grove - Buttonのピンを入力に設定します。

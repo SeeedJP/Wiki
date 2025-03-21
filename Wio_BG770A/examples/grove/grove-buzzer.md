@@ -22,7 +22,7 @@ WioCellular.hをインクルードして、WioCellularインスタンスを使�
 
 ```cpp
 WioCellular.begin();
-WioCellular.enableGrovePower();
+digitalWrite(PIN_VGROVE_ENABLE, LOW);
 ```
 
 Grove - Piezo Buzzer/Active Buzzerのピンを出力に設定します。
