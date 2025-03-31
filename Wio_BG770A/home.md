@@ -32,11 +32,14 @@ Wio BG770Aは、**低消費電力セルラーIoTデバイス開発ボード**で
     * [note . Wio BG770Aの研究](https://note.com/susa_lab/m/m2207f165ba87) . 高知のIoT屋
     * [Zenn . Wio BG770AをSORACOM Airでつないでみる](https://zenn.dev/showm001/articles/2024-12-01-01) . しょーちゃん
     * [note . Wio BG770Aへの道①検証前の準備](https://note.com/anysonica/n/n4b74dfc93ce0) . anysonica
-    * [Zenn . Wio BG770AのATコマンドを確認する](https://zenn.dev/matsujirushi/articles/474d1de60c7c9b) . matsujirushi
-    * [YouTube . Seeed Studio新製品 Wio BG770Aを徹底解説。仕様や使い勝手、開発秘話など盛りだくさん！ [IBUKA LAB 025]](https://www.youtube.com/watch?v=8g5Je8jlzi8) . IBUKA LAB.
     * [note . Wio BG770Aへの道②　乾電池で駆動するGPSユニットをつくる](https://note.com/anysonica/n/n7c6efc6c35a7) . anysonica
-    * [Hatena Blog . 【世界初】Wio BG770AをSeeed社員に教えてもらってチョットワカル気になってみた【発売記念】](https://uepon.hatenadiary.com/entry/2024/12/19/000000) . ueponx
+    * [note . WioBG770Aへの道③超音波距離センサー＋乾電池駆動＋PSM](https://note.com/anysonica/n/n7c99611a1a4c) . anysonica
+    * [Zenn . Wio BG770AのATコマンドを確認する](https://zenn.dev/matsujirushi/articles/474d1de60c7c9b) . matsujirushi
     * [Zenn . Wio BG770Aのサンプルスケッチぶらり旅](https://zenn.dev/matsujirushi/articles/7a1de046f5f05b) . matsujirushi
+    * [Hatena Blog . 【世界初】Wio BG770AをSeeed社員に教えてもらってチョットワカル気になってみた【発売記念】](https://uepon.hatenadiary.com/entry/2024/12/19/000000) . ueponx
     * [Hatena Blog . Wio BG770Aでミニサイネージを作ってみた](https://supernove.hatenadiary.jp/entry/2024/12/21/235847) . KMiura
     * [aadojo . arduino-cliとGitHub Actions self hosted runnerを使ってマイコン開発でもCI/CDを実現する](https://aadojo.alterbooth.com/entry/2024/12/22/111610) . showm001
-    * [note . WioBG770Aへの道③超音波距離センサー＋乾電池駆動＋PSM](https://note.com/anysonica/n/n7c99611a1a4c) . anysonica
+    * [Qiita . Arduino IDEで簡単に始めるSeeedStudio製 Wio BG770A のはじめの一歩](https://qiita.com/yukima77/items/e45a44720cd7fffade3d) . yukima77
+    * [Qiita . SeeedStudio製 Wio BG770AとSORACOM SIMで試す！簡単セルラー通信](https://qiita.com/yukima77/items/45793e72b2347ecbb18b) . yukima77
+* 動画
+    * [YouTube . Seeed Studio新製品 Wio BG770Aを徹底解説。仕様や使い勝手、開発秘話など盛りだくさん！ [IBUKA LAB 025]](https://www.youtube.com/watch?v=8g5Je8jlzi8) . IBUKA LAB.
