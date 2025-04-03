@@ -41,5 +41,6 @@ Wio BG770Aは、**低消費電力セルラーIoTデバイス開発ボード**で
     * [aadojo . arduino-cliとGitHub Actions self hosted runnerを使ってマイコン開発でもCI/CDを実現する](https://aadojo.alterbooth.com/entry/2024/12/22/111610) . showm001
     * [Qiita . Arduino IDEで簡単に始めるSeeedStudio製 Wio BG770A のはじめの一歩](https://qiita.com/yukima77/items/e45a44720cd7fffade3d) . yukima77
     * [Qiita . SeeedStudio製 Wio BG770AとSORACOM SIMで試す！簡単セルラー通信](https://qiita.com/yukima77/items/45793e72b2347ecbb18b) . yukima77
+    * [Qiita . Wio BG770Aで使ってみるM5Stack用環境光センサユニット！その方法とは？](https://qiita.com/yukima77/items/aaf8ff2a3fd9249c8f4b) . yukima77
 * 動画
     * [YouTube . Seeed Studio新製品 Wio BG770Aを徹底解説。仕様や使い勝手、開発秘話など盛りだくさん！ [IBUKA LAB 025]](https://www.youtube.com/watch?v=8g5Je8jlzi8) . IBUKA LAB.
