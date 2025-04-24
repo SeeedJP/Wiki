@@ -45,6 +45,7 @@ Wio BG770Aは、**低消費電力セルラーIoTデバイス開発ボード**で
     * [Qiita . Wio BG770Aで割り込み処理を実装する方法](https://qiita.com/yukima77/items/536867589f62a82ef480) . yukima77
     * [Qiita . Wio BG770Aの省電力化！delay関数で驚きの実現!?](https://qiita.com/yukima77/items/7b9f3947890b486dff8b) . yukima77
     * [Qiita . 低消費電力開発ボードWio BG770Aで試す低容量向けプリペイド型IoTSIMカード1NCE](https://qiita.com/yukima77/items/bcbf2ff5e222a6e40a7b) . yukima77
+    * [Qiita . Wio BG770Aで使うCO2センサ：Sensirion製SCD41の実装方法](https://qiita.com/yukima77/items/03144936684ed58af6d2) . yukima77
 * 動画
     * [YouTube . Seeed Studio新製品 Wio BG770Aを徹底解説。仕様や使い勝手、開発秘話など盛りだくさん！ [IBUKA LAB 025]](https://www.youtube.com/watch?v=8g5Je8jlzi8) . IBUKA LAB.
 * 資料
