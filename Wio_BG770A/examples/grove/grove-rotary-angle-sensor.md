@@ -24,7 +24,7 @@ WioCellular.hをインクルードして、WioCellularインスタンスを使�
 
 ```cpp
 WioCellular.begin();
-digitalWrite(PIN_VGROVE_ENABLE, LOW);
+digitalWrite(PIN_VGROVE_ENABLE, VGROVE_ENABLE_ON);
 ```
 
 アナログ入力の分解能（ビット数）を14ビットに変更します。

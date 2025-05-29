@@ -23,7 +23,7 @@ WioCellularライブラリを使用しているときは、下記コードでVGR
 
 ```cpp
 WioCellular.begin();
-digitalWrite(PIN_VGROVE_ENABLE, LOW);
+digitalWrite(PIN_VGROVE_ENABLE, VGROVE_ENABLE_ON);
 ```
 
 ## 参考リンク
