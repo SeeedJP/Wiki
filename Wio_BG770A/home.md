@@ -24,6 +24,7 @@ Wio BG770Aは、**低消費電力セルラーIoTデバイス開発ボード**で
     * [WioCellularライブラリ リファレンスマニュアル](https://seeedjp.github.io/wio_cellular/)
 * サンプル
     * [サンプルスケッチ](examples.md)
+    * [GitHub . SORACOM UG 四国 x kintone Café 高知 Vol.22 SORACOMハンズオンソース](https://github.com/banauo/soracom_ug_202506) . banauo
 * アプリケーションノート
     * [セルラー関連情報](cellular.md)
     * [消費電力](power-consumption.md)
@@ -51,3 +52,5 @@ Wio BG770Aは、**低消費電力セルラーIoTデバイス開発ボード**で
     * [YouTube . Seeed Studio新製品 Wio BG770Aを徹底解説。仕様や使い勝手、開発秘話など盛りだくさん！ [IBUKA LAB 025]](https://www.youtube.com/watch?v=8g5Je8jlzi8) . IBUKA LAB.
 * 資料
     * [Docswell . 新製品Wio BG770AはWio LTE Cat.1と何が違うのか？](https://www.docswell.com/s/matsujirushi/ZEX737-2025-04-12-213741) . matsujirushi
+    * [Docswell . Wio BG770A ファーストタッチの前に](https://www.docswell.com/s/matsujirushi/Z3G1ED-2025-06-07-152612) . matsujirushi
+    * [Docswell . 25-06-07 Wio BG770A：LTE-M対応通信モジュールの新たな選択肢](https://www.docswell.com/s/5779738433/K7R248-2025-06-07-180000) . T.SUSAMI
