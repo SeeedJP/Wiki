@@ -37,10 +37,20 @@ WioNetwork.begin();
 if (!WioNetwork.waitUntilCommunicationAvailable(NETWORK_TIMEOUT)) abort();
 ```
 
-SORACOM Unified Endpointへ送信は`WioCellularTcpClient2.open()`、`WioCellularTcpClient2.waitforConnect()`、`WioCellularTcpClient2.send()`、`WioCellularTcpClient2.receive()`を呼びます。
+SORACOM Unified EndpointへTCP送信は`WioCellularTcpClient2.open()`、`WioCellularTcpClient2.waitforConnect()`、`WioCellularTcpClient2.send()`、`WioCellularTcpClient2.receive()`を呼びます。
 
 ```cpp
 WioCellularTcpClient2<WioCellularModule> client{ WioCellular };
+client.open(WioNetwork.config.pdpContextId, HOST, PORT);
+client.waitforConnect();
+client.send(str.data(), str.size());
+client.receive(recvData, sizeof(recvData), &recvSize, RECEIVE_TIMEOUT);
+```
+
+TCPの代わりにUDPで送信したいときは`WioCellularUdpClient2`を使います。
+
+```cpp
+WioCellularUdpClient2<WioCellularModule> client{ WioCellular };
 client.open(WioNetwork.config.pdpContextId, HOST, PORT);
 client.waitforConnect();
 client.send(str.data(), str.size());
