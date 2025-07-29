@@ -48,6 +48,7 @@ Wio BG770Aは、**低消費電力セルラーIoTデバイス開発ボード**で
     * [Qiita . 低消費電力開発ボードWio BG770Aで試す低容量向けプリペイド型IoTSIMカード1NCE](https://qiita.com/yukima77/items/bcbf2ff5e222a6e40a7b) . yukima77
     * [Qiita . Wio BG770Aで使うCO2センサ：Sensirion製SCD41の実装方法](https://qiita.com/yukima77/items/03144936684ed58af6d2) . yukima77
     * [Qiita . 低消費電力開発ボードWio BG770Aで試す！Grove E-Inkディスプレイ1.54"](https://qiita.com/yukima77/items/f0384929dd114c5e1858) . yukima77
+    * [FabScene . Seeed Studio Wio BG770A レビュー｜SORACOM & Groveモジュールで手軽につくる、省電力IoTの実力とは](https://fabscene.com/new/pr/wio-bg770a-review-pr-soracom-grove) . 淺野義弘
 * 動画
     * [YouTube . Seeed Studio新製品 Wio BG770Aを徹底解説。仕様や使い勝手、開発秘話など盛りだくさん！ [IBUKA LAB 025]](https://www.youtube.com/watch?v=8g5Je8jlzi8) . IBUKA LAB.
 * 資料
