@@ -1,4 +1,4 @@
-# VSCode+PlatformIOでの開発のはじめかた
+# KB5 VSCode+PlatformIOでの開発のはじめかた
 
 [ユーザーズマニュアル](https://seeedjp.github.io/Wiki/Wio_BG770A/user-manual.html)では開発環境にArduinoIDEを用いています。  
 しかし、ArduinoCoreを用いた開発環境として[Visual Studio Core(以下VSCode)](https://code.visualstudio.com/)+[PlatformIO](https://platformio.org/)を用いている方も少なからずいらっしゃるので、その場合の開発のはじめかたをまとめます。
