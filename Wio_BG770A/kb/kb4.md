@@ -6,7 +6,7 @@
 
 ```
 #define SEARCH_ACCESS_TECHNOLOGY (WioCellularNetwork::SearchAccessTechnology::LTEM)
-#define LTEM_BAND                (WioCellularNetwork::NTTDOCOMO_LTEM_BAND)
+#define LTEM_BAND                (WioCellularNetwork::ALL_LTEM_BAND)
 ```
 
 ```
