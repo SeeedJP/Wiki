@@ -57,3 +57,4 @@ Wio BG770Aは、**低消費電力セルラーIoTデバイス開発ボード**で
     * [Docswell . 新製品Wio BG770AはWio LTE Cat.1と何が違うのか？](https://www.docswell.com/s/matsujirushi/ZEX737-2025-04-12-213741) . matsujirushi
     * [Docswell . Wio BG770A ファーストタッチの前に](https://www.docswell.com/s/matsujirushi/Z3G1ED-2025-06-07-152612) . matsujirushi
     * [Docswell . 25-06-07 Wio BG770A：LTE-M対応通信モジュールの新たな選択肢](https://www.docswell.com/s/5779738433/K7R248-2025-06-07-180000) . T.SUSAMI
+    * [Docswell . Wio BG770A デバッギング](https://www.docswell.com/s/matsujirushi/Z746V8-2025-08-23-162825) . matsujirushi
