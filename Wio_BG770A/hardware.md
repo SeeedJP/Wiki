@@ -91,8 +91,10 @@ Groveモジュールを動かすときはVGROVE_ENABLE信号をオンしてく�
 |:--|:--|:--|:--|:--|
 |Grove - Digital|**Y**|Y|n|n|
 |Grove - Analog|Y|**Y**|n|n|
-|Grove - I2C|Y|Y|**Y**|n|
+|Grove - I2C(*1)|Y|Y|**Y**|n|
 |Grove - UART|Y|n|n|**Y**|
+
+*1: Wio BG770Aの内部で3.3Vにプルアップされています。プルアップ抵抗値は10KΩです。
 
 <a href="media/17.png"><img src="media/17.png" width="600"></a>
 
