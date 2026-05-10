@@ -55,6 +55,7 @@ Wio BG770Aは、**低消費電力セルラーIoTデバイス開発ボード**で
     * [Zenn . Wio BG770AとSORACOM 入門: 概要編](https://zenn.dev/takao2704/articles/getting-started-with-wiobg770a_soracom1) . takao2704
     * [Zenn . Wio BG770AとSORACOM 入門: LTE接続編](https://zenn.dev/takao2704/articles/getting-started-with-wiobg770a_soracom2) . takao2704
     * [Zenn . Wio BG770AとSORACOM 入門: 通信＆センサデータ取得編](https://zenn.dev/takao2704/articles/getting-started-with-wiobg770a_soracom3) . takao2704
+    * [Qiita . Wio BG770Aでカメラは使えるのか？TTLシリアルJPEGカメラでIoTカメラを実現する](https://qiita.com/yukima77/items/2dc45176817b4878eff8) . yukima77
 * 動画
     * [YouTube . Seeed Studio新製品 Wio BG770Aを徹底解説。仕様や使い勝手、開発秘話など盛りだくさん！ [IBUKA LAB 025]](https://www.youtube.com/watch?v=8g5Je8jlzi8) . IBUKA LAB.
 * 資料
