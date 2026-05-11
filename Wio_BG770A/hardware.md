@@ -2,8 +2,10 @@
 
 ## 機能
 
-<a href="media/16.png"><img src="media/16.png" width="600"></a>
+<a href="media/62.png"><img src="media/62.png" width="600"></a>
+<a href="media/64.png"><img src="media/64.png" width="600"></a>
 
+<a href="media/16.png"><img src="media/16.png" width="600"></a>
 <a href="media/6.png"><img src="media/6.png" width="600"></a>
 
 ### LEDとボタン
@@ -96,6 +98,8 @@ Groveモジュールを動かすときはVGROVE_ENABLE信号をオンしてく�
 
 *1: Wio BG770Aの内部で3.3Vにプルアップされています。プルアップ抵抗値は10KΩです。
 
+<a href="media/63.png"><img src="media/63.png" width="600"></a>
+
 <a href="media/17.png"><img src="media/17.png" width="600"></a>
 
 ### 電源
@@ -106,7 +110,7 @@ Wio BG770Aの内部では、電源は3つのドメインに分かれていて、
 
 |電源ドメイン|電圧[V]|供給範囲|投入条件|
 |:--|:--|:--|:--|
-|VSYS|3.4(*1)~17|VSYS_3V3|なし|
+|VSYS|3.4(*1)~16|VSYS_3V3|なし|
 |VSYS_3V3|3.3|CPU、セルラーモジュール、(VGROVE)|なし|
 |VGROVE|3.3|Groveインターフェース|VGROVE_ENABLE信号|
 
@@ -134,7 +138,7 @@ Wio BG770Aの内部では、電源は3つのドメインに分かれていて、
 |Groveインターフェース|x1 Grove - Digital<br>x1 Grove - Analog<br>x1 Grove - I2C<br>x1 Grove - UART<br>**NOTE:** 全て3.3Vです。5Vには対応していません。|
 |USBインターフェース|x1 USB Type-C USB 2.0 Full Speed (**NOTE:** 電源コネクタと兼用です。)|
 |デバッグインターフェース|SWD (Tag-Connect TC2030-*-NL with TC2030-CLIP)<br>SWD+Trace (2x10 1.27mm SMT header)
-|電源コネクタ|USB Type-C (**NOTE:** USBインターフェースと兼用です。)<br>[JST PHコネクタ](https://www.jst-mfg.com/product/index.php?series=199) 2pin (3.4(*1)~17V DC)|
+|電源コネクタ|USB Type-C (**NOTE:** USBインターフェースと兼用です。)<br>[JST PHコネクタ](https://www.jst-mfg.com/product/index.php?series=199) 2pin (3.4(*1)~16V DC)|
 |消費電力|**(TBC)**|
 |寸法|49 x 55 x 13 mm|
 
@@ -146,4 +150,5 @@ Wio BG770Aの内部では、電源は3つのドメインに分かれていて、
 
 ## 資料
 
+* [回路図(v1.1)](media/WioBG770A.v1.1.pdf)
 * [回路図(v1.0.1)](media/WioBG770A.v1.0.1.pdf)

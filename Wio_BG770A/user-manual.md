@@ -86,7 +86,7 @@ Arduino IDEのメニュー「ファイル」>「スケッチ例」>「Wio Cellul
 ボードのオプションを設定します。
 Arduino IDEのメニュー「ツール」配下に表示されている下記項目を設定してください。
 
-* Board Version = "1.0"
+* Board Version = "1.0" ←使用しているWio BG770Aのバージョンを選んでください。
 * Print Port = "None"
 * SoftDevice = "S140 7.3.0"
 
