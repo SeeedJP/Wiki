@@ -63,3 +63,4 @@ Wio BG770Aは、**低消費電力セルラーIoTデバイス開発ボード**で
     * [Docswell . Wio BG770A ファーストタッチの前に](https://www.docswell.com/s/matsujirushi/Z3G1ED-2025-06-07-152612) . matsujirushi
     * [Docswell . 25-06-07 Wio BG770A：LTE-M対応通信モジュールの新たな選択肢](https://www.docswell.com/s/5779738433/K7R248-2025-06-07-180000) . T.SUSAMI
     * [Docswell . Wio BG770A デバッギング](https://www.docswell.com/s/matsujirushi/Z746V8-2025-08-23-162825) . matsujirushi
+    * [Speaker Deck . Wio BG770A で写真を SORACOM Harvest に送る話](https://speakerdeck.com/ochicchi/bg770a-photo-transfer-v2) . Satoru Ohguchi
