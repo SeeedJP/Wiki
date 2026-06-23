@@ -56,6 +56,7 @@ Wio BG770Aは、**低消費電力セルラーIoTデバイス開発ボード**で
     * [Zenn . Wio BG770AとSORACOM 入門: LTE接続編](https://zenn.dev/takao2704/articles/getting-started-with-wiobg770a_soracom2) . takao2704
     * [Zenn . Wio BG770AとSORACOM 入門: 通信＆センサデータ取得編](https://zenn.dev/takao2704/articles/getting-started-with-wiobg770a_soracom3) . takao2704
     * [Qiita . Wio BG770Aでカメラは使えるのか？TTLシリアルJPEGカメラでIoTカメラを実現する](https://qiita.com/yukima77/items/2dc45176817b4878eff8) . yukima77
+    * [Qiita . Wio BG770AでEnOceanセンサを受信してみた](https://qiita.com/yukima77/items/22332f2d2cf06acb0d08) . yukima77
 * 動画
     * [YouTube . Seeed Studio新製品 Wio BG770Aを徹底解説。仕様や使い勝手、開発秘話など盛りだくさん！ [IBUKA LAB 025]](https://www.youtube.com/watch?v=8g5Je8jlzi8) . IBUKA LAB.
 * 資料
@@ -64,3 +65,4 @@ Wio BG770Aは、**低消費電力セルラーIoTデバイス開発ボード**で
     * [Docswell . 25-06-07 Wio BG770A：LTE-M対応通信モジュールの新たな選択肢](https://www.docswell.com/s/5779738433/K7R248-2025-06-07-180000) . T.SUSAMI
     * [Docswell . Wio BG770A デバッギング](https://www.docswell.com/s/matsujirushi/Z746V8-2025-08-23-162825) . matsujirushi
     * [Speaker Deck . Wio BG770A で写真を SORACOM Harvest に送る話](https://speakerdeck.com/ochicchi/bg770a-photo-transfer-v2) . Satoru Ohguchi
+    * [Docswell . Wio BG770Aのアクセサリ作ってみた](https://www.docswell.com/s/k_miura_io/K27QR1-2026-06-20-171017) . Koki Miura
