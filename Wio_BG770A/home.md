@@ -58,6 +58,7 @@ Wio BG770Aは、**低消費電力セルラーIoTデバイス開発ボード**で
     * [Qiita . Wio BG770Aでカメラは使えるのか？TTLシリアルJPEGカメラでIoTカメラを実現する](https://qiita.com/yukima77/items/2dc45176817b4878eff8) . yukima77
     * [Qiita . Wio BG770AでEnOceanセンサを受信してみた](https://qiita.com/yukima77/items/22332f2d2cf06acb0d08) . yukima77
     * [Qiita . Wio BG770Aの電池残量取得！Groveコネクタ化で拡張性アップ](https://qiita.com/yukima77/items/9028d42e4987676bfd6e) . yukima77
+    * [Qiita . Wio BG770AでEnOceanセンサのデータをSORACOMに送ってみた](https://qiita.com/yukima77/items/51291e5e881953e3287c) . yukima77
 * 動画
     * [YouTube . Seeed Studio新製品 Wio BG770Aを徹底解説。仕様や使い勝手、開発秘話など盛りだくさん！ [IBUKA LAB 025]](https://www.youtube.com/watch?v=8g5Je8jlzi8) . IBUKA LAB.
 * 資料
