@@ -25,6 +25,8 @@
 |📝|[grove/grove-accelerometer](https://github.com/SeeedJP/wio_cellular/tree/main/examples/grove/grove-accelerometer)|加速度センサーの値をシリアルモニタに表示します。<br>> [説明](examples/grove/grove-accelerometer.md)|[Grove - 3軸デジタル加速度センサー(±16g)](https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-16g.html)<br>(Grove - ADXL345 - 3-Axis Digital Accelerometer(±16g))|
 |📝|[grove/grove-gps](https://github.com/SeeedJP/wio_cellular/tree/main/examples/grove/grove-gps)|GPSの位置情報をシリアルモニタに表示します。<br>> [説明](examples/grove/grove-gps.md)|[Grove - GPS](https://www.seeedstudio.com/Grove-GPS-Module.html)<br>(Grove - GPS Module)|
 ||[grove/grove-ultrasonic-ranger](https://github.com/SeeedJP/wio_cellular/tree/main/examples/grove/grove-ultrasonic-ranger)|Grove - 超音波距離センサーの距離をシリアルモニタに表示します。|[Grove - 超音波距離センサー](https://www.seeedstudio.com/Grove-Ultrasonic-Distance-Sensor.html)<br>(Grove - Ultrasonic Distance Sensor)|
+|📝|[grove/grove-magnetic-switch](https://github.com/SeeedJP/wio_cellular/tree/main/examples/grove/grove-magnetic-switch)|磁気スイッチのON/OFFをシリアルモニタに表示します。|[Grove - 磁気スイッチ](https://www.seeedstudio.com/Grove-Magnetic-Switch.html)<br>(Grove - Magnetic Switch)|
+|📝|[grove/grove-temphumi-dht11](https://github.com/SeeedJP/wio_cellular/tree/main/examples/grove/grove-temphumi-dht11)|温度と湿度の値をシリアルモニタに表示します。|[Grove - 温湿度センサー](https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DHT11.html)<br>(Grove - Temperature & Humidity Sensor (DHT11))|
 
 ### セルラー通信
 
