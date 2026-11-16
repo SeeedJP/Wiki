@@ -1,0 +1,79 @@
+
+
+Startup
+URC> RDY
+URC> +CFUN: 1
+URC> +CPIN: READY
+URC> +QUSIM: 1
+URC> +QIND: SMS DONE
+URC> APP RDY
+CMD> AT+IFC?
+ECO> AT+IFC? ... 2[ms]
+INF> +IFC: 0,0
+FRC> OK ... 2[ms]
+CMD> AT+IFC=2,2
+ECO> AT+IFC=2,2 ... 3[ms]
+FRC> OK ... 0[ms]
+CMD> AT+CGDCONT?
+ECO> AT+CGDCONT? ... 1[ms]
+INF> +CGDCONT: 1,"IP","soracom.io",10.225.154.84,0,0,0
+INF> +CGDCONT: 2,"IPV4V6","docomodev.net","0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0",0,0,0
+FRC> OK ... 15[ms]
+CMD> AT+QCFG="iotopmode"
+ECO> AT+QCFG="iotopmode" ... 5[ms]
+INF> +QCFG: "iotopmode",0
+FRC> OK ... 3[ms]
+CMD> AT+QCFG="nwscanseq"
+ECO> AT+QCFG="nwscanseq" ... 4[ms]
+INF> +QCFG: "nwscanseq",0203
+FRC> OK ... 2[ms]
+CMD> AT+QCFG="band"
+ECO> AT+QCFG="band" ... 5[ms]
+INF> +QCFG: "band",0x0,0x2000000000f0e189f,0x200000000090f189f
+FRC> OK ... 41[ms]
+CMD> AT+CEREG=1
+ECO> AT+CEREG=1 ... 3[ms]
+FRC> OK ... 1[ms]
+CMD> AT+CEREG?
+ECO> AT+CEREG? ... 1[ms]
+INF> +CEREG: 1,1
+FRC> OK ... 4[ms]
+CMD> AT+CGDCONT?
+ECO> AT+CGDCONT? ... 3[ms]
+INF> +CGDCONT: 1,"IP","soracom.io",10.225.154.84,0,0,0
+INF> +CGDCONT: 2,"IPV4V6","docomodev.net","0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0",0,0,0
+FRC> OK ... 14[ms]
+### Measuring
+### Completed
+### Sending
+Connecting uni.soracom.io:23080
+CMD> AT+QIOPEN=1,0,"TCP","uni.soracom.io",23080,0
+ECO> AT+QIOPEN=1,0,"TCP","uni.soracom.io",23080,0 ... 10[ms]
+FRC> OK ... 0[ms]
+INFO: WioCellularTcpClient2<0> state changed 0 to 1
+URC> +QIOPEN: 0,0
+INFO: WioCellularTcpClient2<0> state changed 1 to 3
+Sending {"uptime":13}
+CMD> AT+QISEND=0,13
+ECO> AT+QISEND=0,13 ... 4[ms]
+INF> >
+FRC> SEND OK ... 4[ms]
+Receiving
+URC> +QIURC: "recv",0
+INFO: WioCellularTcpClient2<0> received
+CMD> AT+QIRD=0,1500
+ECO> AT+QIRD=0,1500 ... 1[ms]
+INF> +QIRD: 4
+FRC> OK ... 2[ms]
+201.
+CMD> AT+QICLOSE=0
+ECO> AT+QICLOSE=0 ... 3[ms]
+FRC> OK ... 1[ms]
+INFO: WioCellularTcpClient2<0> state changed 3 to 0
+### Completed
+CMD> AT+CFUN=0
+ECO> AT+CFUN=0 ... 2[ms]
+FRC> OK ... 257[ms]
+URC> +CEREG: 0
+URC> NORMAL POWER DOWN
+
